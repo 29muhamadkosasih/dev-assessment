@@ -13,24 +13,36 @@
                     <a href="{{ route('kompetensi.index') }}" class="btn btn-secondary">Back</a>
                 </div>
             </div>
+            <table class="mb-2">
+                <tbody>
+                    <tr>
+                        <td class="pe-4">Nama Skema</td>
+                        <td>: &nbsp; {{$show->skema->nama_skema}}</td>
+                    </tr>
+                    <tr>
+                        <td class="pe-4">No. Skema</td>
+                        <td>: &nbsp; {{ $show->skema->no }}</td>
+                    </tr>
+                    <tr>
+                        <td class="pe-4">No. SKKNI</td>
+                        <td>: &nbsp; {{ $show->no_skkni }}</td>
+                    </tr>
+                </tbody>
+            </table>
             <div class="table-responsive">
-                <table class="table dt-scrollableTable table-bordered table-hover">
+                <table class="table dataex-complex-headers table-bordered table-hover">
                     {{-- dt-scrollableTable --}}
                     <thead>
                         <tr style="background-color: skyblue">
-                            <th class="text-center">Nama Skema</th>
-                            <th class="text-center">No SKKNI</th>
-                            <th class="text-center">Kode & Kompetensi </th>
+                            <th class="text-center" style="background-color: skyblue">Kode & Kompetensi </th>
                             <th class="text-center">Element Kompetensi</th>
                             <th class="text-center">Kriteria Unjuk Kerja</th>
                         </tr>
                     </thead>
                     <tbody class="table-border-bottom-0" height="100px">
                         <tr>
-                            <td width="168px" style="text-align: left">{{$show->skema->nama_skema}}</td>
-                            <td width="126px">{{$show->no_skkni}}</td>
-                            <td width="247px">{{$show->kode}}- {{$show->unit_kompetensi}}</td>
-                            <td width="265px">{!! $show->element_kompetensi !!}</td>
+                            <td>{{$show->kode}} - {{$show->unit_kompetensi}}</td>
+                            <td>{!! $show->element_kompetensi !!}</td>
                             <td>{!! $show->kuk !!}</td>
                         </tr>
                         @switch($show)
@@ -38,8 +50,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode2}}- {{$show->unit_kompetensi2}}</td>
                             <td>{!! $show->element_kompetensi2 !!}</td>
                             <td>{!! $show->kuk2 !!}</td>
@@ -51,8 +61,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode3}}- {{$show->unit_kompetensi3}}</td>
                             <td>{!! $show->element_kompetensi3 !!}</td>
                             <td>{!! $show->kuk3 !!}</td>
@@ -64,8 +72,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode4}}- {{$show->unit_kompetensi4}}</td>
                             <td>{!! $show->element_kompetensi4 !!}</td>
                             <td>{!! $show->kuk4 !!}</td>
@@ -77,8 +83,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode5}}- {{$show->unit_kompetensi5}}</td>
                             <td>{!! $show->element_kompetensi5 !!}</td>
                             <td>{!! $show->kuk5 !!}</td>
@@ -90,8 +94,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode6}}- {{$show->unit_kompetensi6}}</td>
                             <td>{!! $show->element_kompetensi6 !!}</td>
                             <td>{!! $show->kuk6 !!}</td>
@@ -103,8 +105,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode7}}- {{$show->unit_kompetensi7}}</td>
                             <td>{!! $show->element_kompetensi7 !!}</td>
                             <td>{!! $show->kuk7 !!}</td>
@@ -116,8 +116,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode8}}- {{$show->unit_kompetensi8}}</td>
                             <td>{!! $show->element_kompetensi8 !!}</td>
                             <td>{!! $show->kuk8 !!}</td>
@@ -129,8 +127,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode9}}- {{$show->unit_kompetensi9}}</td>
                             <td>{!! $show->element_kompetensi9 !!}</td>
                             <td>{!! $show->kuk9 !!}</td>
@@ -142,8 +138,6 @@
                         @break
                         @default
                         <tr>
-                            <td></td>
-                            <td></td>
                             <td>{{$show->kode10}}- {{$show->unit_kompetensi10}}</td>
                             <td>{!! $show->element_kompetensi10 !!}</td>
                             <td>{!! $show->kuk10 !!}</td>
