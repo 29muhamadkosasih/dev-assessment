@@ -140,12 +140,10 @@
                                     class="btn btn-icon btn-warning btn-sm">
                                     <span class="ti ti-edit"></span>
                                 </a>
-                                <form action="{{ route('kompetensi.destroy', $data->id) }}" class="d-inline-block"
-                                    method="post">
+                                <form method="POST" action="{{ route('kompetensi.destroy', $data->id) }}">
                                     @csrf
-                                    @method('DELETE')
-                                    <button type="submit" onclick="return confirm('Are you sure?')"
-                                        class="btn btn-icon btn-danger btn-sm">
+                                    <input name="_method" type="hidden" value="DELETE">
+                                    <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>
@@ -158,5 +156,25 @@
         </div>
     </div>
 </div>
-<!-- /Invoice table -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript">
+    $('.show_confirm').click(function(event) {
+          var form =  $(this).closest("form");
+          var name = $(this).data("name");
+          event.preventDefault();
+          swal({
+              title: `Are you sure you want to delete this record?`,
+              text: "If you delete this, it will be gone forever.",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+          })
+          .then((willDelete) => {
+            if (willDelete) {
+              form.submit();
+            }
+          });
+      });
+
+</script>
 @endsection

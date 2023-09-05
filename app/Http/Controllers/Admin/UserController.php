@@ -116,11 +116,12 @@ class UserController extends Controller
          */
     }
 
-    public function destroy(User $user)
+    public function destroy($id)
     {
-        abort_if(Gate::denies('users.delete'), Response::HTTP_FORBIDDEN, 'Forbidden');
+        // abort_if(Gate::denies('users.delete'), Response::HTTP_FORBIDDEN, 'Forbidden');
 
-        $user->delete();
+        $delete = User::find($id);
+        $delete->delete();
         return redirect()->back()->with('success', 'Success ! Data Users Berhasil di Hapus');
     }
 }

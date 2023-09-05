@@ -39,7 +39,8 @@
 
     <!-- Page CSS -->
     <!-- Page -->
-    <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/page-misc.css')}}" />
+    {{--
+    <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/page-misc.css')}}" /> --}}
     <!-- Helpers -->
     <script src="{{ asset('assets/vendor/js/helpers.js')}}"></script>
 
@@ -52,10 +53,45 @@
     <!-- Content -->
 
     <!--Under Maintenance -->
+    <style>
+        .misc-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+
+        .misc-bg-wrapper {
+            position: relative;
+        }
+
+        .misc-bg-wrapper img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        @media (max-width: 1499.98px) {
+            .misc-bg-wrapper img {
+                height: 250px;
+            }
+
+            .misc-under-maintenance-bg-wrapper img {
+                height: 270px !important;
+            }
+        }
+    </style>
     <div class="container-xxl container-p-y">
         <div class="misc-wrapper">
             <h2 class="mb-1 mx-2">Under Maintenance!</h2>
-            <p class="mb-4 mx-2">Sorry for the inconvenience but we're performing some maintenance at the moment</p>
+            <p class="mb-4 mx-2">Sorry for the inconvenience but we're performing some maintenance at the moment,
+                <b>Please Contact Admin !</b>
+            </p>
             <a href="{{ route('home') }}" class="btn btn-primary mb-4">Back to home</a>
             <div class="mt-4">
                 <img src="{{ asset('assets/img/illustrations/page-misc-under-maintenance.png')}}"

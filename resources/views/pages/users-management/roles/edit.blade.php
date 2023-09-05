@@ -1,9 +1,6 @@
 @extends('layouts/master')
-
 @section('title', 'Roles')
-
 @section('content')
-<!-- Invoice table -->
 <div class="col-12">
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
@@ -60,5 +57,4 @@
         </div>
     </div>
 </div>
-<!-- /Invoice table -->
 @endsection

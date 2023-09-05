@@ -1,7 +1,5 @@
 @extends('layouts/master')
-
 @section('title', 'Users')
-
 @section('content')
 <div class="col-12">
     <div class="card">

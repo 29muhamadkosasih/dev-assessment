@@ -240,7 +240,7 @@
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit_kompetensi6"
                                                 class="form-control" placeholder="Masukan Unit Kompetensi"
-                                                value="unit_kompetensi6" />
+                                                value="{{ $edit->unit_kompetensi6 }}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">

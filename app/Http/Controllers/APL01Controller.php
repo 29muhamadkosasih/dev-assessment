@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use PDF;
 use App\Models\Bank;
 use App\Models\Kompetensi;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\Personaldetail;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Storage;
 
 class APL01Controller extends Controller
 {
@@ -38,7 +37,6 @@ class APL01Controller extends Controller
     public function store(Request $request)
     {
         $userId = auth()->id();
-        $username = Auth::user()->name;
         $request->validate([
             'jabatan' => 'required',
             'tempat_lahir' => 'required',
@@ -62,7 +60,7 @@ class APL01Controller extends Controller
             'ttd' => 'mimes:jpeg,png,jpg|max:8048'
         ]);
 
-        $documentNumber = $username;
+        $documentNumber = Personaldetail::generateInvoiceNumber();
         $data2 = $request->ijazah;
         if ($data2 == NULL) {
             $filename1 = 0;
@@ -74,7 +72,7 @@ class APL01Controller extends Controller
                 $file               = $request->file('ijazah');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename1          = 'Ijazah-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'storage/Ijazah';
+                $destinationPath    = 'storage/app/public/Ijazah';
                 $file->move($destinationPath, $filename1);
             }
         }
@@ -91,7 +89,7 @@ class APL01Controller extends Controller
                 $file               = $request->file('surat_keterangan_perusahaan');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename2         = 'Surat-Keterangan-Perusahaan-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'storage/Surat-Keterangan-Perusahaan';
+                $destinationPath    = 'storage/app/public/Surat-Keterangan-Perusahaan';
                 $file->move($destinationPath, $filename2);
             }
         }
@@ -107,7 +105,7 @@ class APL01Controller extends Controller
                 $file               = $request->file('cv');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename3          = 'CV-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'storage/CV';
+                $destinationPath    = 'storage/app/public/CV';
                 $file->move($destinationPath, $filename3);
             }
         }
@@ -123,7 +121,7 @@ class APL01Controller extends Controller
                 $file               = $request->file('sertifikat_pendukung');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename4          = 'Sertifikat-Pendukung-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'storage/Sertifikat-Pendukung';
+                $destinationPath    = 'storage/app/public/Sertifikat-Pendukung';
                 $file->move($destinationPath, $filename4);
             }
         }
@@ -139,7 +137,7 @@ class APL01Controller extends Controller
                 $file               = $request->file('p_cbt');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename5          = 'Sertifikat-Pelatihan-CBT-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'storage/Pelatihan-CBT';
+                $destinationPath    = 'storage/app/public/Pelatihan-CBT';
                 $file->move($destinationPath, $filename5);
             }
         }
@@ -155,7 +153,7 @@ class APL01Controller extends Controller
                 $file               = $request->file('ktp');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename6          = 'KTP-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'storage/KTP';
+                $destinationPath    = 'storage/app/public/KTP';
                 $file->move($destinationPath, $filename6);
             }
         }
@@ -171,7 +169,7 @@ class APL01Controller extends Controller
                 $file               = $request->file('ttd');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename7          = 'Tanda-Tangan-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'storage/Tanda-Tangan';
+                $destinationPath    = 'storage/app/public/Tanda-Tangan';
                 $file->move($destinationPath, $filename7);
             }
         }
@@ -233,9 +231,13 @@ class APL01Controller extends Controller
 
     public function destroy($id)
     {
-        // abort_if(Gate::denies('apl_01.delete'), Response::HTTP_FORBIDDEN, 'Forbidden');
 
         $delete = Personaldetail::find($id);
+        if ($delete->ktp) {
+
+            Storage::delete($delete->ktp);
+        }
+
         $delete->delete();
         return redirect()->route('apl_01.index')
             ->with('success', 'Success ! Data Bank Berhasil di Hapus');
@@ -261,6 +263,7 @@ class APL01Controller extends Controller
             ->get();
         // dd($datas);
         return view('pages.apl_01.get', [
+
             'datas' => $datas
         ]);
     }
