@@ -4,14 +4,14 @@
 
 @section('content')
 @foreach ($datas as $item)
-<!-- Invoice -->
-<div class="col-xl-9 col-md-8 col-12 mb-md-0 mb-4">
+<div class="col-xl-12 col-md-12 col-12">
     <div class="card invoice-preview-card">
         <div class="card-body">
             <div class="d-flex justify-content-between flex-xl-row flex-md-column flex-sm-row flex-column m-sm-3 m-0">
                 <div class="mb-xl-0 mb-2">
                     <div class="d-flex svg-illustration mb-4 gap-2 align-items-center">
-                        <img src="https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png" width="80" />
+                        <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
+                            width="80" />
                     </div>
                 </div>
                 <div>
@@ -99,32 +99,5 @@
         </div>
     </div>
 </div>
-<!-- /Invoice -->
-
-<!-- Invoice Actions -->
-<div class="col-xl-3 col-md-4 col-12 invoice-actions">
-    <div class="card">
-        <div class="card-body">
-            <button class="btn btn-primary d-grid w-100 mb-2 waves-effect waves-light" data-bs-toggle="offcanvas"
-                data-bs-target="#sendInvoiceOffcanvas">
-                <span class="d-flex align-items-center justify-content-center text-nowrap"><i
-                        class="ti ti-send ti-xs me-1"></i>Send Invoice</span>
-            </button>
-            <a class="btn btn-label-secondary d-grid w-100 mb-2 waves-effect" target="_blank"
-                href="{{ url('cetak_pdf', $item->id) }}">
-                Print
-            </a>
-            <a href="./app-invoice-edit.html" class="btn btn-label-secondary d-grid w-100 mb-2 waves-effect">
-                Edit Invoice
-            </a>
-            <button class="btn btn-primary d-grid w-100 waves-effect waves-light" data-bs-toggle="offcanvas"
-                data-bs-target="#addPaymentOffcanvas">
-                <span class="d-flex align-items-center justify-content-center text-nowrap"><i
-                        class="ti ti-currency-dollar ti-xs me-1"></i>Add Payment</span>
-            </button>
-        </div>
-    </div>
-</div>
-<!-- /Invoice Actions -->
 @endforeach
 @endsection

@@ -33,15 +33,66 @@
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
                             <td>{{$data->no_pendaftaran}}</td>
-                            <td>{{$data->created_at}}</td>
+                            <td> {{ \Carbon\Carbon::parse($data->created_at)->format('d-m-Y') }}</td>
                             <td>{{$data->nama_lengkap->name}}</td>
                             <td>{{$data->kompetensi->skema->nama_skema}}</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                @switch($data)
+                                @case($data->is_validasi == NULL)
+                                <span class=" badge bg-info">
+                                    <i data-feather='dollar-sign'></i>
+                                    Belum di Verifikasi
+                                </span>
+                                @break
+                                @default
+                                <span class=" badge bg-info">
+                                    <i data-feather='dollar-sign'></i>
+                                    {{ $data->status }}
+                                </span>
+                                @endswitch
+                            </td>
+                            <td>
+                                @switch($data)
+                                @case($data->is_validasi == NULL)
+                                <span class=" badge bg-info">
+                                    <i data-feather='dollar-sign'></i>
+                                    Belum di Verifikasi
+                                </span>
+                                @break
+                                @default
+                                <span class=" badge bg-info">
+                                    <i data-feather='dollar-sign'></i>
+                                    {{ $data->status }}
+                                </span>
+                                @endswitch
+                            </td>
+                            <td>
+                                @switch($data)
+                                @case($data->is_validasi == NULL)
+                                <span class=" badge bg-info">
+                                    <i data-feather='dollar-sign'></i>
+                                    Belum di Verifikasi
+                                </span>
+                                @break
+                                @default
+                                {{ $data->nama_admin_lsp }}
+                                @endswitch
+                            </td>
+                            <td>
+                                @switch($data)
+                                @case($data->tanggal_validasi == null)
+                                <span class=" badge bg-info">
+                                    <i data-feather='dollar-sign'></i>
+                                    Belum di Verifikasi
+                                </span>
+                                @break
+                                @default
+                                {{ \Carbon\Carbon::parse($data->tanggal_validasi)->format('d-m-Y') }}
+                                @endswitch
+                            </td>
                             <td class="text-center">
-
+                                @switch($data )
+                                @case($data->is_validasi == NULL)
                                 <a href="{{ route('validasi.show', $data->id) }}"
                                     class="btn btn-icon btn-success btn-sm">
                                     <span class="ti ti-eye"></span>
@@ -55,6 +106,13 @@
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>
+                                @break
+                                @default
+                                <a href="{{ url('cetak_pdf', $data->id) }}" class="btn btn-icon btn-primary btn-sm"
+                                    target="_blank">
+                                    <span class="ti ti-download"></span>
+                                </a>
+                                @endswitch
                             </td>
                         </tr>
                         @endforeach

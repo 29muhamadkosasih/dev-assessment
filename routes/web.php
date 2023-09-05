@@ -28,6 +28,10 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/maintenance', function () {
+    return view('layouts.maintenance');
+});
+
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('home', [StaterkitController::class, 'home'])->name('home');

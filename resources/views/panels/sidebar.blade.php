@@ -60,14 +60,14 @@
         </li>
         @endcan --}}
 
-        @can('apl_01.create')
+        {{-- @can('apl_01.create') --}}
         <li class="menu-item {{ Route::currentRouteNamed('apl_01.create') ? 'active' : '' }}">
             <a href="{{ route('apl_01.create') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
                 <div data-i18n="APL-01">APL-01</div>
             </a>
         </li>
-        @endcan
+        {{-- @endcan --}}
 
         <li class="menu-item {{ Route::currentRouteNamed('validasi.index', 'validasi.show') ? 'active' : '' }}">
             <a href="{{ route('validasi.index') }}" class="menu-link">

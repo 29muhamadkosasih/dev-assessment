@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use PDF;
-use TCPDF;
 use App\Models\Bank;
-use App\Models\APL01;
 use App\Models\Kompetensi;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -29,7 +27,7 @@ class APL01Controller extends Controller
 
     public function create()
     {
-        abort_if(Gate::denies('apl_01.create'), Response::HTTP_FORBIDDEN, 'Forbidden');
+        // abort_if(Gate::denies('apl_01.create'), Response::HTTP_FORBIDDEN, 'Forbidden');
 
         $kompetensi = Kompetensi::all();
         return view('pages.apl_01.create', [
@@ -39,11 +37,29 @@ class APL01Controller extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->all());
         $userId = auth()->id();
         $username = Auth::user()->name;
         $request->validate([
             'jabatan' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'jenis_kelamin' => ['required', 'in:Laki-laki, Wanita'],
+            'no_hp' => 'required',
+            'pendidikan_terakhir' => ['required', 'not_in:Open this select'],
+            'kebangsaan' => ['required', 'not_in:Open this select'],
+            'alamat' => 'required',
+            'nama_perusahaan' => 'required',
+            'email_perusahaan' => 'required',
+            'no_hp_perusahaan' => 'required',
+            'alamat_perusahaan' => 'required',
+            'kompetensi_id' => ['required', 'not_in:Open this select'],
+            'ktp' => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
+            'surat_keterangan_perusahaan' => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
+            'ijazah' => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
+            'sertifikat_pendukung' => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
+            'cv' => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
+            'p_cbt' => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
+            'ttd' => 'mimes:jpeg,png,jpg|max:8048'
         ]);
 
         $documentNumber = $username;
@@ -53,7 +69,7 @@ class APL01Controller extends Controller
         } else {
             if ($request->hasFile('ijazah')) {
                 $this->validate($request, [
-                    'ijazah'          => 'mimes:jpeg,png,jpg,gif,pdf|max:15048',
+                    'ijazah'          => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
                 ]);
                 $file               = $request->file('ijazah');
                 $temp               = str_replace('/', '_', $documentNumber);
@@ -70,7 +86,7 @@ class APL01Controller extends Controller
         } else {
             if ($request->hasFile('surat_keterangan_perusahaan')) {
                 $this->validate($request, [
-                    'surat_keterangan_perusahaan'          => 'mimes:jpeg,png,jpg,gif,pdf|max:15048',
+                    'surat_keterangan_perusahaan'          => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
                 ]);
                 $file               = $request->file('surat_keterangan_perusahaan');
                 $temp               = str_replace('/', '_', $documentNumber);
@@ -86,12 +102,12 @@ class APL01Controller extends Controller
         } else {
             if ($request->hasFile('cv')) {
                 $this->validate($request, [
-                    'cv'          => 'mimes:jpeg,png,jpg,gif,pdf|max:15048',
+                    'cv'          => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
                 ]);
                 $file               = $request->file('cv');
                 $temp               = str_replace('/', '_', $documentNumber);
                 $filename3          = 'CV-' . $temp . '.' . $file->getClientOriginalExtension();
-                $destinationPath    = 'CV';
+                $destinationPath    = 'storage/CV';
                 $file->move($destinationPath, $filename3);
             }
         }
@@ -102,7 +118,7 @@ class APL01Controller extends Controller
         } else {
             if ($request->hasFile('sertifikat_pendukung')) {
                 $this->validate($request, [
-                    'sertifikat_pendukung'          => 'mimes:jpeg,png,jpg,gif,pdf|max:15048',
+                    'sertifikat_pendukung'          => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
                 ]);
                 $file               = $request->file('sertifikat_pendukung');
                 $temp               = str_replace('/', '_', $documentNumber);
@@ -118,7 +134,7 @@ class APL01Controller extends Controller
         } else {
             if ($request->hasFile('p_cbt')) {
                 $this->validate($request, [
-                    'p_cbt'          => 'mimes:jpeg,png,jpg,gif,pdf|max:15048',
+                    'p_cbt'          => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
                 ]);
                 $file               = $request->file('p_cbt');
                 $temp               = str_replace('/', '_', $documentNumber);
@@ -134,7 +150,7 @@ class APL01Controller extends Controller
         } else {
             if ($request->hasFile('ktp')) {
                 $this->validate($request, [
-                    'ktp'          => 'mimes:jpeg,png,jpg,gif,pdf|max:15048',
+                    'ktp'          => 'mimes:jpeg,png,jpg,gif,pdf|max:8048',
                 ]);
                 $file               = $request->file('ktp');
                 $temp               = str_replace('/', '_', $documentNumber);
@@ -150,7 +166,7 @@ class APL01Controller extends Controller
         } else {
             if ($request->hasFile('ttd')) {
                 $this->validate($request, [
-                    'ttd'          => 'mimes:jpeg,png,jpg,gif,pdf|max:15048',
+                    'ttd'          => 'mimes:jpeg,png,jpg,|max:8048',
                 ]);
                 $file               = $request->file('ttd');
                 $temp               = str_replace('/', '_', $documentNumber);
@@ -185,7 +201,7 @@ class APL01Controller extends Controller
         $order->ttd = $filename7;
         $order->kompetensi_id = $request->kompetensi_id;
         $order->save();
-        return redirect()->route('get.apl_01')->with('success', 'Success ! Data Bank Berhasil di Tambahkan');
+        return redirect()->route('get.apl01')->with('success', 'Success ! Pengisian Form APL-01  Berhasil ');
     }
 
     public function edit($id)
@@ -225,18 +241,14 @@ class APL01Controller extends Controller
             ->with('success', 'Success ! Data Bank Berhasil di Hapus');
     }
 
-    public function pdf()
+    public function pdf($id)
     {
-        $userId = auth()->user()->id;
-        $datas = Personaldetail::where('nama_lengkap_id', $userId)
-            ->latest()
-            ->limit(1)
-            ->get();
-        $pdf = PDF::loadview('pages.apl_01.print', [
-            'datas' => $datas
+        $datas = Personaldetail::find($id);
+        $pdf = \PDF::loadview('pages.apl_01.print', [
+            'datas' => $datas,
         ]);
         $pdf->set_paper('letter', 'potrait');
-        return $pdf->stream('laporan-request-fund.pdf');
+        return $pdf->stream('FR-APL-01 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI.pdf');
     }
 
     public function get()
@@ -251,14 +263,5 @@ class APL01Controller extends Controller
         return view('pages.apl_01.get', [
             'datas' => $datas
         ]);
-
-
-        // $pdf = new TCPDF();
-        // $pdf->AddPage();
-        // $pdf->writeHTML(view('pages.apl_01.get', [
-        //     'datas' => $datas
-
-        // ])->render(), true, false, true, false, '');
-        // $pdf->Output('pdf_view.pdf', 'D');
     }
 }

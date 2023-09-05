@@ -21,20 +21,20 @@
                     <thead>
                         <tr style="background-color: skyblue">
                             <th width='5px' style="text-align: center">No</th>
-                            <th>Nama Skema</th>
+                            <th width="170px">Nama Skema</th>
                             <th>No SKKNI</th>
                             <th>Kode</th>
                             <th>Unit Kompetensi</th>
-                            <th class="text-center">Actions</th>
+                            <th width="100px" class="text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                         @foreach ($kompetensi as $data)
                         <tr>
-                            <td class="text-center">{{$loop->iteration}}</td>
-                            <td>{{$data->skema->nama_skema}}</td>
-                            <td>{{$data->no_skkni}}</td>
-                            <td>
+                            <td style="vertical-align: top">{{$loop->iteration}}</td>
+                            <td style="vertical-align: top">{{$data->skema->nama_skema}}</td>
+                            <td style="vertical-align: top">{{$data->no_skkni}}</td>
+                            <td style="vertical-align: top">
                                 {{$data->kode}} <br>
 
                                 @unless(!$data->kode2)
@@ -131,7 +131,7 @@
                                 @endunless
 
                             </td>
-                            <td class="text-center">
+                            <td style="vertical-align: top">
                                 <a href="{{ route('kompetensi.show', $data->id) }}"
                                     class="btn btn-icon btn-success btn-sm">
                                     <span class="ti ti-eye"></span>

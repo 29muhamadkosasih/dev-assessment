@@ -326,7 +326,7 @@
                                 <td> Fotokopi Ijazah</td>
                                 <td style="text-align: center">
                                     @switch($show)
-                                    @case($show->ijazah === 0)
+                                    @case($show->ijazah == 0)
                                     @break
                                     @default
                                     &check;
@@ -334,7 +334,7 @@
                                 </td>
                                 <td>
                                     @switch($show)
-                                    @case($show->ijazah === 0)
+                                    @case($show->ijazah == 0)
                                     &check;
                                     @break
                                     @default
@@ -346,7 +346,7 @@
                                 <td>Surat Keterangan Perusahaan</td>
                                 <td style="text-align: center">
                                     @switch($show)
-                                    @case($show->surat_keterangan_perusahaan === 0)
+                                    @case($show->surat_keterangan_perusahaan == 0)
                                     @break
                                     @default
                                     &check;
@@ -354,7 +354,7 @@
                                 </td>
                                 <td>
                                     @switch($show)
-                                    @case($show->surat_keterangan_perusahaan === 0)
+                                    @case($show->surat_keterangan_perusahaan == 0)
                                     &check;
                                     @break
                                     @default
@@ -366,7 +366,7 @@
                                 <td>Curruculum Vitae</td>
                                 <td style="text-align: center">
                                     @switch($show)
-                                    @case($show->cv === 0)
+                                    @case($show->cv == 0)
                                     @break
                                     @default
                                     &check;
@@ -374,7 +374,7 @@
                                 </td>
                                 <td>
                                     @switch($show)
-                                    @case($show->cv === 0)
+                                    @case($show->cv == 0)
                                     &check;
                                     @break
                                     @default
@@ -386,7 +386,7 @@
                                 <td> Sertifikat Pendukung</td>
                                 <td style="text-align: center">
                                     @switch($show)
-                                    @case($show->sertifikat_pendukung === 0)
+                                    @case($show->sertifikat_pendukung == 0)
                                     @break
                                     @default
                                     &check;
@@ -394,7 +394,7 @@
                                 </td>
                                 <td>
                                     @switch($show)
-                                    @case($show->sertifikat_pendukung === 0)
+                                    @case($show->sertifikat_pendukung == 0)
                                     &check;
                                     @break
                                     @default
@@ -406,20 +406,7 @@
                                 <td> KTP</td>
                                 <td style="text-align: center">
                                     @switch($show)
-                                    @case($show->ktp === 0)
-                                    @break
-                                    @default
-                                    &check;
-                                    @endswitch
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center">6</td>
-                                <td>Sertifikat Pelatihan CBT</td>
-                                <td style="text-align: center">
-                                    @switch($show)
-                                    @case($show->p_cbt === 0)
+                                    @case($show->ktp == 0)
                                     @break
                                     @default
                                     &check;
@@ -427,7 +414,27 @@
                                 </td>
                                 <td>
                                     @switch($show)
-                                    @case($show->p_cbt === 0)
+                                    @case($show->ktp == 0)
+                                    &check;
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">6</td>
+                                <td>Sertifikat Pelatihan CBT</td>
+                                <td style="text-align: center">
+                                    @switch($show)
+                                    @case($show->p_cbt == 0)
+                                    @break
+                                    @default
+                                    &check;
+                                    @endswitch
+                                </td>
+                                <td>
+                                    @switch($show)
+                                    @case($show->p_cbt == 0)
                                     &check;
                                     @break
                                     @default
@@ -447,16 +454,17 @@
 <!-- Invoice Actions -->
 <div class="col-xl-12 col-md-12 col-12">
     <div class="card">
-        <form action="{{ route('validasi', $show->id) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('validasi.update', $show->id) }}" method="POST" enctype="multipart/form-data">
             @method('PUT')
             @csrf
             <div class="card-body">
                 <div class="row g-3">
                     <div class="col-sm-6">
                         <label class="form-label">Admin LSP</label>
-                        <input type="text" class="form-control @error('no') is-invalid @enderror"
-                            placeholder="Masukan No Skema" name="no" value="{{ old('no') }}" />
-                        @error('no')
+                        <input type="text" class="form-control @error('nama_admin_lsp') is-invalid @enderror"
+                            placeholder="Masukan Nama Admin LSP" name="nama_admin_lsp"
+                            value="{{ old('nama_admin_lsp') }}" required autofocus />
+                        @error('nama_admin_lsp')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -464,9 +472,9 @@
                     </div>
                     <div class="col-sm-6">
                         <label class="form-label">No. Reg</label>
-                        <input type="text" class="form-control @error('no') is-invalid @enderror"
-                            placeholder="Masukan No Skema" name="no" value="{{ old('no') }}" />
-                        @error('no')
+                        <input type="text" class="form-control @error('no_reg') is-invalid @enderror"
+                            placeholder="Masukan No Reg" name="no_reg" value="{{ old('no_reg') }}" required />
+                        @error('no_reg')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -487,10 +495,10 @@
                         @enderror
                     </div>
                     <div class="col-sm-6">
-                        <label class="form-label">Tanda Tangan</label>
-                        <input type="file" class="form-control @error('no') is-invalid @enderror"
-                            placeholder="Masukan No Skema" name="no" value="{{ old('no') }}" />
-                        @error('no')
+                        <label class="form-label">Tanda Tangan &nbsp;* file JPEG</label>
+                        <input type="file" class="form-control @error('ttd_admin_lsp') is-invalid @enderror"
+                            name="ttd_admin_lsp" value="{{ old('ttd_admin_lsp') }}" />
+                        @error('ttd_admin_lsp')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -516,7 +524,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label class="form-label">Catatan</label>
-                        <textarea id="plAddress" name="alamat" class="form-control" rows="2"
+                        <textarea id="plAddress" name="catatan" class="form-control" rows="2"
                             placeholder="12, Business Park"></textarea>
                     </div>
                 </div>
@@ -527,6 +535,4 @@
         </form>
     </div>
 </div>
-<!-- /Invoice Actions -->
-
 @endsection
