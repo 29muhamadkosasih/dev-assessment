@@ -37,21 +37,17 @@
                                 </span>
                             </td>
                             <td class="text-center">
-                                @can('permissions.edit')
-                                <a href="{{ route('permissions.edit', $data->id) }}"
-                                    class="btn btn-icon btn-warning btn-sm">
-                                    <span class="ti ti-edit"></span>
-                                </a>
-                                @endcan
-                                @can('permissions.delete')
                                 <form method="POST" action="{{ route('permissions.destroy', $data->id) }}">
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
+                                    <a href="{{ route('permissions.edit', $data->id) }}"
+                                        class="btn btn-icon btn-warning btn-sm">
+                                        <span class="ti ti-edit"></span>
+                                    </a>
                                     <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>
-                                @endcan
                             </td>
                         </tr>
                         @endforeach

@@ -51,12 +51,13 @@
                             <td>{{ $data->nama_skema }}</td>
                             <td>{{ $data->no }}</td>
                             <td style="text-align: center">
-                                <a href="{{ route('skema.edit', $data->id) }}" class="btn btn-icon btn-warning btn-sm">
-                                    <span class="ti ti-edit"></span>
-                                </a>
                                 <form method="POST" action="{{ route('skema.destroy', $data->id) }}">
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
+                                    <a href="{{ route('skema.edit', $data->id) }}"
+                                        class="btn btn-icon btn-warning btn-sm">
+                                        <span class="ti ti-edit"></span>
+                                    </a>
                                     <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
                                         <span class="ti ti-trash"></span>
                                     </button>

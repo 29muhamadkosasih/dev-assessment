@@ -37,25 +37,23 @@
                                 @endforeach
                             </td>
                             <td class="text-center">
-                                @can('roles.show')
-                                <a href="{{ route('roles.show', $data->id) }}" class="btn btn-icon btn-success btn-sm">
-                                    <span class="ti ti-eye"></span>
-                                </a>
-                                @endcan
-                                @can('roles.edit')
-                                <a href="{{ route('roles.edit', $data->id) }}" class="btn btn-icon btn-warning btn-sm">
-                                    <span class="ti ti-edit"></span>
-                                </a>
-                                @endcan
-                                @can('roles.delete')
+
                                 <form method="POST" action="{{ route('roles.destroy', $data->id) }}">
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
+                                    <a href="{{ route('roles.show', $data->id) }}"
+                                        class="btn btn-icon btn-success btn-sm">
+                                        <span class="ti ti-eye"></span>
+                                    </a>
+
+                                    <a href="{{ route('roles.edit', $data->id) }}"
+                                        class="btn btn-icon btn-warning btn-sm">
+                                        <span class="ti ti-edit"></span>
+                                    </a>
                                     <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>
-                                @endcan
                             </td>
                         </tr>
                         @endforeach

@@ -36,25 +36,23 @@
                             <td>{{$user->email}}</td>
                             <td>{{$user->role->title ?? "--"}}</td>
                             <td class="text-center">
-                                @can('users.show')
-                                <a href="{{ route('users.show', $user->id) }}" class="btn btn-icon btn-success btn-sm">
-                                    <span class="ti ti-eye"></span>
-                                </a>
-                                @endcan
-                                @can('users.edit')
-                                <a href="{{ route('users.edit', $user->id) }}" class="btn btn-icon btn-warning btn-sm">
-                                    <span class="ti ti-edit"></span>
-                                </a>
-                                @endcan
-                                @can('users.delete')
+
                                 <form method="POST" action="{{ route('users.destroy', $user->id) }}">
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
+                                    <a href="{{ route('users.show', $user->id) }}"
+                                        class="btn btn-icon btn-success btn-sm">
+                                        <span class="ti ti-eye"></span>
+                                    </a>
+
+                                    <a href="{{ route('users.edit', $user->id) }}"
+                                        class="btn btn-icon btn-warning btn-sm">
+                                        <span class="ti ti-edit"></span>
+                                    </a>
                                     <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>
-                                @endcan
                             </td>
                         </tr>
                         @endforeach
