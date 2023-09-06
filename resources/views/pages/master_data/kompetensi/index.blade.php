@@ -83,7 +83,7 @@
                                 @endunless
 
                             </td>
-                            <td>{{$data->unit_kompetensi}} <br>
+                            <td style="vertical-align: top">{{$data->unit_kompetensi}} <br>
 
                                 @unless(!$data->unit_kompetensi2)
                                 <!-- Tampilkan data -->
@@ -168,6 +168,10 @@
               icon: "warning",
               buttons: true,
               dangerMode: true,
+              showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
           })
           .then((willDelete) => {
             if (willDelete) {
