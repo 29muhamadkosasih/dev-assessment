@@ -18,6 +18,8 @@ class KompetensiController extends Controller
 
     public function create()
     {
+        // return view('layouts.maintenance');
+
         $nama_skema = Skema::all();
         return view('pages.master_data.kompetensi.create', [
             'nama_skema'  => $nama_skema
@@ -26,7 +28,6 @@ class KompetensiController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request);
         $request->validate([
             'nama_skema_id'     => 'required|numeric',
             'no_skkni'          => 'required',
@@ -94,6 +95,7 @@ class KompetensiController extends Controller
             'kode8'                 => $request->kode8,
             'kode9'                 => $request->kode9,
             'kode10'                => $request->kode10,
+            'kode11'                => $request->kode11,
             'unit_kompetensi'       => $request->unit_kompetensi,
             'unit_kompetensi2'      => $request->unit_kompetensi2,
             'unit_kompetensi3'      => $request->unit_kompetensi3,
@@ -104,6 +106,7 @@ class KompetensiController extends Controller
             'unit_kompetensi8'      => $request->unit_kompetensi8,
             'unit_kompetensi9'      => $request->unit_kompetensi9,
             'unit_kompetensi10'     => $request->unit_kompetensi10,
+            'unit_kompetensi11'     => $request->unit_kompetensi11,
             'element_kompetensi'    => $request->element_kompetensi,
             'element_kompetensi2'   => $request->element_kompetensi2,
             'element_kompetensi3'   => $request->element_kompetensi3,
@@ -114,6 +117,7 @@ class KompetensiController extends Controller
             'element_kompetensi8'   => $request->element_kompetensi8,
             'element_kompetensi9'   => $request->element_kompetensi9,
             'element_kompetensi10'  => $request->element_kompetensi10,
+            'element_kompetensi11'  => $request->element_kompetensi11,
             'kuk'                   => $request->kuk,
             'kuk2'                  => $request->kuk2,
             'kuk3'                  => $request->kuk3,
@@ -124,6 +128,7 @@ class KompetensiController extends Controller
             'kuk8'                  => $request->kuk8,
             'kuk9'                  => $request->kuk9,
             'kuk10'                 => $request->kuk10,
+            'kuk11'                 => $request->kuk11,
         ]);
         return redirect()->route('kompetensi.index')
             ->with('success', 'Success ! Data Kompetensi Berhasil di Update');

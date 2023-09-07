@@ -382,6 +382,41 @@
                             </div>
                         </div>
 
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingEleven">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#accordionEleven" aria-expanded="false"
+                                    aria-controls="accordionEleven">
+                                    Kode Unit & Kompetensi </button>
+                            </h2>
+                            <div id="accordionEleven" class="accordion-collapse collapse"
+                                aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <label class="form-label" for="plFirstName">Kode</label>
+                                            <input type="text" id="plFirstName" name="kode11" class="form-control"
+                                                placeholder="Masukan Kode" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="form-label" for="plFirstName">Unit Kompetensi</label>
+                                            <input type="text" id="plFirstName" name="unit_kompetensi11"
+                                                class="form-control" placeholder="Masukan Unit Kompetensi" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control" id="editor21" name="element_kompetensi11"
+                                            rows="5"></textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Kriteria Unjuk Kerja</label>
+                                        <textarea class="form-control" id="editor22" name="kuk11" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="mb-3 mt-3">
@@ -509,6 +544,18 @@
 
         ClassicEditor
             .create(document.querySelector('#editor20'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#editor21'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#editor22'))
             .catch(error => {
                 console.error(error);
             });
