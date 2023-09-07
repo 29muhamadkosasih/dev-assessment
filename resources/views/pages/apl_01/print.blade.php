@@ -44,9 +44,11 @@
         </colgroup>
         <thead>
             <tr>
-                <td colspan="2"><img
-                        src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
-                        width="80"></td>
+                <td colspan="2">
+                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
+                        width="80">
+                    {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -54,7 +56,9 @@
                 <td></td>
                 <td></td>
                 <td colspan="2">
-                    <img src="{{ public_path('Storage/logo/bnsp.png') }}" alt="" style="width: 90">
+                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
+                        alt="" style="width: 90">
+                    {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
                 </td>
 
             </tr>
@@ -321,8 +325,24 @@
                         recusandae soluta earum inventore, unde quis, illum exercitationem eveniet fugit obcaecati
                         adipisci molestias laborum rerum facere?
                     </td>
-                    <td></td>
-                    <td></td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->status == 'Lengkap')
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->status == 'Lengkap')
+                        @break
+                        @default
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @endswitch
+                    </td>
                     <td></td>
                 </tr>
             </tbody>
@@ -347,47 +367,140 @@
                     <td style="text-align: center">1</td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Fotokopi
                         Ijazah</td>
-                    <td></td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->ijazah == 0)
+                        @break
+                        @default
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @endswitch
+                    </td>
                     <td>
+                        @switch($datas)
+                        @case($datas->ijazah == 0)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
                     </td>
                 </tr>
                 <tr>
                     <td style="text-align: center">2</td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;"> Surat
                         Keterangan Perusahaan</td>
-                    <td></td>
-                    <td></td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->surat_keterangan_perusahaan == 0)
+                        @break
+                        @default
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @endswitch
+                    </td>
+                    <td>
+                        @switch($datas)
+                        @case($datas->surat_keterangan_perusahaan == 0)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
                 </tr>
                 <tr>
                     <td style="text-align: center">3</td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         Curruculum Vitae</td>
-                    <td></td>
-                    <td></td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->cv == 0)
+                        @break
+                        @default
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @endswitch
+                    </td>
+                    <td>
+                        @switch($datas)
+                        @case($datas->cv == 0)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
                 </tr>
                 <tr>
                     <td style="text-align: center">4</td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         Sertifikat Pendukung</td>
-                    <td></td>
-                    <td></td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->sertifikat_pendukung == 0)
+                        @break
+                        @default
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @endswitch
+                    </td>
+                    <td>
+                        @switch($datas)
+                        @case($datas->sertifikat_pendukung == 0)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
                 </tr>
                 <tr>
                     <td style="text-align: center">5</td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">KTP</td>
-                    <td></td>
-                    <td></td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->ktp == 0)
+                        @break
+                        @default
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18"> @endswitch
+                    </td>
+                    <td>
+                        @switch($datas)
+                        @case($datas->ktp == 0)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18"> @break
+                        @default
+                        @endswitch
+                    </td>
                 </tr>
                 <tr>
                     <td style="text-align: center">6</td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         Sertifikat Pelatihan CBT</td>
-                    <td></td>
-                    <td></td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->p_cbt == 0)
+                        @break
+                        @default
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @endswitch
+                    </td>
+                    <td>
+                        @switch($datas)
+                        @case($datas->p_cbt == 0)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
                 </tr>
             </tbody>
         </table>
-        <p style="margin-top: 5px">*) diisi oleh LSP ✓ </p> <br>
+        <p style="margin-top: 5px">*) diisi oleh LSP </p> <br>
 
         <table class="table" border=”1″ id="ping">
             <thead>
@@ -401,9 +514,11 @@
                         persyaratan dasar
                         assessment jarak
                     </td>
-                    <th colspan="2"
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Pemohon :
-                    </th>
+                    <td colspan="2"
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        <b>Pemohon
+                            &nbsp;:</b>
+                    </td>
                 </tr>
                 <tr>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Nama
@@ -416,7 +531,8 @@
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Tanda
                         Tangan</td>
                     <td height="200px" style="text-align: center">
-                        <img src="{{ public_path('Storage/ttd/').$datas->ttd }}" alt="" style="width: 150px">
+                        {{-- <img src="{{ asset('/storage/app/public/ttd/'. $datas->ttd) }}" alt=""
+                            style="width: 150px"> --}}
                     </td>
                 </tr>
             </thead>
@@ -425,9 +541,13 @@
                     <td rowspan="4"
                         style="text-align: left: vertical-align: top; vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         <b>Catatan :</b>
+
+                        <p>{{ $datas->catatan }}</p>
+
                     </td>
-                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Admin
-                        LSP: </td>
+                    <td colspan="2"
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;"> <b>Admin
+                            LSP &nbsp; :</b> </td>
                     <td></td>
                 </tr>
                 <tr>
@@ -447,7 +567,7 @@
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Tanda
                         Tangan</td>
                     <td height="200px" style="text-align: center">
-                        <img src="{{ public_path('Storage/ttd_admin_lsp/').$datas->ttd_admin_lsp }}" alt=""
+                        <img src="{{ Storage::url('public/ttd_admin/').$datas->ttd_admin_lsp }}" alt=""
                             style="width: 150px">
 
                         {{-- {{ Storage::url('public/blogs/').$blog->image }} --}}
@@ -455,7 +575,6 @@
                 </tr>
             </tbody>
         </table>
-        <input type="checkbox" id="myCheckbox" name="myCheckbox">
     </div>
 </body>
 

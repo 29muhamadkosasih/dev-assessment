@@ -314,7 +314,7 @@ class APL01Controller extends Controller
         Storage::disk('local')->delete('public/ktp/' . $delete->ktp);
         Storage::disk('local')->delete('public/surat_keterangan_perusahaan/' . $delete->surat_keterangan_perusahaan);
         Storage::disk('local')->delete('public/sertifikat_pendukung/' . $delete->sertifikat_pendukung);
-        dd($delete);
+        // dd($delete);
         $delete->delete();
         return redirect()->route('apl_01.index')
             ->with('success', 'Success ! Data Bank Berhasil di Hapus');
@@ -323,6 +323,8 @@ class APL01Controller extends Controller
     public function pdf($id)
     {
         $datas = Personaldetail::find($id);
+
+        // dd($datas);
         $pdf = \PDF::loadview('pages.apl_01.print', [
             'datas' => $datas,
         ]);
