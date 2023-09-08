@@ -9,10 +9,10 @@
         <div class="card-body">
             <div class="row ">
                 <div class="col-auto me-auto ">
-                    <h5 class="mb-0">List Data Kompetensi APL-01</h5>
+                    <h5 class="mb-0">List Data Kompetensi APL-02</h5>
                 </div>
                 <div class="col-auto">
-                    <a href="{{ route('kompetensi.create') }}" class="btn btn-primary">Create</a>
+                    <a href="{{ route('kompetensi02.create') }}" class="btn btn-primary">Create</a>
 
                 </div>
             </div>
@@ -22,8 +22,7 @@
                         <tr style="background-color: skyblue">
                             <th width='5px' style="text-align: center">No</th>
                             <th width="170px">Nama Skema</th>
-                            <th>No SKKNI</th>
-                            <th>Kode</th>
+                            <th>Kode Kompetensi</th>
                             <th>Unit Kompetensi</th>
                             <th width="100px" class="text-center">Actions</th>
                         </tr>
@@ -33,7 +32,6 @@
                         <tr>
                             <td style="vertical-align: top">{{$loop->iteration}}</td>
                             <td style="vertical-align: top">{{$data->skema->nama_skema}}</td>
-                            <td style="vertical-align: top">{{$data->no_skkni}}</td>
                             <td style="vertical-align: top">
                                 {{$data->kode}} <br>
 
@@ -83,56 +81,56 @@
                                 @endunless
 
                             </td>
-                            <td style="vertical-align: top">{{$data->unit_kompetensi}} <br>
+                            <td style="vertical-align: top">{{$data->unit}} <br>
 
-                                @unless(!$data->unit_kompetensi2)
+                                @unless(!$data->unit2)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi2 }} <br>
+                                {{ $data->unit2 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi3)
+                                @unless(!$data->unit3)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi3 }} <br>
+                                {{ $data->unit3 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi4)
+                                @unless(!$data->unit4)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi4 }} <br>
+                                {{ $data->unit4 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi5)
+                                @unless(!$data->unit5)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi5 }} <br>
+                                {{ $data->unit5 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi6)
+                                @unless(!$data->unit6)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi6 }} <br>
+                                {{ $data->unit6 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi7)
+                                @unless(!$data->unit7)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi7 }} <br>
+                                {{ $data->unit7 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi8)
+                                @unless(!$data->unit8)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi8 }} <br>
+                                {{ $data->unit8 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi9)
+                                @unless(!$data->unit9)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi9 }} <br>
+                                {{ $data->unit9 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi10)
+                                @unless(!$data->unit10)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi10 }} <br>
+                                {{ $data->unit10 }} <br>
                                 @endunless
 
-                                @unless(!$data->unit_kompetensi11)
+                                @unless(!$data->unit11)
                                 <!-- Tampilkan data -->
-                                {{ $data->unit_kompetensi11 }} <br>
+                                {{ $data->unit11 }} <br>
                                 @endunless
 
                             </td>
@@ -140,14 +138,14 @@
                                 <form method="POST" action="{{ route('kompetensi.destroy', $data->id) }}">
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
-                                    <a href="{{ route('kompetensi.show', $data->id) }}"
+                                    <a href="{{ route('kompetensi02.show', $data->id) }}"
                                         class="btn btn-icon btn-success btn-sm">
                                         <span class="ti ti-eye"></span>
                                     </a>
-                                    <a href="{{ route('kompetensi.edit', $data->id) }}"
+                                    {{-- <a href="{{ route('kompetensi.edit', $data->id) }}"
                                         class="btn btn-icon btn-warning btn-sm">
                                         <span class="ti ti-edit"></span>
-                                    </a>
+                                    </a> --}}
                                     <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
                                         <span class="ti ti-trash"></span>
                                     </button>

@@ -5,19 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Skema extends Model
+class Kompetensi02 extends Model
 {
     use HasFactory;
-    protected $table = 'skema';
+    protected $table = 'kompetensi02';
     protected $guarded = [];
 
     public function skema()
     {
-        return $this->hasMany(Kompetensi::class);
+        return $this->belongsTo(Skema::class, 'nama_skema_id');
     }
 
-    public function skema02()
+    public function kompetensi()
     {
-        return $this->hasMany(Kompetensi02::class);
+        return $this->hasMany(Personaldetail::class);
     }
 }

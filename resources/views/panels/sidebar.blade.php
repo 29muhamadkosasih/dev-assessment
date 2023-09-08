@@ -97,10 +97,18 @@
         @endcan
 
         <li
-            class="menu-item {{ Route::currentRouteNamed('kompetensi.index','kompetensi.show','kompetensi.edit') ? 'active' : '' }}">
+            class="menu-item {{ Route::currentRouteNamed('kompetensi.index','kompetensi.show','kompetensi.edit','kompetensi.create') ? 'active' : '' }}">
             <a href="{{ route('kompetensi.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-tool"></i>
-                <div data-i18n="Kompentensi">Kompentensi</div>
+                <div data-i18n="Kompentensi APL-01">Kompentensi APL-01</div>
+            </a>
+        </li>
+
+        <li
+            class="menu-item {{ Route::currentRouteNamed('kompetensi02.index','kompetensi02.show','kompetensi02.edit','kompetensi02.create') ? 'active' : '' }}">
+            <a href="{{ route('kompetensi02.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-tool"></i>
+                <div data-i18n="Kompentensi APL-02">Kompentensi APL-02</div>
             </a>
         </li>
 

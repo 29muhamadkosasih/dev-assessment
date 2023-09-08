@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::n7VaNZI2gJIP5wuH',
+            '_route' => 'generated::0ZJgS5saUoJi9tsV',
           ),
           1 => NULL,
           2 => 
@@ -44,7 +44,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::MtzfRBOgNMhfv0sP',
+            '_route' => 'generated::amvQe2Gb02MeNLYc',
           ),
           1 => NULL,
           2 => 
@@ -64,7 +64,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::cui1BFsu4v8Oc6C0',
+            '_route' => 'generated::buYlCRaxdK0hiRRG',
           ),
           1 => NULL,
           2 => 
@@ -101,7 +101,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::w2s8rBB9J64CofEr',
+            '_route' => 'generated::MWbJPAQv1PE1c0FD',
           ),
           1 => NULL,
           2 => 
@@ -156,7 +156,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QfmLdM1fflqYrMSY',
+            '_route' => 'generated::jWnKQDjR44YUJ2an',
           ),
           1 => NULL,
           2 => 
@@ -247,7 +247,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::TqisaJ2y1q2HJd5x',
+            '_route' => 'generated::A72KslKFwrMx27IO',
           ),
           1 => NULL,
           2 => 
@@ -787,6 +787,62 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/kompetensi02' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'kompetensi02.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'kompetensi02.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/kompetensi02/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'kompetensi02.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/validasi' => 
       array (
         0 => 
@@ -846,7 +902,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ermissions/([^/]++)(?|/edit(*:68)|(*:75)))|/lang/([^/]++)(*:98)|/validasi/(?|post/([^/]++)(*:131)|([^/]++)(?|(*:150)|/edit(*:163)|(*:171)))|/cetak_pdf/([^/]++)(*:200)|/users/([^/]++)(?|(*:226)|/edit(*:239)|(*:247))|/roles/([^/]++)(?|(*:274)|/edit(*:287)|(*:295))|/bank/([^/]++)(?|(*:321)|/edit(*:334)|(*:342))|/dashboard/([^/]++)(?|(*:373)|/edit(*:386)|(*:394))|/apl_01/([^/]++)(?|(*:422)|/edit(*:435)|(*:443))|/skema/([^/]++)(?|(*:470)|/edit(*:483)|(*:491))|/kompetensi/([^/]++)(?|(*:523)|/edit(*:536)|(*:544)))/?$}sDu',
+      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ermissions/([^/]++)(?|/edit(*:68)|(*:75)))|/lang/([^/]++)(*:98)|/validasi/(?|post/([^/]++)(*:131)|([^/]++)(?|(*:150)|/edit(*:163)|(*:171)))|/cetak_pdf/([^/]++)(*:200)|/users/([^/]++)(?|(*:226)|/edit(*:239)|(*:247))|/roles/([^/]++)(?|(*:274)|/edit(*:287)|(*:295))|/bank/([^/]++)(?|(*:321)|/edit(*:334)|(*:342))|/dashboard/([^/]++)(?|(*:373)|/edit(*:386)|(*:394))|/apl_01/([^/]++)(?|(*:422)|/edit(*:435)|(*:443))|/skema/([^/]++)(?|(*:470)|/edit(*:483)|(*:491))|/kompetensi(?|/([^/]++)(?|(*:526)|/edit(*:539)|(*:547))|02/([^/]++)(?|(*:570)|/edit(*:583)|(*:591))))/?$}sDu',
     ),
     3 => 
     array (
@@ -944,7 +1000,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::yysm3WyM5DMVOAMB',
+            '_route' => 'generated::V1djO8S672O0r6wZ',
           ),
           1 => 
           array (
@@ -1077,7 +1133,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::3HSjmpSbc3xi646s',
+            '_route' => 'generated::UHigKW1tSmPBDkUA',
           ),
           1 => 
           array (
@@ -1622,7 +1678,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      523 => 
+      526 => 
       array (
         0 => 
         array (
@@ -1645,7 +1701,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      536 => 
+      539 => 
       array (
         0 => 
         array (
@@ -1668,7 +1724,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      544 => 
+      547 => 
       array (
         0 => 
         array (
@@ -1709,6 +1765,94 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      570 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'kompetensi02.show',
+          ),
+          1 => 
+          array (
+            0 => 'kompetensi02',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      583 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'kompetensi02.edit',
+          ),
+          1 => 
+          array (
+            0 => 'kompetensi02',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      591 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'kompetensi02.update',
+          ),
+          1 => 
+          array (
+            0 => 'kompetensi02',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'kompetensi02.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'kompetensi02',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         2 => 
         array (
           0 => NULL,
@@ -1725,7 +1869,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::n7VaNZI2gJIP5wuH' => 
+    'generated::0ZJgS5saUoJi9tsV' => 
     array (
       'methods' => 
       array (
@@ -1742,13 +1886,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:297:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:79:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a440000000000000000";}";s:4:"hash";s:44:"WQckvO7bJCzrzSg6nonOau5U/2xaTcAb576KvIVLDEQ=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a520000000000000000";}";s:4:"hash";s:44:"3nkWWOmwrIlIA1FuN0+UnniQpW4wGSahU8KSap04r2w=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::n7VaNZI2gJIP5wuH',
+        'as' => 'generated::0ZJgS5saUoJi9tsV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1764,7 +1908,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::MtzfRBOgNMhfv0sP' => 
+    'generated::amvQe2Gb02MeNLYc' => 
     array (
       'methods' => 
       array (
@@ -1780,13 +1924,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:265:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:47:"function () {
     return \\view(\'auth.login\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a460000000000000000";}";s:4:"hash";s:44:"hZZXEyZVQJvh3RAXa6+c1gsesvmyzbk3+Z8amQ0qWHQ=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a540000000000000000";}";s:4:"hash";s:44:"UlRbOYQdAx3YSVZcaJ8qGZ2yyrvdQ3zjkBWH+s+A2GU=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::MtzfRBOgNMhfv0sP',
+        'as' => 'generated::amvQe2Gb02MeNLYc',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1802,7 +1946,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::cui1BFsu4v8Oc6C0' => 
+    'generated::buYlCRaxdK0hiRRG' => 
     array (
       'methods' => 
       array (
@@ -1818,13 +1962,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:274:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:56:"function () {
     return \\view(\'layouts.maintenance\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a480000000000000000";}";s:4:"hash";s:44:"CfCEtwq6Eedl24AooiStB05zVh1G4D9DXPNghGLlhSo=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000000000a560000000000000000";}";s:4:"hash";s:44:"adtnOMpXtwgp9Km12kk0vJwikUivpNWHz8lAhNd/pdM=";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::cui1BFsu4v8Oc6C0',
+        'as' => 'generated::buYlCRaxdK0hiRRG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1877,7 +2021,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::w2s8rBB9J64CofEr' => 
+    'generated::MWbJPAQv1PE1c0FD' => 
     array (
       'methods' => 
       array (
@@ -1897,7 +2041,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::w2s8rBB9J64CofEr',
+        'as' => 'generated::MWbJPAQv1PE1c0FD',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1986,7 +2130,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QfmLdM1fflqYrMSY' => 
+    'generated::jWnKQDjR44YUJ2an' => 
     array (
       'methods' => 
       array (
@@ -2006,7 +2150,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::QfmLdM1fflqYrMSY',
+        'as' => 'generated::jWnKQDjR44YUJ2an',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2205,7 +2349,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::TqisaJ2y1q2HJd5x' => 
+    'generated::A72KslKFwrMx27IO' => 
     array (
       'methods' => 
       array (
@@ -2225,7 +2369,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::TqisaJ2y1q2HJd5x',
+        'as' => 'generated::A72KslKFwrMx27IO',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2279,7 +2423,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::yysm3WyM5DMVOAMB' => 
+    'generated::V1djO8S672O0r6wZ' => 
     array (
       'methods' => 
       array (
@@ -2301,7 +2445,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::yysm3WyM5DMVOAMB',
+        'as' => 'generated::V1djO8S672O0r6wZ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2467,7 +2611,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::3HSjmpSbc3xi646s' => 
+    'generated::UHigKW1tSmPBDkUA' => 
     array (
       'methods' => 
       array (
@@ -2489,7 +2633,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::3HSjmpSbc3xi646s',
+        'as' => 'generated::UHigKW1tSmPBDkUA',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4559,6 +4703,270 @@ app('router')->setCompiledRoutes(
         'as' => 'kompetensi.destroy',
         'uses' => 'App\\Http\\Controllers\\KompetensiController@destroy',
         'controller' => 'App\\Http\\Controllers\\KompetensiController@destroy',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'kompetensi02.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'kompetensi02',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'kompetensi02.index',
+        'uses' => 'App\\Http\\Controllers\\Kompetensi02Controller@index',
+        'controller' => 'App\\Http\\Controllers\\Kompetensi02Controller@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'kompetensi02.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'kompetensi02/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'kompetensi02.create',
+        'uses' => 'App\\Http\\Controllers\\Kompetensi02Controller@create',
+        'controller' => 'App\\Http\\Controllers\\Kompetensi02Controller@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'kompetensi02.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'kompetensi02',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'kompetensi02.store',
+        'uses' => 'App\\Http\\Controllers\\Kompetensi02Controller@store',
+        'controller' => 'App\\Http\\Controllers\\Kompetensi02Controller@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'kompetensi02.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'kompetensi02/{kompetensi02}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'kompetensi02.show',
+        'uses' => 'App\\Http\\Controllers\\Kompetensi02Controller@show',
+        'controller' => 'App\\Http\\Controllers\\Kompetensi02Controller@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'kompetensi02.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'kompetensi02/{kompetensi02}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'kompetensi02.edit',
+        'uses' => 'App\\Http\\Controllers\\Kompetensi02Controller@edit',
+        'controller' => 'App\\Http\\Controllers\\Kompetensi02Controller@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'kompetensi02.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'kompetensi02/{kompetensi02}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'kompetensi02.update',
+        'uses' => 'App\\Http\\Controllers\\Kompetensi02Controller@update',
+        'controller' => 'App\\Http\\Controllers\\Kompetensi02Controller@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'kompetensi02.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'kompetensi02/{kompetensi02}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'auth',
+        ),
+        'as' => 'kompetensi02.destroy',
+        'uses' => 'App\\Http\\Controllers\\Kompetensi02Controller@destroy',
+        'controller' => 'App\\Http\\Controllers\\Kompetensi02Controller@destroy',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 

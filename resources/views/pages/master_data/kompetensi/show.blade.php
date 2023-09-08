@@ -88,7 +88,6 @@
                             <td style="vertical-align: top">{!! $show->kuk5 !!}</td>
                         </tr>
                         @endswitch
-
                         @switch($show)
                         @case($show->kode6 == NULL)
                         @break
@@ -141,6 +140,17 @@
                             <td style="vertical-align: top">{{$show->kode10}} <br> {{$show->unit_kompetensi10}}</td>
                             <td style="vertical-align: top">{!! $show->element_kompetensi10 !!}</td>
                             <td style="vertical-align: top">{!! $show->kuk10 !!}</td>
+                        </tr>
+                        @endswitch
+
+                        @switch($show)
+                        @case($show->kode11 == NULL)
+                        @break
+                        @default
+                        <tr>
+                            <td style="vertical-align: top">{{$show->kode11}} <br> {{$show->unit_kompetensi11}}</td>
+                            <td style="vertical-align: top">{!! $show->element_kompetensi11 !!}</td>
+                            <td style="vertical-align: top">{!! $show->kuk11 !!}</td>
                         </tr>
                         @endswitch
 

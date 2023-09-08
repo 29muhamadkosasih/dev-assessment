@@ -1,0 +1,12 @@
+                <tr>
+                    @unless(!$datas->kompetensi->kode11)
+                    <!-- Tampilkan data -->
+                    <td width='40px' style="text-align: center">11</td>
+                    <td width='150px'
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        {{$datas->kompetensi->kode11}}</td>
+                    <td width='300px'
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        {{$datas->kompetensi->unit_kompetensi11}}</td>
+                    @endunless
+                </tr>

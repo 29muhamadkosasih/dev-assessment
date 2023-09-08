@@ -12,6 +12,7 @@ use App\Http\Controllers\StaterkitController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\KompetensiController;
+use App\Http\Controllers\Kompetensi02Controller;
 use App\Http\Controllers\Admin\PermissionController;
 /*
 |--------------------------------------------------------------------------
@@ -49,5 +50,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('apl_01', APL01Controller::class);
     Route::resource('skema', SkemaController::class);
     Route::resource('kompetensi', KompetensiController::class);
+    Route::resource('kompetensi02', Kompetensi02Controller::class);
     Route::resource('validasi', ValidasiController::class);
 });
