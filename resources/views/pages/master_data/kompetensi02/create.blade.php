@@ -28,7 +28,7 @@
                     <div class="col-sm-6">
                         <label class="form-label" for="plFirstName">No SKKNI</label>
                         <input type="text" id="plFirstName" class="form-control @error('no_skkni') is-invalid @enderror"
-                            placeholder="Masukan No SKKNI" />
+                            placeholder="Masukan No SKKNI" name="no_skkni" />
                     </div>
                 </div>
                 <div class="col-md mb-4 mb-md-2">

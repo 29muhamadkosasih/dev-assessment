@@ -45,9 +45,9 @@
         <thead>
             <tr>
                 <td colspan="2">
-                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
-                        width="80">
-                    {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
+                    {{-- <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
+                        width="80"> --}}
+                    <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80">
                 </td>
                 <td></td>
                 <td></td>
@@ -56,9 +56,9 @@
                 <td></td>
                 <td></td>
                 <td colspan="2">
-                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
-                        alt="" style="width: 90">
-                    {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
+                    {{-- <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
+                        alt="" style="width: 90"> --}}
+                    <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90">
                 </td>
 
             </tr>
@@ -148,70 +148,27 @@
         <table class="table" border="1" id="ping">
             <thead>
                 <tr>
-                    <th colspan="3" rowspan="2" style="text-align: center">Nama Sertifikasi Okupasi</th>
+                    <th colspan="2" rowspan="2" style="text-align: center">Nama Sertifikasi Okupasi</th>
                     <th style="text-align: center">Judul</th>
                     <th style="text-align: center">:</th>
-                    <th colspan="5" style="text-align: center">Jenis Standar (Standart Khusus/Standar
+                    <th colspan="4" style="text-align: center">Jenis Standar (Standart Khusus/Standar
                         Internasional/SKKNI)</th>
                 </tr>
                 </tr>
                 <tr>
                     <th>Nomor</th>
                     <th>:</th>
-                    <th colspan="5">498578329578329473289</th>
+                    <th colspan="4">498578329578329473289</th>
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0">
                 <tr>
-                    <th colspan="4">Tujuan Assessment</th>
+                    <th colspan="3">Tujuan Assessment</th>
                     <th>:</th>
-                    <th>
-                        @switch($datas)
-                        @case($datas->tujuan_assessment == 'Sertifikasi')
-                        {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
-                        @break
-                        @default
-                        {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
-                        @endswitch
-                        Sertifikasi
-                    </th>
-                    <th>
-                        @switch($datas)
-                        @case($datas->tujuan_assessment == 'RCC')
-                        {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
-                        @break
-                        @default
-                        {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
-                        @endswitch
-
-                        RCC</th>
-                    <th>
-                        @switch($datas)
-                        @case($datas->tujuan_assessment == 'RPL')
-                        {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
-                        @break
-                        @default
-                        {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
-                        @endswitch
-                        RPL</th>
-                    <th>
-                        @switch($datas)
-                        @case($datas->tujuan_assessment == 'Hasil Pelatihan/Proses Pembelajaran')
-                        {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
-                        @break
-                        @default
-                        {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
-                        @endswitch
-                        Hasil Pelatihan/Proses Pembelajaran</th>
-                    <th>
-                        @switch($datas)
-                        @case($datas->tujuan_assessment == 'Lainnya')
-                        {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
-                        @break
-                        @default
-                        {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
-                        @endswitch
-                        Lainnya</th>
+                    <th> </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </tbody>
         </table>
@@ -230,59 +187,57 @@
                 <tr>
                     <td width='40px' style="text-align: center">1</td>
                     <td width='150px'> &nbsp; {{$datas->kompetensi->kode}}</td>
-                    <td width='270px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi}}</td>
+                    <td width='320px'> &nbsp; {{$datas->kompetensi->unit_kompetensi}}</td>
 
                     @if (!empty($datas->kompetensi->kode10 ))
-                    <td rowspan=" 10" width='167px'
+                    <td rowspan="10" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
                     @elseif (!empty($datas->kompetensi->kode9 ))
-                    <td rowspan="9" width='167px'
+                    <td rowspan="9" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode8 ))
-                    <td rowspan="8" width='167px'
+                    <td rowspan="8" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode7 ))
-                    <td rowspan="7" width='167px'
+                    <td rowspan="7" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode6 ))
-                    <td rowspan="6" width='167px'
+                    <td rowspan="6" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode5 ))
-                    <td rowspan="5" width='167px'
+                    <td rowspan="5" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode4 ))
-                    <td rowspan="4" width='167px'
+                    <td rowspan="4" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode3 ))
-                    <td rowspan="3" width='167px'
+                    <td rowspan="3" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
                     @elseif (!empty($datas->kompetensi->kode2 ))
-                    <td rowspan="2" width='167px'
+                    <td rowspan="2" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode ))
-                    <td rowspan="1" width='167px'
+                    <td rowspan="1" width='200px'
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
                     @else
-                    {{-- <td rowspan="10" width='167px'> &nbsp;{{$datas->kompetensi->no_skkni}}</td> --}}
+                    {{-- <td rowspan="10" width='200px'> &nbsp;{{$datas->kompetensi->no_skkni}}</td> --}}
                     @endif
 
                 </tr>
@@ -290,24 +245,16 @@
                     @unless(!$datas->kompetensi->kode2)
                     <!-- Tampilkan data -->
                     <td width='40px' style="text-align: center">2</td>
-                    <td width='150px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->kode2}}</td>
-                    <td width='300px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi2}}</td>
+                    <td width='150px'> &nbsp; {{$datas->kompetensi->kode2}}</td>
+                    <td width='300px'> &nbsp; {{$datas->kompetensi->unit_kompetensi2}}</td>
                     @endunless
                 </tr>
                 <tr>
                     @unless(!$datas->kompetensi->kode3)
                     <!-- Tampilkan data -->
                     <td width='40px' style="text-align: center">3</td>
-                    <td width='150px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->kode3}}</td>
-                    <td width='300px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi3}}</td>
+                    <td width='150px'> &nbsp; {{$datas->kompetensi->kode3}}</td>
+                    <td width='300px'> &nbsp; {{$datas->kompetensi->unit_kompetensi3}}</td>
                     @endunless
                 </tr>
 
@@ -315,12 +262,8 @@
                     @unless(!$datas->kompetensi->kode4)
                     <!-- Tampilkan data -->
                     <td width='40px' style="text-align: center">4</td>
-                    <td width='150px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->kode4}}</td>
-                    <td width='300px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi4}}</td>
+                    <td width='150px'> &nbsp; {{$datas->kompetensi->kode4}}</td>
+                    <td width='300px'> &nbsp; {{$datas->kompetensi->unit_kompetensi4}}</td>
                     @endunless
                 </tr>
 
@@ -328,12 +271,8 @@
                     @unless(!$datas->kompetensi->kode5)
                     <!-- Tampilkan data -->
                     <td width='40px' style="text-align: center">5</td>
-                    <td width='150px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->kode5}}</td>
-                    <td width='300px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi5}}</td>
+                    <td width='150px'> &nbsp; {{$datas->kompetensi->kode5}}</td>
+                    <td width='300px'> &nbsp; {{$datas->kompetensi->unit_kompetensi5}}</td>
                     @endunless
                 </tr>
 
@@ -341,12 +280,8 @@
                     @unless(!$datas->kompetensi->kode6)
                     <!-- Tampilkan data -->
                     <td width='40px' style="text-align: center">6</td>
-                    <td width='150px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->kode6}}</td>
-                    <td width='300px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi6}}</td>
+                    <td width='150px'> &nbsp; {{$datas->kompetensi->kode6}}</td>
+                    <td width='300px'> &nbsp; {{$datas->kompetensi->unit_kompetensi6}}</td>
                     @endunless
                 </tr>
 
@@ -354,12 +289,8 @@
                     @unless(!$datas->kompetensi->kode7)
                     <!-- Tampilkan data -->
                     <td width='40px' style="text-align: center">7</td>
-                    <td width='150px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->kode7}}</td>
-                    <td width='300px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi7}}</td>
+                    <td width='150px'> &nbsp; {{$datas->kompetensi->kode7}}</td>
+                    <td width='300px'> &nbsp; {{$datas->kompetensi->unit_kompetensi7}}</td>
                     @endunless
                 </tr>
             </tbody>
@@ -372,7 +303,7 @@
                 <tr>
                     <th rowspan="2" width='40px' style="text-align: center">No</th>
                     <th width="400px" rowspan="2">Bukti Persyaratan </th>
-                    <th width="167px" colspan="2">Memenuhi Pesyaratan </th>
+                    <th width="200px" colspan="2">Memenuhi Pesyaratan </th>
                     <th width="100px" rowspan="2">Catatan</th>
                 </tr>
                 <tr>
@@ -581,9 +512,7 @@
                         <br><br>
                         Berdasarkan ketentuan
                         persyaratan dasar
-                        assessment. <br> <br>
-
-                        <b>Diterima</b>/ <b><del>Tidak diterima</del>*)</b> Sebagai peserta sertifikasi
+                        assessment jarak
                     </td>
                     <td colspan="2"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
@@ -594,17 +523,15 @@
                 <tr>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Nama
                     </td>
-                    <td width="167px"
+                    <td width="200px"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
                         $datas->nama_lengkap->name }}</td>
                 </tr>
                 <tr>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Tanda
-                        Tangan / Tanggal</td>
-                    <td height="167px" style="text-align: center">
-                        {{-- <img src="{{ storage_path('app/public/ttd/'. $datas->ttd) }}" alt="" style="width: 150px">
-                        --}}
-                        {{ \Carbon\Carbon::parse($datas->created_at)->format('d-m-Y') }}
+                        Tangan</td>
+                    <td height="200px" style="text-align: center">
+                        <img src="{{ storage_path('app/public/ttd/'. $datas->ttd) }}" alt="" style="width: 150px">
                     </td>
                 </tr>
             </thead>
@@ -637,14 +564,12 @@
                 </tr>
                 <tr>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Tanda
-                        Tangan/ Tanggal</td>
-                    <td height="167px" style="text-align: center">
-                        {{-- <img src="{{ storage_path('app/public/ttd_admin_lsp/').$datas->ttd_admin_lsp }}" alt=""
-                            style="width: 150px"> --}}
+                        Tangan</td>
+                    <td height="200px" style="text-align: center">
+                        <img src="{{ storage_path('app/public/ttd_admin_lsp/').$datas->ttd_admin_lsp }}" alt=""
+                            style="width: 150px">
 
                         {{-- {{ Storage::url('public/blogs/').$blog->image }} --}}
-
-                        {{ $datas->tanggal_validasi }}
                     </td>
                 </tr>
             </tbody>

@@ -7,8 +7,8 @@
 <script src="{{ asset('plugins/tables/js/datatable/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('plugins/tables/js/datatable/dataTables.fixedHeader.min.js') }}"></script>
 <script src="{{ asset('plugins/tables/js/datatable/dataTables.fixedColumns.min.js') }}"></script>
-<script src="{{ asset('plugins/tables/js/datatables-extensions-init/datatable-fixed-column.min.js') }}">
-</script>
+{{-- <script src="{{ asset('plugins/tables/js/datatables-extensions-init/datatable-fixed-column.min.js') }}">
+</script> --}}
 <script src="{{ asset('plugins/tables/js/datatables-extensions-init/datatable-fixed-header.min.js') }}">
 </script>
 <script src="{{ asset('plugins/tables/js/datatable-init/datatable-basic.min.js') }}"></script>

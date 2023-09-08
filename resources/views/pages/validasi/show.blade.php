@@ -525,7 +525,7 @@
                     <div class="col-sm-6">
                         <label class="form-label">Catatan</label>
                         <textarea id="plAddress" name="catatan" class="form-control" rows="2"
-                            placeholder="12, Business Park"></textarea>
+                            placeholder="12, Business Park">{{ old('catatan') }}</textarea>
                     </div>
                 </div>
                 <div class="col-12 d-flex justify-content-end mt-4">

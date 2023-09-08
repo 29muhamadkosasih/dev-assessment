@@ -1,9 +1,6 @@
 @extends('layouts/master')
-
 @section('title', 'Kompetensi')
-
 @section('content')
-<!-- Invoice table -->
 <div class="col-xl-12">
     <div class="card">
         <div class="card-body">
@@ -139,14 +136,21 @@
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
                                     <a href="{{ route('kompetensi02.show', $data->id) }}"
-                                        class="btn btn-icon btn-success btn-sm">
+                                        class="btn btn-icon btn-success btn-sm" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-original-title="Detail"
+                                        aria-describedby="tooltip358783">
                                         <span class="ti ti-eye"></span>
                                     </a>
-                                    {{-- <a href="{{ route('kompetensi.edit', $data->id) }}"
-                                        class="btn btn-icon btn-warning btn-sm">
+
+                                    <a href="{{ route('kompetensi02.edit', $data->id) }}"
+                                        class="btn btn-icon btn-warning btn-sm" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-original-title="Edit"
+                                        aria-describedby="tooltip358783">
                                         <span class="ti ti-edit"></span>
-                                    </a> --}}
-                                    <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
+                                    </a>
+                                    <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Delete"
+                                        aria-describedby="tooltip358783">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>

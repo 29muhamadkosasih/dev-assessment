@@ -94,7 +94,9 @@
                                 @switch($data )
                                 @case($data->is_validasi == NULL)
                                 <a href="{{ route('validasi.show', $data->id) }}"
-                                    class="btn btn-icon btn-success btn-sm">
+                                    class="btn btn-icon btn-success btn-sm" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" data-bs-original-title="Detail"
+                                    aria-describedby="tooltip358783">
                                     <span class="ti ti-eye"></span>
                                 </a>
                                 <form action="{{ route('validasi.destroy', $data->id) }}" class="d-inline-block"
@@ -102,14 +104,17 @@
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" onclick="return confirm('Are you sure?')"
-                                        class="btn btn-icon btn-danger btn-sm">
+                                        class="btn btn-icon btn-danger btn-sm" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-original-title="Delete"
+                                        aria-describedby="tooltip358783">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>
                                 @break
                                 @default
                                 <a href="{{ url('cetak_pdf', $data->id) }}" class="btn btn-icon btn-primary btn-sm"
-                                    target="_blank">
+                                    target="_blank" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-original-title="Download" aria-describedby="tooltip358783">
                                     <span class="ti ti-download"></span>
                                 </a>
                                 @endswitch

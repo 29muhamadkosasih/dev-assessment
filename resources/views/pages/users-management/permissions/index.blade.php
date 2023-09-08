@@ -41,10 +41,14 @@
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
                                     <a href="{{ route('permissions.edit', $data->id) }}"
-                                        class="btn btn-icon btn-warning btn-sm">
+                                        class="btn btn-icon btn-warning btn-sm" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" data-bs-original-title="Edit"
+                                        aria-describedby="tooltip358783">
                                         <span class="ti ti-edit"></span>
                                     </a>
-                                    <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm">
+                                    <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Delete"
+                                        aria-describedby="tooltip358783">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>
