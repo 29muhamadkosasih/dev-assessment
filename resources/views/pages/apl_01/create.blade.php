@@ -1,6 +1,17 @@
 @extends('layouts/master')
 @section('title', 'APL 01')
 @section('content')
+<style>
+    .kbw-signature {
+        width: 100%;
+        height: 200px;
+    }
+
+    #sig canvas {
+        width: 100% !important;
+        height: auto;
+    }
+</style>
 <div class="col">
     <div class="card mb">
         <div class="card-header">
@@ -277,7 +288,7 @@
                             </span>
                             @enderror
                         </div>
-                        <div class="col-sm-6">
+                        {{-- <div class="col-sm-6">
                             <label class="form-label d-block" for="plBathrooms">Tanda Tangan &nbsp; * file JPEG </label>
                             <input type="file" id="plBathrooms" name="ttd"
                                 class="form-control @error('ttd') is-invalid @enderror" placeholder="4" required />
@@ -286,15 +297,32 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                             @enderror
-                        </div>
-
-                    </div>
-                    <div class="col-12 d-flex justify-content-end mt-4">
-                        <button class="btn btn-success btn-submit">Submit</button>
+                        </div> --}}
                     </div>
                 </div>
+                <div class="col-12 mt-4 ">
+                    <div class="col-6 mb-3">
+                        <label class="form-label d-block" for="plBathrooms">Tanda Tangan</label>
+                        <div  id="sig"></div>
+                    </div>
+                    <button id="clear" class="btn btn-danger btn-sm ">Clear</button>
+                    <textarea id="signature" name="signed" style="display: none"></textarea>
+                </div>
+                <div class="col-12 d-flex justify-content-end mt-4">
+                    <button class="btn btn-success btn-submit">Submit</button>
+                </div>
             </div>
-        </form>
     </div>
+    </form>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+<script type="text/javascript">
+    var sig = $('#sig').signature({syncField: '#signature', syncFormat: 'PNG'});
+            $('#clear').click(function (e) {
+                e.preventDefault();
+                sig.signature('clear');
+                $("#signature64").val('');
+            });
+</script>
 @endsection

@@ -36,6 +36,7 @@ class APL01Controller extends Controller
 
     public function store(Request $request)
     {
+        // dd($request->all());
         $userId = auth()->id();
         $this->validate($request, [
             'jabatan' => 'required',
@@ -57,12 +58,19 @@ class APL01Controller extends Controller
             'sertifikat_pendukung' => 'required|mimes:jpeg,png,jpg,gif,pdf|max:8048',
             'cv' => 'required|mimes:jpeg,png,jpg,gif,pdf|max:8048',
             'p_cbt' => 'required|mimes:jpeg,png,jpg,gif,pdf|max:8048',
-            'ttd' => 'required|mimes:jpeg,png,jpg|max:8048'
         ]);
 
 
-        $image = $request->file('ttd');
-        $image->storeAs('public/ttd', $image->hashName());
+        $folderPath = storage_path('app/public/ttd/'); // create signatures folder in public directory
+        $image_parts = explode(";base64,", $request->signed);
+        $image_type_aux = explode("image/", $image_parts[0]);
+        $image_type = $image_type_aux[1];
+        $image_base64 = base64_decode($image_parts[1]);
+        $file = $folderPath . uniqid() . '.' . $image_type;
+        file_put_contents($file, $image_base64);
+
+        // $image = $request->file('ttd');
+        // $image->storeAs('public/ttd', $image->hashName());
 
         $image2 = $request->file('ktp');
         $image2->storeAs('public/ktp', $image2->hashName());
@@ -100,7 +108,7 @@ class APL01Controller extends Controller
             'email_perusahaan'  => $request->email_perusahaan,
             'alamat_perusahaan'  => $request->alamat_perusahaan,
             'kompetensi_id'  => $request->kompetensi_id,
-            'ttd'     => $image->hashName(),
+            'signature'     => uniqid() . '.' . $image_type,
             'ktp'     => $image2->hashName(),
             'p_cbt'     => $image3->hashName(),
             'sertifikat_pendukung'     => $image4->hashName(),

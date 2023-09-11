@@ -40,15 +40,23 @@ class ValidasiController extends Controller
             'tujuan_assessment' => ['required', 'in:Sertifikasi,RCC, RPL,Hasil Pelatihan/Proses Pembelajaran, Lainnya'],
             'status' => ['required', 'in:Lengkap,Belum Lengkap'],
             'no_reg' => 'required',
-            'ttd_admin_lsp' => 'mimes:jpeg,png,jpg|max:8048',
 
         ]);
 
+        $folderPath = storage_path('app/public/ttd_admin_lsp/'); // create signatures folder in public directory
+        $image_parts = explode(";base64,", $request->signature_admin);
+        $image_type_aux = explode("image/", $image_parts[0]);
+        $image_type = $image_type_aux[1];
+        $image_base64 = base64_decode($image_parts[1]);
+        $file = $folderPath . uniqid() . '.' . $image_type;
+        file_put_contents($file, $image_base64);
+        // dd($request->all());
+
         $data = Personaldetail::find($id);
-        $image = $request->file('ttd_admin_lsp');
-        $image->storeAs('public/ttd_admin_lsp', $image->hashName());
+        // $image = $request->file('ttd_admin_lsp');
+        // $image->storeAs('public/ttd_admin_lsp', $image->hashName());
         $data->update([
-            'ttd_admin_lsp'     => $image->hashName(),
+            'signature_admin'     => uniqid() . '.' . $image_type,
             'nama_admin_lsp'     => $request->nama_admin_lsp,
             'no_reg'     => $request->no_reg,
             'status'     => $request->status,
@@ -57,38 +65,6 @@ class ValidasiController extends Controller
             'tanggal_validasi'     => $formattedDate,
             'is_validasi'     => 1,
         ]);
-
-        // if (!$data) {
-        //     return redirect()->back()->with('error', 'Data tidak ditemukan');
-        // }
-        // $username = Auth::user()->name;
-        // $documentNumber = $username;
-        // $data2 = $request->ttd_admin_lsp;
-        // if ($data2 == NULL) {
-        //     $filename1 = 0;
-        // } else {
-        //     if ($request->hasFile('ttd_admin_lsp')) {
-        //         $this->validate($request, [
-        //             'ttd_admin_lsp'          => 'mimes:jpeg,png,jpg|max:8048',
-        //         ]);
-        //         $file               = $request->file('ttd_admin_lsp');
-        //         $temp               = str_replace('/', '_', $documentNumber);
-        //         $filename1          = 'TTD-Admin-' . $temp . '.' . $file->getClientOriginalExtension();
-        //         $destinationPath    = 'storage/TTD-Admin';
-        //         $file->move($destinationPath, $filename1);
-        //     }
-        // }
-        // // Update field yang diinginkan dengan nilai baru
-        // $data->nama_admin_lsp = $request->input('nama_admin_lsp'); // Ganti dengan nama field yang ingin Anda update
-        // $data->no_reg = $request->input('no_reg');
-        // $data->status = $request->input('status');
-        // $data->ttd_admin_lsp = $filename1;
-        // $data->tujuan_assessment = $request->input('tujuan_assessment');
-        // $data->catatan = $request->input('catatan');
-        // $data->tanggal_validasi = $formattedDate;
-        // $data->is_validasi = 1;
-        // // Simpan perubahan ke database
-        // $data->save();
 
         return redirect()->route('validasi.index')->with('success', 'Success ! Data Berhasil di Validasi');
     }

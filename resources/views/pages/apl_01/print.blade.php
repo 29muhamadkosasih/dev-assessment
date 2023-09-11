@@ -169,49 +169,64 @@
                         @switch($datas)
                         @case($datas->tujuan_assessment == 'Sertifikasi')
                         {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
+                        Sertifikasi
                         @break
                         @default
                         {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
+                        <del>Sertifikasi</del>
                         @endswitch
-                        Sertifikasi
                     </th>
                     <th>
                         @switch($datas)
                         @case($datas->tujuan_assessment == 'RCC')
                         {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
+                        RCC
                         @break
                         @default
                         {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
+                        <del>RCC</del>
                         @endswitch
 
-                        RCC</th>
+                    </th>
                     <th>
                         @switch($datas)
                         @case($datas->tujuan_assessment == 'RPL')
                         {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
+                        RPL
                         @break
                         @default
+                        <del>RPL</del>
                         {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
                         @endswitch
-                        RPL</th>
+                    </th>
                     <th>
                         @switch($datas)
                         @case($datas->tujuan_assessment == 'Hasil Pelatihan/Proses Pembelajaran')
                         {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
+                        Hasil Pelatihan/Proses Pembelajaran
                         @break
                         @default
                         {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
+                        <del>Hasil Pelatihan/Proses Pembelajaran</del>
                         @endswitch
-                        Hasil Pelatihan/Proses Pembelajaran</th>
+                    </th>
                     <th>
                         @switch($datas)
                         @case($datas->tujuan_assessment == 'Lainnya')
+                        Lainnya
                         {{-- <img src="{{ asset('assets/img/favicon/ceklis.png') }}" width="80"> --}}
                         @break
                         @default
+                        <del>Lainnya</del>
                         {{-- <img src="{{ asset('assets/img/favicon/non_ceklis.png') }}" width="80"> --}}
                         @endswitch
-                        Lainnya</th>
+
+                    </th>
+                </tr>
+                <tr>
+                    <td style="width: 15%;"> </td>
+                    <td style="text-align: right"></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -235,54 +250,54 @@
                         {{$datas->kompetensi->unit_kompetensi}}</td>
 
                     @if (!empty($datas->kompetensi->kode10 ))
-                    <td rowspan=" 10" width='167px'
+                    <td rowspan=" 10"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
                     @elseif (!empty($datas->kompetensi->kode9 ))
-                    <td rowspan="9" width='167px'
+                    <td rowspan="9"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode8 ))
-                    <td rowspan="8" width='167px'
+                    <td rowspan="8"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode7 ))
-                    <td rowspan="7" width='167px'
+                    <td rowspan="7"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode6 ))
-                    <td rowspan="6" width='167px'
+                    <td rowspan="6"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode5 ))
-                    <td rowspan="5" width='167px'
+                    <td rowspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode4 ))
-                    <td rowspan="4" width='167px'
+                    <td rowspan="4"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode3 ))
-                    <td rowspan="3" width='167px'
+                    <td rowspan="3"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
                     @elseif (!empty($datas->kompetensi->kode2 ))
-                    <td rowspan="2" width='167px'
+                    <td rowspan="2"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
 
                     @elseif (!empty($datas->kompetensi->kode ))
-                    <td rowspan="1" width='167px'
+                    <td rowspan="1"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->kompetensi->no_skkni}}</td>
                     @else
-                    {{-- <td rowspan="10" width='167px'> &nbsp;{{$datas->kompetensi->no_skkni}}</td> --}}
+                    {{-- <td rowspan="10"> &nbsp;{{$datas->kompetensi->no_skkni}}</td> --}}
                     @endif
 
                 </tr>

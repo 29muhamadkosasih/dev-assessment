@@ -51,7 +51,7 @@
 
 <!-- Vendors JS -->
 <script src="{{ asset('assets/vendor/libs/toastr/toastr.js')}}"></script>
-
+<script src="{{ asset('assets/vendor/libs/masonry/masonry.js') }}"></script>
 <!-- Page JS -->
 <script src="{{ asset('assets/js/ui-toasts.js') }}"></script>
 

@@ -3,6 +3,13 @@
 <link rel="stylesheet" href="{{ asset('assets/vendor/fonts/tabler-icons.css')}}" />
 <link rel="stylesheet" href="{{ asset('assets/vendor/fonts/flag-icons.css')}}" />
 
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3/css/bootstrap.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="http://keith-wood.name/js/jquery.signature.js"></script>
+<link rel="stylesheet" type="text/css" href="http://keith-wood.name/css/jquery.signature.css">
 <!-- Core CSS -->
 <link rel="stylesheet" href="{{ asset('assets/vendor/css/rtl/core.css')}}" />
 <link rel="stylesheet" href="{{ asset('assets/vendor/css/rtl/theme-default.css')}}" />

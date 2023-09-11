@@ -3,6 +3,18 @@
 @section('title', 'Users')
 
 @section('content')
+
+<style>
+    .kbw-signature {
+        width: 100%;
+        height: 200px;
+    }
+
+    #sig canvas {
+        width: 100% !important;
+        height: auto;
+    }
+</style>
 <!-- Invoice -->
 <div class="col-xl-12 col-md-12 col-12 mb-3">
     <div class="card invoice-preview-card">
@@ -495,16 +507,6 @@
                         @enderror
                     </div>
                     <div class="col-sm-6">
-                        <label class="form-label">Tanda Tangan &nbsp;* file JPEG</label>
-                        <input type="file" class="form-control @error('ttd_admin_lsp') is-invalid @enderror"
-                            name="ttd_admin_lsp" value="{{ old('ttd_admin_lsp') }}" />
-                        @error('ttd_admin_lsp')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                        @enderror
-                    </div>
-                    <div class="col-sm-6">
                         <label class="form-label">Tujuan Assessment</label>
                         <select id="plMaintenencePer" name="tujuan_assessment"
                             class="form-select @error('tujuan_assessment') is-invalid @enderror" required>
@@ -528,6 +530,14 @@
                             placeholder="12, Business Park">{{ old('catatan') }}</textarea>
                     </div>
                 </div>
+                <div class="col-12 mt-4 ">
+                    <div class="col-6 mb-3">
+                        <label class="form-label d-block" for="plBathrooms">Tanda Tangan</label>
+                        <div id="sig"></div>
+                    </div>
+                    <button id="clear" class="btn btn-danger btn-sm">Clear</button>
+                    <textarea id="signature" name="signature_admin" style="display: none"></textarea>
+                </div>
                 <div class="col-12 d-flex justify-content-end mt-4">
                     <button class="btn btn-primary btn-submit" type="submit">Submit</button>
                 </div>
@@ -535,4 +545,14 @@
         </form>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+<script type="text/javascript">
+    var sig = $('#sig').signature({syncField: '#signature', syncFormat: 'PNG'});
+            $('#clear').click(function (e) {
+                e.preventDefault();
+                sig.signature('clear');
+                $("#signature64").val('');
+            });
+</script>
 @endsection
