@@ -77,6 +77,8 @@ class Kompetensi02Controller extends Controller
 
     public function edit($id)
     {
+        // dd($id);
+
         $nama_skema = Skema::all();
         $edit = Kompetensi02::find($id);
         $kompetensi = Kompetensi02::all();
@@ -94,13 +96,10 @@ class Kompetensi02Controller extends Controller
             'kode'              => 'required',
             'unit'   => 'required',
             'element_kuk_1_01' => 'required',
-            // Tambahkan aturan validasi lainnya sesuai kebutuhan
         ]);
-
         // Mengambil semua data yang dikirimkan dalam permintaan
-        $data = $request->all();
+      $data = $request->all();
 
-        // Menggunakan model untuk menemukan data yang akan diupdate
         $model = Kompetensi02::findOrFail($id);
 
         // Melakukan update data dengan menggunakan fill
@@ -109,18 +108,17 @@ class Kompetensi02Controller extends Controller
         // Simpan perubahan ke database
         $model->save();
         return redirect()->route('kompetensi02.index')
-        ->with('success', 'Success ! Data Kompetensi Berhasil di Update');
+            ->with('success', 'Success ! Data Kompetensi Berhasil di Update');
     }
 
     public function update(Request $request, $id)
     {
+
+        // dd($request->all());
         $request->validate([
-            'nama_skema_id' => 'required|numeric',
             'kode'              => 'required',
             'unit'   => 'required',
-            'no_skkni'   => 'required',
             'element_kuk_1_01' => 'required',
-            // Tambahkan aturan validasi lainnya sesuai kebutuhan
         ]);
 
         // Mengambil semua data yang dikirimkan dalam permintaan

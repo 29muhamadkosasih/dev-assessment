@@ -13,6 +13,6 @@ class AnswerAPL02 extends Model
 
     public function apl02()
     {
-        return $this->belongsTo(apl02::class, 'apl02_id');
+        return $this->belongsTo(APL02::class, 'apl02_id');
     }
 }

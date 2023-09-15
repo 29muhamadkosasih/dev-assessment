@@ -142,12 +142,12 @@
                                         <span class="ti ti-eye"></span>
                                     </a>
 
-                                    {{-- <a href="{{ route('kompetensi02.edit', $data->id) }}"
+                                    <a href="{{ route('kompetensi02.edit', $data->id) }}"
                                         class="btn btn-icon btn-warning btn-sm" data-bs-toggle="tooltip"
                                         data-bs-placement="top" data-bs-original-title="Edit"
                                         aria-describedby="tooltip358783">
                                         <span class="ti ti-edit"></span>
-                                    </a> --}}
+                                    </a>
                                     <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm"
                                         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Delete"
                                         aria-describedby="tooltip358783">

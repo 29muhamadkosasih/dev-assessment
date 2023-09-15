@@ -14,23 +14,22 @@
                 @method('PUT')
                 @csrf
                 <div class="row g-3">
-                    <div class="col-sm-6">
-                        <label class="form-label" for="plFirstName">Nama Skema</label>
-                        <select class="form-select @error('nama_skema_id') is-invalid @enderror" id="selectDefault"
-                            name="nama_skema_id" value="{{ old('nama_skema_id') }}" required>
-                            <option selected>Open this select</option>
-                            @foreach ($nama_skema as $key => $value)
-                            <option value="{{ $value->id }}">
-                                {{ $value->nama_skema }}
-                            </option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="col-sm-6">
-                        <label class="form-label" for="plFirstName">No SKKNI</label>
-                        <input type="text" id="plFirstName" class="form-control @error('no_skkni') is-invalid @enderror"
-                            placeholder="Masukan No SKKNI" name="no_skkni" />
-                    </div>
+                    <table class="m-3">
+                        <tbody>
+                            <tr>
+                                <td class="pe-5">Nama Skema</td>
+                                <td>: &nbsp; <b>{{$edit->kompetensi->skema->nama_skema}}</b> </td>
+                            </tr>
+                            <tr>
+                                <td class="pe-10">No. Skema</td>
+                                <td>: &nbsp; {{ $edit->kompetensi->skema->no }}</td>
+                            </tr>
+                            <tr>
+                                <td class="pe-10 ">No. SKKNI</td>
+                                <td class="mt-2">: &nbsp;{{ $edit->kompetensi->no_skkni }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="col-md mb-4 mb-md-2">
                     <div class="accordion mt-3" id="accordionExample">
@@ -939,7 +938,7 @@
                 </div>
                 <div class="mb-3 mt-3">
                     <button type="submit" class="btn btn-primary float-end ms-2">Submit</button>
-                    <a href="{{ route('kompetensi.index') }}" class="btn btn-secondary float-end ">Back</a>
+                    <a href="{{ route('kompetensi02.index') }}" class="btn btn-secondary float-end ">Back</a>
             </form>
         </div>
     </div>
