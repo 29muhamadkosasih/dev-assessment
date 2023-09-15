@@ -76,10 +76,17 @@
             </a>
         </li>
 
-        <li class="menu-item {{ (request()->is('bank')) ? 'active' : '' }}">
-            <a href="#" class="menu-link">
+        <li class="menu-item {{ Route::currentRouteNamed('apl_02.index') ? 'active' : '' }}">
+            <a href="{{ route('apl_02.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
                 <div data-i18n="APL-02">APL-02</div>
+            </a>
+        </li>
+
+        <li class="menu-item {{ Route::currentRouteNamed('validasi02.index', 'validasi02.show') ? 'active' : '' }}">
+            <a href="{{ route('validasi02.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
+                <div data-i18n="Validasi APL-02">Validasi APL-02</div>
             </a>
         </li>
 

@@ -532,6 +532,8 @@
                         Tangan</td>
                     <td height="200px" style="text-align: center">
                         <img src="{{ storage_path('app/public/ttd/'. $datas->ttd) }}" alt="" style="width: 150px">
+                        <br>
+                        {{ \Carbon\Carbon::parse($datas->created_at)->format('d-m-Y') }}
                     </td>
                 </tr>
             </thead>
@@ -568,8 +570,8 @@
                     <td height="200px" style="text-align: center">
                         <img src="{{ storage_path('app/public/ttd_admin_lsp/').$datas->ttd_admin_lsp }}" alt=""
                             style="width: 150px">
-
-                        {{-- {{ Storage::url('public/blogs/').$blog->image }} --}}
+                        <br>
+                        {{ $datas->tanggal_validasi }}
                     </td>
                 </tr>
             </tbody>

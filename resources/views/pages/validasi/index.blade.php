@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="table-responsive text-nowrap">
-                <table class="table table-bordered table-hover zero-configuration">
+                <table class="table table-bordered zero-configuration">
                     <thead>
                         <tr style="background-color: skyblue">
                             <th width='10px' style="text-align: center">No</th>
@@ -95,18 +95,16 @@
                                 @case($data->is_validasi == NULL)
                                 <a href="{{ route('validasi.show', $data->id) }}"
                                     class="btn btn-icon btn-success btn-sm" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" data-bs-original-title="Detail"
+                                    data-bs-placement="top" data-bs-original-title="Validasi"
                                     aria-describedby="tooltip358783">
                                     <span class="ti ti-eye"></span>
                                 </a>
-                                <form action="{{ route('validasi.destroy', $data->id) }}" class="d-inline-block"
+                                <form action="{{ route('apl_01.destroy', $data->id) }}" class="d-inline-block"
                                     method="post">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" onclick="return confirm('Are you sure?')"
-                                        class="btn btn-icon btn-danger btn-sm" data-bs-toggle="tooltip"
-                                        data-bs-placement="top" data-bs-original-title="Delete"
-                                        aria-describedby="tooltip358783">
+                                        class="btn btn-icon btn-danger btn-sm">
                                         <span class="ti ti-trash"></span>
                                     </button>
                                 </form>

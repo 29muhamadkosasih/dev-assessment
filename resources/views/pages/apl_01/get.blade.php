@@ -1,7 +1,5 @@
 @extends('layouts/master')
-
-@section('title', 'apl_01')
-
+@section('title', 'APL 01')
 @section('content')
 @foreach ($datas as $item)
 <div class="col-xl-12 col-md-12 col-12">

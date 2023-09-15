@@ -7,9 +7,11 @@
 <script src="{{ asset('plugins/tables/js/datatable/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('plugins/tables/js/datatable/dataTables.fixedHeader.min.js') }}"></script>
 <script src="{{ asset('plugins/tables/js/datatable/dataTables.fixedColumns.min.js') }}"></script>
-{{-- <script src="{{ asset('plugins/tables/js/datatables-extensions-init/datatable-fixed-column.min.js') }}">
-</script> --}}
+<script src="{{ asset('plugins/tables/js/datatables-extensions-init/datatable-fixed-column.min.js') }}">
+</script>
 <script src="{{ asset('plugins/tables/js/datatables-extensions-init/datatable-fixed-header.min.js') }}">
+</script>
+<script src="{{ asset('plugins/tables/js/datatables-extensions-init/datatable-responsive.min.js') }}">
 </script>
 <script src="{{ asset('plugins/tables/js/datatable-init/datatable-basic.min.js') }}"></script>
 
@@ -76,9 +78,7 @@
 <script src="{{ asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
 <script src="{{ asset('assets/vendor/libs/node-waves/node-waves.js')}}"></script>
 <script src="{{ asset('assets/js/tables-datatables-extensions.js')}}"></script>
-
-<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
-
+<script src="{{ asset('https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js') }}"></script>
 <script>
     $(window).on('load', function () {
                 if (feather) {

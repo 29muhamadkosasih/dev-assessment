@@ -1,12 +1,1282 @@
-                <tr>
-                    @unless(!$datas->kompetensi->kode11)
-                    <!-- Tampilkan data -->
-                    <td width='40px' style="text-align: center">11</td>
-                    <td width='150px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->kode11}}</td>
-                    <td width='300px'
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->kompetensi->unit_kompetensi11}}</td>
-                    @endunless
-                </tr>
+            @unless(!$datas->apl02->kompetensi02->kode11)
+            <div style="margin-top: 20px">
+                <div class="table-responsive">
+                    <table class="table" border="1" id="ping"
+                        style="background-color: skyblue;border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <td width="200px"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    <b>Unit Kompetensi No.
+                                        11</b>
+                                </td>
+                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                    $datas->apl02->kompetensi02->kode11 }} <br>
+                                    {{ $datas->apl02->kompetensi02->unit11 }}
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table" border="1" id="ping">
+                        <tbody>
+                            <tr>
+                                <td width="503px"> <b>Dapatkah saya?</b> </td>
+                                <td width="62px" style="text-align: center">K</td>
+                                <td width="62px" style="text-align: center">BK</td>
+                                <td width="80px" style="text-align: center">Bukti</td>
+                            </tr>
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_01 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_01 == 'K')
+                                    {{ $datas->element_kuk_11_01 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_01 == 'BK')
+                                    {{ $datas->element_kuk_11_01 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_02)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_02 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_02 == 'K')
+                                    {{ $datas->element_kuk_11_02 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_02 == 'BK')
+                                    {{ $datas->element_kuk_11_02 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_03)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_03 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_03 == 'K')
+                                    {{ $datas->element_kuk_11_03 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_03 == 'BK')
+                                    {{ $datas->element_kuk_11_03 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_04)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_04 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_04 == 'K')
+                                    {{ $datas->element_kuk_11_04 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_04 == 'BK')
+                                    {{ $datas->element_kuk_11_04 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_05)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_05 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_05 == 'K')
+                                    {{ $datas->element_kuk_11_05 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_05 == 'BK')
+                                    {{ $datas->element_kuk_11_05 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_06)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_06 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_06 == 'K')
+                                    {{ $datas->element_kuk_11_06 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_06 == 'BK')
+                                    {{ $datas->element_kuk_11_06 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_07)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_07 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_07 == 'K')
+                                    {{ $datas->element_kuk_11_07 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_07 == 'BK')
+                                    {{ $datas->element_kuk_11_07 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_08)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_08 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_08 == 'K')
+                                    {{ $datas->element_kuk_11_08 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_08 == 'BK')
+                                    {{ $datas->element_kuk_11_08 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_09)
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_09 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_09 == 'K')
+                                    {{ $datas->element_kuk_11_09 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_09 == 'BK')
+                                    {{ $datas->element_kuk_11_09 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @unless(!$datas->apl02->kompetensi02->element_kuk_11_10)
+                            <!-- Tampilkan data -->
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_10 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_10 == 'K')
+                                    {{ $datas->element_kuk_11_10 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_10 == 'BK')
+                                    {{ $datas->element_kuk_11_10 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endunless
+
+                            @switch($datas)
+                            @case($datas->apl02->kompetensi02->element_kuk_11_11 == NULL)
+                            @break
+                            @default
+                            <tr>
+                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_11 !!}</td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_11 == 'K')
+                                    {{ $datas->element_kuk_11_11 }}
+                                    @break
+                                    @default
+                                    @endswitch
+
+                                </td>
+                                <td style="text-align: center">
+
+                                    @switch($datas)
+                                    @case($datas->element_kuk_11_11 == 'BK')
+                                    {{ $datas->element_kuk_11_11 }}
+                                    @break
+                                    @default
+                                    @endswitch
+                                </td>
+                                <td></td>
+                            </tr>
+                            @endswitch
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            @endunless                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @unless(!$datas->apl02->kompetensi02->kode8)
+                                    <div style="margin-top: 20px">
+                                        <div class="table-responsive">
+                                            <table class="table" border="1" id="ping" style="background-color: skyblue;border-collapse: collapse;">
+                                                <thead>
+                                                    <tr>
+                                                        <td width="200px"
+                                                            style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                                            <b>Unit Kompetensi No.
+                                                                8</b>
+                                                        </td>
+                                                        <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                                            $datas->apl02->kompetensi02->kode8 }} <br>
+                                                            {{ $datas->apl02->kompetensi02->unit8 }}
+                                                        </td>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table" border="1" id="ping">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="503px"> <b>Dapatkah saya?</b> </td>
+                                                        <td width="62px" style="text-align: center">K</td>
+                                                        <td width="62px" style="text-align: center">BK</td>
+                                                        <td width="80px" style="text-align: center">Bukti</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_01 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_01 == 'K')
+                                                            {{ $datas->element_kuk_11_01 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_01 == 'BK')
+                                                            {{ $datas->element_kuk_11_01 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_02)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_02 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_02 == 'K')
+                                                            {{ $datas->element_kuk_11_02 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_02 == 'BK')
+                                                            {{ $datas->element_kuk_11_02 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_03)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_03 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_03 == 'K')
+                                                            {{ $datas->element_kuk_11_03 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_03 == 'BK')
+                                                            {{ $datas->element_kuk_11_03 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_04)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_04 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_04 == 'K')
+                                                            {{ $datas->element_kuk_11_04 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_04 == 'BK')
+                                                            {{ $datas->element_kuk_11_04 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_05)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_05 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_05 == 'K')
+                                                            {{ $datas->element_kuk_11_05 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_05 == 'BK')
+                                                            {{ $datas->element_kuk_11_05 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_06)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_06 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_06 == 'K')
+                                                            {{ $datas->element_kuk_11_06 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_06 == 'BK')
+                                                            {{ $datas->element_kuk_11_06 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_07)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_07 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_07 == 'K')
+                                                            {{ $datas->element_kuk_11_07 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_07 == 'BK')
+                                                            {{ $datas->element_kuk_11_07 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_08)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_08 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_08 == 'K')
+                                                            {{ $datas->element_kuk_11_08 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_08 == 'BK')
+                                                            {{ $datas->element_kuk_11_08 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_09)
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_09 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_09 == 'K')
+                                                            {{ $datas->element_kuk_11_09 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_09 == 'BK')
+                                                            {{ $datas->element_kuk_11_09 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @unless(!$datas->apl02->kompetensi02->element_kuk_11_10)
+                                                    <!-- Tampilkan data -->
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_10 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_10 == 'K')
+                                                            {{ $datas->element_kuk_11_10 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_10 == 'BK')
+                                                            {{ $datas->element_kuk_11_10 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endunless
+                                    
+                                                    @switch($datas)
+                                                    @case($datas->apl02->kompetensi02->element_kuk_11_11 == NULL)
+                                                    @break
+                                                    @default
+                                                    <tr>
+                                                        <td>{!! $datas->apl02->kompetensi02->element_kuk_11_11 !!}</td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_11 == 'K')
+                                                            {{ $datas->element_kuk_11_11 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                    
+                                                        </td>
+                                                        <td style="text-align: center">
+                                    
+                                                            @switch($datas)
+                                                            @case($datas->element_kuk_11_11 == 'BK')
+                                                            {{ $datas->element_kuk_11_11 }}
+                                                            @break
+                                                            @default
+                                                            @endswitch
+                                                        </td>
+                                                        <td></td>
+                                                    </tr>
+                                                    @endswitch
+                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    @endunless@unless(!$datas->apl02->kompetensi02->kode9)
+                        <div style="margin-top: 20px">
+                            <div class="table-responsive">
+                                <table class="table" border="1" id="ping" style="background-color: skyblue;border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <td width="200px"
+                                                style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                                <b>Unit Kompetensi No.
+                                                    9</b>
+                                            </td>
+                                            <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                                $datas->apl02->kompetensi02->kode9 }} <br>
+                                                {{ $datas->apl02->kompetensi02->unit9 }}
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table" border="1" id="ping">
+                                    <tbody>
+                                        <tr>
+                                            <td width="503px"> <b>Dapatkah saya?</b> </td>
+                                            <td width="62px" style="text-align: center">K</td>
+                                            <td width="62px" style="text-align: center">BK</td>
+                                            <td width="80px" style="text-align: center">Bukti</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_01 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_01 == 'K')
+                                                {{ $datas->element_kuk_11_01 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_01 == 'BK')
+                                                {{ $datas->element_kuk_11_01 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_02)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_02 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_02 == 'K')
+                                                {{ $datas->element_kuk_11_02 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_02 == 'BK')
+                                                {{ $datas->element_kuk_11_02 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_03)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_03 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_03 == 'K')
+                                                {{ $datas->element_kuk_11_03 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_03 == 'BK')
+                                                {{ $datas->element_kuk_11_03 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_04)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_04 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_04 == 'K')
+                                                {{ $datas->element_kuk_11_04 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_04 == 'BK')
+                                                {{ $datas->element_kuk_11_04 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_05)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_05 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_05 == 'K')
+                                                {{ $datas->element_kuk_11_05 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_05 == 'BK')
+                                                {{ $datas->element_kuk_11_05 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_06)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_06 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_06 == 'K')
+                                                {{ $datas->element_kuk_11_06 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_06 == 'BK')
+                                                {{ $datas->element_kuk_11_06 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_07)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_07 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_07 == 'K')
+                                                {{ $datas->element_kuk_11_07 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_07 == 'BK')
+                                                {{ $datas->element_kuk_11_07 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_08)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_08 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_08 == 'K')
+                                                {{ $datas->element_kuk_11_08 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_08 == 'BK')
+                                                {{ $datas->element_kuk_11_08 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_09)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_09 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_09 == 'K')
+                                                {{ $datas->element_kuk_11_09 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_09 == 'BK')
+                                                {{ $datas->element_kuk_11_09 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_10)
+                                        <!-- Tampilkan data -->
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_10 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_10 == 'K')
+                                                {{ $datas->element_kuk_11_10 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_10 == 'BK')
+                                                {{ $datas->element_kuk_11_10 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @switch($datas)
+                                        @case($datas->apl02->kompetensi02->element_kuk_11_11 == NULL)
+                                        @break
+                                        @default
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_11 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_11 == 'K')
+                                                {{ $datas->element_kuk_11_11 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_11 == 'BK')
+                                                {{ $datas->element_kuk_11_11 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endswitch
+                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        @endunless @unless(!$datas->apl02->kompetensi02->kode8)
+                        <div style="margin-top: 20px">
+                            <div class="table-responsive">
+                                <table class="table" border="1" id="ping" style="background-color: skyblue;border-collapse: collapse;">
+                                    <thead>
+                                        <tr>
+                                            <td width="200px"
+                                                style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                                <b>Unit Kompetensi No.
+                                                    8</b>
+                                            </td>
+                                            <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                                $datas->apl02->kompetensi02->kode8 }} <br>
+                                                {{ $datas->apl02->kompetensi02->unit8 }}
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table" border="1" id="ping">
+                                    <tbody>
+                                        <tr>
+                                            <td width="503px"> <b>Dapatkah saya?</b> </td>
+                                            <td width="62px" style="text-align: center">K</td>
+                                            <td width="62px" style="text-align: center">BK</td>
+                                            <td width="80px" style="text-align: center">Bukti</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_01 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_01 == 'K')
+                                                {{ $datas->element_kuk_11_01 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_01 == 'BK')
+                                                {{ $datas->element_kuk_11_01 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_02)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_02 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_02 == 'K')
+                                                {{ $datas->element_kuk_11_02 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_02 == 'BK')
+                                                {{ $datas->element_kuk_11_02 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_03)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_03 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_03 == 'K')
+                                                {{ $datas->element_kuk_11_03 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_03 == 'BK')
+                                                {{ $datas->element_kuk_11_03 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_04)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_04 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_04 == 'K')
+                                                {{ $datas->element_kuk_11_04 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_04 == 'BK')
+                                                {{ $datas->element_kuk_11_04 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_05)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_05 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_05 == 'K')
+                                                {{ $datas->element_kuk_11_05 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_05 == 'BK')
+                                                {{ $datas->element_kuk_11_05 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_06)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_06 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_06 == 'K')
+                                                {{ $datas->element_kuk_11_06 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_06 == 'BK')
+                                                {{ $datas->element_kuk_11_06 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_07)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_07 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_07 == 'K')
+                                                {{ $datas->element_kuk_11_07 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_07 == 'BK')
+                                                {{ $datas->element_kuk_11_07 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_08)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_08 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_08 == 'K')
+                                                {{ $datas->element_kuk_11_08 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_08 == 'BK')
+                                                {{ $datas->element_kuk_11_08 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_09)
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_09 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_09 == 'K')
+                                                {{ $datas->element_kuk_11_09 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_09 == 'BK')
+                                                {{ $datas->element_kuk_11_09 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @unless(!$datas->apl02->kompetensi02->element_kuk_11_10)
+                                        <!-- Tampilkan data -->
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_10 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_10 == 'K')
+                                                {{ $datas->element_kuk_11_10 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_10 == 'BK')
+                                                {{ $datas->element_kuk_11_10 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endunless
+                        
+                                        @switch($datas)
+                                        @case($datas->apl02->kompetensi02->element_kuk_11_11 == NULL)
+                                        @break
+                                        @default
+                                        <tr>
+                                            <td>{!! $datas->apl02->kompetensi02->element_kuk_11_11 !!}</td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_11 == 'K')
+                                                {{ $datas->element_kuk_11_11 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                        
+                                            </td>
+                                            <td style="text-align: center">
+                        
+                                                @switch($datas)
+                                                @case($datas->element_kuk_11_11 == 'BK')
+                                                {{ $datas->element_kuk_11_11 }}
+                                                @break
+                                                @default
+                                                @endswitch
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endswitch
+                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        @endunless

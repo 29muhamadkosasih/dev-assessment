@@ -7,43 +7,31 @@
 <div class="col-12">
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
-            <h5 class="mb-0">Create Kompetensi APL-02</h5>
+            <h5 class="mb-0">Edit Kompetensi APL-02</h5>
         </div>
         <div class="card-body">
-            <form method="POST" action="{{ route('kompetensi02.store') }}">
+            <form method="POST" action="{{ route('kompetensi02.update_sub', $edit->id) }}">
+                @method('PUT')
                 @csrf
                 <div class="row g-3">
-                    {{-- <div class="col-sm-6">
-                        <label class="form-label" for="plFirstName">Nama Skema</label>
-                        <select class="form-select @error('nama_skema_id') is-invalid @enderror" id="selectDefault"
-                            name="nama_skema_id" value="{{ old('nama_skema_id') }}" required>
-                            <option selected>Open this select</option>
-                            @foreach ($nama_skema as $key => $value)
-                            <option value="{{ $value->id }}">
-                                {{ $value->nama_skema }}
-                            </option>
-                            @endforeach
-                        </select>
-                    </div> --}}
-                    <div class="col-sm-6">
-                        <label class="form-label" for="plFirstName">Kompetensi APL-01</label>
-                        <select class="form-select @error('kompetensi_id') is-invalid @enderror" id="selectDefault"
-                            name="kompetensi_id" value="{{ old('kompetensi_id') }}" required>
-                            <option selected>Open this select</option>
-                            @foreach ($kompetensi as $key => $value)
-                            <option value="{{ $value->id }}">
-                                {{ $value->skema->nama_skema }}
-                            </option>
-                            @endforeach
-                        </select>
-                    </div>
-                    {{-- <div class="col-sm-6">
-                        <label class="form-label" for="plFirstName">No SKKNI</label>
-                        <input type="text" id="plFirstName" class="form-control @error('no_skkni') is-invalid @enderror"
-                            placeholder="Masukan No SKKNI" name="no_skkni" />
-                    </div> --}}
+                    <table class="m-3">
+                        <tbody>
+                            <tr>
+                                <td class="pe-5">Nama Skema</td>
+                                <td>: &nbsp; <b>{{$edit->kompetensi->skema->nama_skema}}</b> </td>
+                            </tr>
+                            <tr>
+                                <td class="pe-10">No. Skema</td>
+                                <td>: &nbsp; {{ $edit->kompetensi->skema->no }}</td>
+                            </tr>
+                            <tr>
+                                <td class="pe-10 ">No. SKKNI</td>
+                                <td class="mt-2">: &nbsp;{{ $edit->kompetensi->no_skkni }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                {{-- <div class="col-md mb-4 mb-md-2">
+                <div class="col-md mb-4 mb-md-2">
                     <div class="accordion mt-3" id="accordionExample">
 
                         <div class="card accordion-item active">
@@ -62,69 +50,82 @@
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode"
                                                 class="form-control @error('kode') is-invalid @enderror"
-                                                placeholder="Masukan Kode" required />
+                                                placeholder="Masukan Kode" required
+                                                value="{{ $edit->kompetensi->kode }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit"
                                                 class="form-control @error('unit') is-invalid @enderror"
-                                                placeholder="Masukan Unit Kompetensi" required />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi }}" required />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_01') is-invalid @enderror"
-                                            id="editor" name="element_kuk_1_01" rows="5"></textarea>
+                                            id="editor" name="element_kuk_1_01"
+                                            rows="5">{{ $edit->element_kuk_1_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_02') is-invalid @enderror"
-                                            id="editor2" name="element_kuk_1_02" rows="5"></textarea>
+                                            id="editor2" name="element_kuk_1_02"
+                                            rows="5">{{ $edit->element_kuk_1_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_03') is-invalid @enderror"
-                                            id="editor3" name="element_kuk_1_03" rows="5"></textarea>
+                                            id="editor3" name="element_kuk_1_03"
+                                            rows="5">{{ $edit->element_kuk_1_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_04') is-invalid @enderror"
-                                            id="editor4" name="element_kuk_1_04" rows="5"></textarea>
+                                            id="editor4" name="element_kuk_1_04"
+                                            rows="5">{{ $edit->element_kuk_1_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_05') is-invalid @enderror"
-                                            id="editor5" name="element_kuk_1_05" rows="5"></textarea>
+                                            id="editor5" name="element_kuk_1_05"
+                                            rows="5">{{ $edit->element_kuk_1_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_06') is-invalid @enderror"
-                                            id="editor6" name="element_kuk_1_06" rows="5"></textarea>
+                                            id="editor6" name="element_kuk_1_06"
+                                            rows="5">{{ $edit->element_kuk_1_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_07') is-invalid @enderror"
-                                            id="editor7" name="element_kuk_1_07" rows="5"></textarea>
+                                            id="editor7" name="element_kuk_1_07"
+                                            rows="5">{{ $edit->element_kuk_1_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_08') is-invalid @enderror"
-                                            id="editor8" name="element_kuk_1_08" rows="5"></textarea>
+                                            id="editor8" name="element_kuk_1_08"
+                                            rows="5">{{ $edit->element_kuk_1_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_09') is-invalid @enderror"
-                                            id="editor9" name="element_kuk_1_09" rows="5"></textarea>
+                                            id="editor9" name="element_kuk_1_09"
+                                            rows="5">{{ $edit->element_kuk_1_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_10') is-invalid @enderror"
-                                            id="editor10" name="element_kuk_1_10" rows="5"></textarea>
+                                            id="editor10" name="element_kuk_1_10"
+                                            rows="5">{{ $edit->element_kuk_1_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control @error('element_kuk_1_11') is-invalid @enderror"
-                                            id="editor11" name="element_kuk_1_11" rows="5"></textarea>
+                                            id="editor11" name="element_kuk_1_11"
+                                            rows="5">{{ $edit->element_kuk_1_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -143,68 +144,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode2" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode2 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit2" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi2}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor12" name="element_kuk_2_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor13" name="element_kuk_2_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor14" name="element_kuk_2_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor15" name="element_kuk_2_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor16" name="element_kuk_2_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor17" name="element_kuk_2_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor18" name="element_kuk_2_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor19" name="element_kuk_2_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor20" name="element_kuk_2_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor21" name="element_kuk_2_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor22" name="element_kuk_2_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_2_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -224,68 +226,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode3" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode3 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit3" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi3}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor23" name="element_kuk_3_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor24" name="element_kuk_3_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor25" name="element_kuk_3_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor26" name="element_kuk_3_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor27" name="element_kuk_3_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor28" name="element_kuk_3_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor29" name="element_kuk_3_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor30" name="element_kuk_3_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor31" name="element_kuk_3_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor32" name="element_kuk_3_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor33" name="element_kuk_3_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_3_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -304,68 +307,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode4" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode4 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit4" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi4}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor34" name="element_kuk_4_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor35" name="element_kuk_4_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor36" name="element_kuk_4_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor37" name="element_kuk_4_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor38" name="element_kuk_4_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor39" name="element_kuk_4_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor40" name="element_kuk_4_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor41" name="element_kuk_4_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor42" name="element_kuk_4_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor43" name="element_kuk_4_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor44" name="element_kuk_4_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_4_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -384,68 +388,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode5" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode5 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit5" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi5}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor45" name="element_kuk_5_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor46" name="element_kuk_5_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor47" name="element_kuk_5_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor48" name="element_kuk_5_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor49" name="element_kuk_5_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor50" name="element_kuk_5_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor51" name="element_kuk_5_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor52" name="element_kuk_5_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor53" name="element_kuk_5_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor54" name="element_kuk_5_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor55" name="element_kuk_5_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_5_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -464,68 +469,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode6" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode6 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit6" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi6}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor56" name="element_kuk_6_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor57" name="element_kuk_6_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor58" name="element_kuk_6_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor59" name="element_kuk_6_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor60" name="element_kuk_6_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor61" name="element_kuk_6_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor62" name="element_kuk_6_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor63" name="element_kuk_6_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor64" name="element_kuk_6_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor65" name="element_kuk_6_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor66" name="element_kuk_6_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_6_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -545,68 +551,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode7" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode7 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit7" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi7}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor67" name="element_kuk_7_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor68" name="element_kuk_7_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor69" name="element_kuk_7_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor70" name="element_kuk_7_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor71" name="element_kuk_7_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor72" name="element_kuk_7_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor73" name="element_kuk_7_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor74" name="element_kuk_7_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor75" name="element_kuk_7_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor76" name="element_kuk_7_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor77" name="element_kuk_7_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_7_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -626,68 +633,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode8" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode8 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit8" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi8}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor78" name="element_kuk_8_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor79" name="element_kuk_8_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor80" name="element_kuk_8_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor81" name="element_kuk_8_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor82" name="element_kuk_8_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor83" name="element_kuk_8_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor84" name="element_kuk_8_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor85" name="element_kuk_8_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor86" name="element_kuk_8_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor87" name="element_kuk_8_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor88" name="element_kuk_8_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_8_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -706,68 +714,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode9" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode9 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit9" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi9}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor89" name="element_kuk_9_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor90" name="element_kuk_9_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor91" name="element_kuk_9_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor92" name="element_kuk_9_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor93" name="element_kuk_9_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor94" name="element_kuk_9_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor95" name="element_kuk_9_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor96" name="element_kuk_9_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor97" name="element_kuk_9_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor98" name="element_kuk_9_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor99" name="element_kuk_9_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_9_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -786,68 +795,69 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode10" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode10 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit10" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi10}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor100" name="element_kuk_10_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor101" name="element_kuk_10_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor102" name="element_kuk_10_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor103" name="element_kuk_10_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor104" name="element_kuk_10_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor105" name="element_kuk_10_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor106" name="element_kuk_10_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor107" name="element_kuk_10_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor108" name="element_kuk_10_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor109" name="element_kuk_10_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor110" name="element_kuk_10_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_10_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -867,78 +877,79 @@
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Kode</label>
                                             <input type="text" id="plFirstName" name="kode11" class="form-control"
-                                                placeholder="Masukan Kode" />
+                                                placeholder="Masukan Kode" value="{{ $edit->kompetensi->kode11 }}" />
                                         </div>
                                         <div class="col-sm-6">
                                             <label class="form-label" for="plFirstName">Unit Kompetensi</label>
                                             <input type="text" id="plFirstName" name="unit11" class="form-control"
-                                                placeholder="Masukan Unit Kompetensi" />
+                                                placeholder="Masukan Unit Kompetensi"
+                                                value="{{ $edit->kompetensi->unit_kompetensi11}}" />
                                         </div>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor111" name="element_kuk_11_01"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_01 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor112" name="element_kuk_11_02"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_02 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor113" name="element_kuk_11_03"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_03 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor114" name="element_kuk_11_04"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_04 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor115" name="element_kuk_11_05"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_05 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor116" name="element_kuk_11_06"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_06 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor117" name="element_kuk_11_07"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_07 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor118" name="element_kuk_11_08"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_08 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor119" name="element_kuk_11_09"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_09 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor120" name="element_kuk_11_10"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_10 }}</textarea>
                                     </div>
                                     <div class="col-sm-12 mt-2">
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor121" name="element_kuk_11_11"
-                                            rows="5"></textarea>
+                                            rows="5">{{ $edit->element_kuk_11_11 }}</textarea>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                </div> --}}
+                </div>
                 <div class="mb-3 mt-3">
                     <button type="submit" class="btn btn-primary float-end ms-2">Submit</button>
-                    <a href="{{ route('kompetensi.index') }}" class="btn btn-secondary float-end ">Back</a>
+                    {{-- <a href="{{ route('kompetensi.index') }}" class="btn btn-secondary float-end ">Back</a> --}}
             </form>
         </div>
     </div>

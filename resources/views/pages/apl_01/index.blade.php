@@ -1,15 +1,12 @@
 @extends('layouts/master')
-
-@section('title', 'apl_01')
-
+@section('title', 'APL 01')
 @section('content')
-<!-- Invoice table -->
 <div class="col-xl-12">
     <div class="card">
         <div class="card-body">
             <div class="row ">
                 <div class="col-auto me-auto ">
-                    <h5 class="mb-0">List Data apl_01</h5>
+                    <h5 class="mb-0">List Data APL 01</h5>
                 </div>
                 <div class="col-auto">
                     <a href="{{ route('apl_01.create') }}" class="btn btn-primary">Create</a>
@@ -71,5 +68,4 @@
         </div>
     </div>
 </div>
-<!-- /Invoice table -->
 @endsection

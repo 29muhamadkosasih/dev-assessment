@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKompetensi02Table extends Migration
+class CreateAnswerApl02Table extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateKompetensi02Table extends Migration
      */
     public function up()
     {
-        Schema::create('kompetensi02', function (Blueprint $table) {
+        Schema::create('answer_apl02', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('nama_skema_id');
-            $table->foreign('nama_skema_id')->references('id')->on('skema')->onDelete('cascade');
-            $table->string('tuk')->nullable();
-            $table->string('kode')->nullable();
-            $table->string('unit')->nullable();
+            $table->unsignedBigInteger('apl02_id');
+            $table->foreign('apl02_id')->references('id')->on('apl02')->onDelete('cascade');
             $table->longText('element_kuk_1_01')->nullable();
             $table->longText('element_kuk_1_02')->nullable();
             $table->longText('element_kuk_1_03')->nullable();
@@ -32,8 +29,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_1_10')->nullable();
             $table->longText('element_kuk_1_11')->nullable();
 
-            $table->string('kode2')->nullable();
-            $table->string('unit2')->nullable();
             $table->longText('element_kuk_2_01')->nullable();
             $table->longText('element_kuk_2_02')->nullable();
             $table->longText('element_kuk_2_03')->nullable();
@@ -46,8 +41,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_2_10')->nullable();
             $table->longText('element_kuk_2_11')->nullable();
 
-            $table->string('kode3')->nullable();
-            $table->string('unit3')->nullable();
             $table->longText('element_kuk_3_01')->nullable();
             $table->longText('element_kuk_3_02')->nullable();
             $table->longText('element_kuk_3_03')->nullable();
@@ -60,8 +53,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_3_10')->nullable();
             $table->longText('element_kuk_3_11')->nullable();
 
-            $table->string('kode4')->nullable();
-            $table->string('unit4')->nullable();
             $table->longText('element_kuk_4_01')->nullable();
             $table->longText('element_kuk_4_02')->nullable();
             $table->longText('element_kuk_4_03')->nullable();
@@ -74,8 +65,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_4_10')->nullable();
             $table->longText('element_kuk_4_11')->nullable();
 
-            $table->string('kode5')->nullable();
-            $table->string('unit5')->nullable();
             $table->longText('element_kuk_5_01')->nullable();
             $table->longText('element_kuk_5_02')->nullable();
             $table->longText('element_kuk_5_03')->nullable();
@@ -88,8 +77,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_5_10')->nullable();
             $table->longText('element_kuk_5_11')->nullable();
 
-            $table->string('kode6')->nullable();
-            $table->string('unit6')->nullable();
             $table->longText('element_kuk_6_01')->nullable();
             $table->longText('element_kuk_6_02')->nullable();
             $table->longText('element_kuk_6_03')->nullable();
@@ -102,9 +89,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_6_10')->nullable();
             $table->longText('element_kuk_6_11')->nullable();
 
-
-            $table->string('kode7')->nullable();
-            $table->string('unit7')->nullable();
             $table->longText('element_kuk_7_01')->nullable();
             $table->longText('element_kuk_7_02')->nullable();
             $table->longText('element_kuk_7_03')->nullable();
@@ -117,9 +101,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_7_10')->nullable();
             $table->longText('element_kuk_7_11')->nullable();
 
-
-            $table->string('kode8')->nullable();
-            $table->string('unit8')->nullable();
             $table->longText('element_kuk_8_01')->nullable();
             $table->longText('element_kuk_8_02')->nullable();
             $table->longText('element_kuk_8_03')->nullable();
@@ -132,9 +113,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_8_10')->nullable();
             $table->longText('element_kuk_8_11')->nullable();
 
-
-            $table->string('kode9')->nullable();
-            $table->string('unit9')->nullable();
             $table->longText('element_kuk_9_01')->nullable();
             $table->longText('element_kuk_9_02')->nullable();
             $table->longText('element_kuk_9_03')->nullable();
@@ -147,9 +125,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_9_10')->nullable();
             $table->longText('element_kuk_9_11')->nullable();
 
-
-            $table->string('kode10')->nullable();
-            $table->string('unit10')->nullable();
             $table->longText('element_kuk_10_01')->nullable();
             $table->longText('element_kuk_10_02')->nullable();
             $table->longText('element_kuk_10_03')->nullable();
@@ -162,8 +137,6 @@ class CreateKompetensi02Table extends Migration
             $table->longText('element_kuk_10_10')->nullable();
             $table->longText('element_kuk_10_11')->nullable();
 
-            $table->string('kode11')->nullable();
-            $table->string('unit11')->nullable();
             $table->longText('element_kuk_11_01')->nullable();
             $table->longText('element_kuk_11_02')->nullable();
             $table->longText('element_kuk_11_03')->nullable();
@@ -178,6 +151,7 @@ class CreateKompetensi02Table extends Migration
             $table->timestamps();
         });
     }
+
     /**
      * Reverse the migrations.
      *
@@ -185,6 +159,6 @@ class CreateKompetensi02Table extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kompetensi02');
+        Schema::dropIfExists('answer_apl02');
     }
 }

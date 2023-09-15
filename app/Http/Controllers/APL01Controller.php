@@ -158,7 +158,7 @@ class APL01Controller extends Controller
         Storage::disk('local')->delete('public/sertifikat_pendukung/' . $delete->sertifikat_pendukung);
         // dd($delete);
         $delete->delete();
-        return redirect()->route('apl_01.index')
+        return redirect()->route('validasi.index')
             ->with('success', 'Success ! Data Bank Berhasil di Hapus');
     }
 

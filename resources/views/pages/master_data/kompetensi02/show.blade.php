@@ -26,18 +26,18 @@
                             </th>
                             <th width="250px">Judul </th>
                             <th width="1px">:</th>
-                            <th width="750px">Juru ikat</th>
+                            <th width="750px">{{ $show->kompetensi->skema->nama_skema }}</th>
                         </tr>
                         <tr>
                             <th>Nomor</th>
                             <th>:</th>
-                            <th>df9857489575</th>
+                            <th>{{ $show->kompetensi->skema->no }}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td colspan="2">TUK</td>
-                            <td></td>
+                            <td>:</td>
                             <td>Sewaktu/Tempat Kerja/Mandiri</td>
                         </tr>
                     </tbody>

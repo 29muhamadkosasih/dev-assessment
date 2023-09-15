@@ -28,7 +28,7 @@
                         @foreach ($kompetensi as $data)
                         <tr>
                             <td style="vertical-align: top">{{$loop->iteration}}</td>
-                            <td style="vertical-align: top">{{$data->skema->nama_skema}}</td>
+                            <td style="vertical-align: top">{{$data->kompetensi->skema->nama_skema}}</td>
                             <td style="vertical-align: top">
                                 {{$data->kode}} <br>
 
@@ -132,7 +132,7 @@
 
                             </td>
                             <td style="vertical-align: top;text-align-center">
-                                <form method="POST" action="{{ route('kompetensi.destroy', $data->id) }}">
+                                <form method="POST" action="{{ route('kompetensi02.destroy', $data->id) }}">
                                     @csrf
                                     <input name="_method" type="hidden" value="DELETE">
                                     <a href="{{ route('kompetensi02.show', $data->id) }}"
@@ -142,12 +142,12 @@
                                         <span class="ti ti-eye"></span>
                                     </a>
 
-                                    <a href="{{ route('kompetensi02.edit', $data->id) }}"
+                                    {{-- <a href="{{ route('kompetensi02.edit', $data->id) }}"
                                         class="btn btn-icon btn-warning btn-sm" data-bs-toggle="tooltip"
                                         data-bs-placement="top" data-bs-original-title="Edit"
                                         aria-describedby="tooltip358783">
                                         <span class="ti ti-edit"></span>
-                                    </a>
+                                    </a> --}}
                                     <button type="submit" class="btn btn-icon btn-danger btn-sm show_confirm"
                                         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Delete"
                                         aria-describedby="tooltip358783">
