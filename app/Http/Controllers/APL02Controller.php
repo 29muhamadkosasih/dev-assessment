@@ -37,12 +37,15 @@ class APL02Controller extends Controller
             'apl01_id' => ['required', 'not_in:Open this select']
         ]);
         APL02::create($request->all());
+
         return redirect()->route('get.apl02')->with('success', 'Success ! Data Bank Berhasil di Tambahkan');
     }
 
     public function show($id)
     {
         $edit = APL02::find($id);
+
+        $data2 = $edit->id;
         $apl02 = APL02::latest()
             ->limit(1)
             ->get();
@@ -193,11 +196,24 @@ class APL02Controller extends Controller
         $get->element_kuk_11_10 = $request->input('element_kuk_11_10');
         $get->element_kuk_11_11 = $request->input('element_kuk_11_11');
         $get->tuk = $request->input('tuk');
-        // dd($get);
+        dd($get);
         $get->save();
 
         return redirect()->route('apl_02.index')->with('success', 'Success ! Data Bank Berhasil di Tambahkan');
     }
+    // {
+    //     dd($request->all());
+    //     $data = $request->all();
+
+    //     $model = AnswerAPL02::findOrFail($id);
+
+    //     // Melakukan update data dengan menggunakan fill
+    //     $model->fill($data);
+
+    //     // Simpan perubahan ke database
+    //     $model->save();
+    // }
+
 
     public function get()
     {

@@ -127,6 +127,210 @@
                                             id="editor11" name="element_kuk_1_11"
                                             rows="5">{{ $edit->element_kuk_1_11 }}</textarea>
                                     </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_12') is-invalid @enderror"
+                                            id="editor122" name="element_kuk_1_12"
+                                            rows="5">{{ $edit->element_kuk_1_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_13') is-invalid @enderror"
+                                            id="editor123" name="element_kuk_1_13"
+                                            rows="5">{{ $edit->element_kuk_1_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_14') is-invalid @enderror"
+                                            id="editor124" name="element_kuk_1_14"
+                                            rows="5">{{ $edit->element_kuk_1_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_15') is-invalid @enderror"
+                                            id="editor125" name="element_kuk_1_15"
+                                            rows="5">{{ $edit->element_kuk_1_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_16') is-invalid @enderror"
+                                            id="editor126" name="element_kuk_1_16"
+                                            rows="5">{{ $edit->element_kuk_1_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_17') is-invalid @enderror"
+                                            id="editor127" name="element_kuk_1_17"
+                                            rows="5">{{ $edit->element_kuk_1_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_18') is-invalid @enderror"
+                                            id="editor128" name="element_kuk_1_18"
+                                            rows="5">{{ $edit->element_kuk_1_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_19') is-invalid @enderror"
+                                            id="editor129" name="element_kuk_1_19"
+                                            rows="5">{{ $edit->element_kuk_1_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_20') is-invalid @enderror"
+                                            id="editor130" name="element_kuk_1_20"
+                                            rows="5">{{ $edit->element_kuk_1_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_21') is-invalid @enderror"
+                                            id="editor131" name="element_kuk_1_21"
+                                            rows="5">{{ $edit->element_kuk_1_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_22') is-invalid @enderror"
+                                            id="editor132" name="element_kuk_1_22"
+                                            rows="5">{{ $edit->element_kuk_1_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_23') is-invalid @enderror"
+                                            id="editor133" name="element_kuk_1_23"
+                                            rows="5">{{ $edit->element_kuk_1_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_24') is-invalid @enderror"
+                                            id="editor134" name="element_kuk_1_24"
+                                            rows="5">{{ $edit->element_kuk_1_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_25') is-invalid @enderror"
+                                            id="editor135" name="element_kuk_1_25"
+                                            rows="5">{{ $edit->element_kuk_1_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_26') is-invalid @enderror"
+                                            id="editor136" name="element_kuk_1_26"
+                                            rows="5">{{ $edit->element_kuk_1_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_27') is-invalid @enderror"
+                                            id="editor137" name="element_kuk_1_27"
+                                            rows="5">{{ $edit->element_kuk_1_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_28') is-invalid @enderror"
+                                            id="editor138" name="element_kuk_1_28"
+                                            rows="5">{{ $edit->element_kuk_1_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_29') is-invalid @enderror"
+                                            id="editor139" name="element_kuk_1_29"
+                                            rows="5">{{ $edit->element_kuk_1_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_30') is-invalid @enderror"
+                                            id="editor140" name="element_kuk_1_30"
+                                            rows="5">{{ $edit->element_kuk_1_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_31') is-invalid @enderror"
+                                            id="editor141" name="element_kuk_1_31"
+                                            rows="5">{{ $edit->element_kuk_1_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_32') is-invalid @enderror"
+                                            id="editor142" name="element_kuk_1_32"
+                                            rows="5">{{ $edit->element_kuk_1_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_33') is-invalid @enderror"
+                                            id="editor143" name="element_kuk_1_33"
+                                            rows="5">{{ $edit->element_kuk_1_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_34') is-invalid @enderror"
+                                            id="editor144" name="element_kuk_1_34"
+                                            rows="5">{{ $edit->element_kuk_1_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_35') is-invalid @enderror"
+                                            id="editor145" name="element_kuk_1_35"
+                                            rows="5">{{ $edit->element_kuk_1_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_36') is-invalid @enderror"
+                                            id="editor146" name="element_kuk_1_36"
+                                            rows="5">{{ $edit->element_kuk_1_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_37') is-invalid @enderror"
+                                            id="editor147" name="element_kuk_1_37"
+                                            rows="5">{{ $edit->element_kuk_1_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_38') is-invalid @enderror"
+                                            id="editor148" name="element_kuk_1_38"
+                                            rows="5">{{ $edit->element_kuk_1_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_39') is-invalid @enderror"
+                                            id="editor149" name="element_kuk_1_39"
+                                            rows="5">{{ $edit->element_kuk_1_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_40') is-invalid @enderror"
+                                            id="editor150" name="element_kuk_1_40"
+                                            rows="5">{{ $edit->element_kuk_1_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_41') is-invalid @enderror"
+                                            id="editor151" name="element_kuk_1_41"
+                                            rows="5">{{ $edit->element_kuk_1_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_42') is-invalid @enderror"
+                                            id="editor152" name="element_kuk_1_42"
+                                            rows="5">{{ $edit->element_kuk_1_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_43') is-invalid @enderror"
+                                            id="editor153" name="element_kuk_1_43"
+                                            rows="5">{{ $edit->element_kuk_1_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_44') is-invalid @enderror"
+                                            id="editor154" name="element_kuk_1_44"
+                                            rows="5">{{ $edit->element_kuk_1_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_1_45') is-invalid @enderror"
+                                            id="editor155" name="element_kuk_1_45"
+                                            rows="5">{{ $edit->element_kuk_1_45 }}</textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -208,6 +412,211 @@
                                         <textarea class="form-control" id="editor22" name="element_kuk_2_11"
                                             rows="5">{{ $edit->element_kuk_2_11 }}</textarea>
                                     </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_12') is-invalid @enderror"
+                                            id="editor156" name="element_kuk_2_12"
+                                            rows="5">{{ $edit->element_kuk_2_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_13') is-invalid @enderror"
+                                            id="editor157" name="element_kuk_2_13"
+                                            rows="5">{{ $edit->element_kuk_2_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_14') is-invalid @enderror"
+                                            id="editor158" name="element_kuk_2_14"
+                                            rows="5">{{ $edit->element_kuk_2_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_15') is-invalid @enderror"
+                                            id="editor159" name="element_kuk_2_15"
+                                            rows="5">{{ $edit->element_kuk_2_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_16') is-invalid @enderror"
+                                            id="editor160" name="element_kuk_2_16"
+                                            rows="5">{{ $edit->element_kuk_2_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_17') is-invalid @enderror"
+                                            id="editor161" name="element_kuk_2_17"
+                                            rows="5">{{ $edit->element_kuk_2_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_18') is-invalid @enderror"
+                                            id="editor162" name="element_kuk_2_18"
+                                            rows="5">{{ $edit->element_kuk_2_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_19') is-invalid @enderror"
+                                            id="editor163" name="element_kuk_2_19"
+                                            rows="5">{{ $edit->element_kuk_2_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_20') is-invalid @enderror"
+                                            id="editor164" name="element_kuk_2_20"
+                                            rows="5">{{ $edit->element_kuk_2_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_21') is-invalid @enderror"
+                                            id="editor165" name="element_kuk_2_21"
+                                            rows="5">{{ $edit->element_kuk_2_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_22') is-invalid @enderror"
+                                            id="editor166" name="element_kuk_2_22"
+                                            rows="5">{{ $edit->element_kuk_2_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_23') is-invalid @enderror"
+                                            id="editor167" name="element_kuk_2_23"
+                                            rows="5">{{ $edit->element_kuk_2_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_24') is-invalid @enderror"
+                                            id="editor168" name="element_kuk_2_24"
+                                            rows="5">{{ $edit->element_kuk_2_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_25') is-invalid @enderror"
+                                            id="editor169" name="element_kuk_2_25"
+                                            rows="5">{{ $edit->element_kuk_2_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_26') is-invalid @enderror"
+                                            id="editor170" name="element_kuk_2_26"
+                                            rows="5">{{ $edit->element_kuk_2_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_27') is-invalid @enderror"
+                                            id="editor171" name="element_kuk_2_27"
+                                            rows="5">{{ $edit->element_kuk_2_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_28') is-invalid @enderror"
+                                            id="editor172" name="element_kuk_2_28"
+                                            rows="5">{{ $edit->element_kuk_2_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_29') is-invalid @enderror"
+                                            id="editor173" name="element_kuk_2_29"
+                                            rows="5">{{ $edit->element_kuk_2_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_30') is-invalid @enderror"
+                                            id="editor174" name="element_kuk_2_30"
+                                            rows="5">{{ $edit->element_kuk_2_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_31') is-invalid @enderror"
+                                            id="editor175" name="element_kuk_2_31"
+                                            rows="5">{{ $edit->element_kuk_2_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_32') is-invalid @enderror"
+                                            id="editor176" name="element_kuk_2_32"
+                                            rows="5">{{ $edit->element_kuk_2_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_33') is-invalid @enderror"
+                                            id="editor177" name="element_kuk_2_33"
+                                            rows="5">{{ $edit->element_kuk_2_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_34') is-invalid @enderror"
+                                            id="editor178" name="element_kuk_2_34"
+                                            rows="5">{{ $edit->element_kuk_2_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_35') is-invalid @enderror"
+                                            id="editor179" name="element_kuk_2_35"
+                                            rows="5">{{ $edit->element_kuk_2_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_36') is-invalid @enderror"
+                                            id="editor180" name="element_kuk_2_36"
+                                            rows="5">{{ $edit->element_kuk_2_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_37') is-invalid @enderror"
+                                            id="editor181" name="element_kuk_2_37"
+                                            rows="5">{{ $edit->element_kuk_2_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_38') is-invalid @enderror"
+                                            id="editor182" name="element_kuk_2_38"
+                                            rows="5">{{ $edit->element_kuk_2_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_39') is-invalid @enderror"
+                                            id="editor183" name="element_kuk_2_39"
+                                            rows="5">{{ $edit->element_kuk_2_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_40') is-invalid @enderror"
+                                            id="editor184" name="element_kuk_2_40"
+                                            rows="5">{{ $edit->element_kuk_2_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_41') is-invalid @enderror"
+                                            id="editor185" name="element_kuk_2_41"
+                                            rows="5">{{ $edit->element_kuk_2_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_42') is-invalid @enderror"
+                                            id="editor186" name="element_kuk_2_42"
+                                            rows="5">{{ $edit->element_kuk_2_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_43') is-invalid @enderror"
+                                            id="editor187" name="element_kuk_2_43"
+                                            rows="5">{{ $edit->element_kuk_2_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_44') is-invalid @enderror"
+                                            id="editor188" name="element_kuk_2_44"
+                                            rows="5">{{ $edit->element_kuk_2_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_2_45') is-invalid @enderror"
+                                            id="editor189" name="element_kuk_2_45"
+                                            rows="5">{{ $edit->element_kuk_2_45 }}</textarea>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -290,6 +699,211 @@
                                         <textarea class="form-control" id="editor33" name="element_kuk_3_11"
                                             rows="5">{{ $edit->element_kuk_3_11 }}</textarea>
                                     </div>
+
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_12') is-invalid @enderror"
+                                            id="editor190" name="element_kuk_3_12"
+                                            rows="5">{{ $edit->element_kuk_3_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_13') is-invalid @enderror"
+                                            id="editor191" name="element_kuk_3_13"
+                                            rows="5">{{ $edit->element_kuk_3_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_14') is-invalid @enderror"
+                                            id="editor192" name="element_kuk_3_14"
+                                            rows="5">{{ $edit->element_kuk_3_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_15') is-invalid @enderror"
+                                            id="editor193" name="element_kuk_3_15"
+                                            rows="5">{{ $edit->element_kuk_3_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_16') is-invalid @enderror"
+                                            id="editor194" name="element_kuk_3_16"
+                                            rows="5">{{ $edit->element_kuk_3_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_17') is-invalid @enderror"
+                                            id="editor195" name="element_kuk_3_17"
+                                            rows="5">{{ $edit->element_kuk_3_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_18') is-invalid @enderror"
+                                            id="editor196" name="element_kuk_3_18"
+                                            rows="5">{{ $edit->element_kuk_3_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_19') is-invalid @enderror"
+                                            id="editor197" name="element_kuk_3_19"
+                                            rows="5">{{ $edit->element_kuk_3_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_20') is-invalid @enderror"
+                                            id="editor199" name="element_kuk_3_20"
+                                            rows="5">{{ $edit->element_kuk_3_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_21') is-invalid @enderror"
+                                            id="editor200" name="element_kuk_3_21"
+                                            rows="5">{{ $edit->element_kuk_3_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_22') is-invalid @enderror"
+                                            id="editor201" name="element_kuk_3_22"
+                                            rows="5">{{ $edit->element_kuk_3_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_23') is-invalid @enderror"
+                                            id="editor202" name="element_kuk_3_23"
+                                            rows="5">{{ $edit->element_kuk_3_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_24') is-invalid @enderror"
+                                            id="editor203" name="element_kuk_3_24"
+                                            rows="5">{{ $edit->element_kuk_3_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_25') is-invalid @enderror"
+                                            id="editor204" name="element_kuk_3_25"
+                                            rows="5">{{ $edit->element_kuk_3_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_26') is-invalid @enderror"
+                                            id="editor205" name="element_kuk_3_26"
+                                            rows="5">{{ $edit->element_kuk_3_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_27') is-invalid @enderror"
+                                            id="editor206" name="element_kuk_3_27"
+                                            rows="5">{{ $edit->element_kuk_3_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_28') is-invalid @enderror"
+                                            id="editor207" name="element_kuk_3_28"
+                                            rows="5">{{ $edit->element_kuk_3_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_29') is-invalid @enderror"
+                                            id="editor208" name="element_kuk_3_29"
+                                            rows="5">{{ $edit->element_kuk_3_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_30') is-invalid @enderror"
+                                            id="editor209" name="element_kuk_3_30"
+                                            rows="5">{{ $edit->element_kuk_3_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_31') is-invalid @enderror"
+                                            id="editor210" name="element_kuk_3_31"
+                                            rows="5">{{ $edit->element_kuk_3_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_32') is-invalid @enderror"
+                                            id="editor211" name="element_kuk_3_32"
+                                            rows="5">{{ $edit->element_kuk_3_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_33') is-invalid @enderror"
+                                            id="editor212" name="element_kuk_3_33"
+                                            rows="5">{{ $edit->element_kuk_3_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_34') is-invalid @enderror"
+                                            id="editor213" name="element_kuk_3_34"
+                                            rows="5">{{ $edit->element_kuk_3_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_35') is-invalid @enderror"
+                                            id="editor214" name="element_kuk_3_35"
+                                            rows="5">{{ $edit->element_kuk_3_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_36') is-invalid @enderror"
+                                            id="editor215" name="element_kuk_3_36"
+                                            rows="5">{{ $edit->element_kuk_3_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_37') is-invalid @enderror"
+                                            id="editor216" name="element_kuk_3_37"
+                                            rows="5">{{ $edit->element_kuk_3_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_38') is-invalid @enderror"
+                                            id="editor217" name="element_kuk_3_38"
+                                            rows="5">{{ $edit->element_kuk_3_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_39') is-invalid @enderror"
+                                            id="editor218" name="element_kuk_3_39"
+                                            rows="5">{{ $edit->element_kuk_3_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_40') is-invalid @enderror"
+                                            id="editor219" name="element_kuk_3_40"
+                                            rows="5">{{ $edit->element_kuk_3_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_41') is-invalid @enderror"
+                                            id="editor220" name="element_kuk_3_41"
+                                            rows="5">{{ $edit->element_kuk_3_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_42') is-invalid @enderror"
+                                            id="editor221" name="element_kuk_3_42"
+                                            rows="5">{{ $edit->element_kuk_3_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_43') is-invalid @enderror"
+                                            id="editor222" name="element_kuk_3_43"
+                                            rows="5">{{ $edit->element_kuk_3_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_44') is-invalid @enderror"
+                                            id="editor223" name="element_kuk_3_44"
+                                            rows="5">{{ $edit->element_kuk_3_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_3_45') is-invalid @enderror"
+                                            id="editor224" name="element_kuk_3_45"
+                                            rows="5">{{ $edit->element_kuk_3_45 }}</textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -370,6 +984,210 @@
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor44" name="element_kuk_4_11"
                                             rows="5">{{ $edit->element_kuk_4_11 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_12') is-invalid @enderror"
+                                            id="editor225" name="element_kuk_4_12"
+                                            rows="5">{{ $edit->element_kuk_4_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_13') is-invalid @enderror"
+                                            id="editor226" name="element_kuk_4_13"
+                                            rows="5">{{ $edit->element_kuk_4_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_14') is-invalid @enderror"
+                                            id="editor227" name="element_kuk_4_14"
+                                            rows="5">{{ $edit->element_kuk_4_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_15') is-invalid @enderror"
+                                            id="editor228" name="element_kuk_4_15"
+                                            rows="5">{{ $edit->element_kuk_4_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_16') is-invalid @enderror"
+                                            id="editor229" name="element_kuk_4_16"
+                                            rows="5">{{ $edit->element_kuk_4_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_17') is-invalid @enderror"
+                                            id="editor230" name="element_kuk_4_17"
+                                            rows="5">{{ $edit->element_kuk_4_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_18') is-invalid @enderror"
+                                            id="editor231" name="element_kuk_4_18"
+                                            rows="5">{{ $edit->element_kuk_4_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_19') is-invalid @enderror"
+                                            id="editor232" name="element_kuk_4_19"
+                                            rows="5">{{ $edit->element_kuk_4_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_20') is-invalid @enderror"
+                                            id="editor233" name="element_kuk_4_20"
+                                            rows="5">{{ $edit->element_kuk_4_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_21') is-invalid @enderror"
+                                            id="editor234" name="element_kuk_4_21"
+                                            rows="5">{{ $edit->element_kuk_4_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_22') is-invalid @enderror"
+                                            id="editor235" name="element_kuk_4_22"
+                                            rows="5">{{ $edit->element_kuk_4_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_23') is-invalid @enderror"
+                                            id="editor236" name="element_kuk_4_23"
+                                            rows="5">{{ $edit->element_kuk_4_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_24') is-invalid @enderror"
+                                            id="editor237" name="element_kuk_4_24"
+                                            rows="5">{{ $edit->element_kuk_4_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_25') is-invalid @enderror"
+                                            id="editor238" name="element_kuk_4_25"
+                                            rows="5">{{ $edit->element_kuk_4_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_26') is-invalid @enderror"
+                                            id="editor239" name="element_kuk_4_26"
+                                            rows="5">{{ $edit->element_kuk_4_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_27') is-invalid @enderror"
+                                            id="editor240" name="element_kuk_4_27"
+                                            rows="5">{{ $edit->element_kuk_4_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_28') is-invalid @enderror"
+                                            id="editor241" name="element_kuk_4_28"
+                                            rows="5">{{ $edit->element_kuk_4_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_29') is-invalid @enderror"
+                                            id="editor242" name="element_kuk_4_29"
+                                            rows="5">{{ $edit->element_kuk_4_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_30') is-invalid @enderror"
+                                            id="editor243" name="element_kuk_4_30"
+                                            rows="5">{{ $edit->element_kuk_4_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_31') is-invalid @enderror"
+                                            id="editor244" name="element_kuk_4_31"
+                                            rows="5">{{ $edit->element_kuk_4_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_32') is-invalid @enderror"
+                                            id="editor245" name="element_kuk_4_32"
+                                            rows="5">{{ $edit->element_kuk_4_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_33') is-invalid @enderror"
+                                            id="editor246" name="element_kuk_4_33"
+                                            rows="5">{{ $edit->element_kuk_4_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_34') is-invalid @enderror"
+                                            id="editor247" name="element_kuk_4_34"
+                                            rows="5">{{ $edit->element_kuk_4_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_35') is-invalid @enderror"
+                                            id="editor248" name="element_kuk_4_35"
+                                            rows="5">{{ $edit->element_kuk_4_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_36') is-invalid @enderror"
+                                            id="editor249" name="element_kuk_4_36"
+                                            rows="5">{{ $edit->element_kuk_4_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_37') is-invalid @enderror"
+                                            id="editor250" name="element_kuk_4_37"
+                                            rows="5">{{ $edit->element_kuk_4_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_38') is-invalid @enderror"
+                                            id="editor251" name="element_kuk_4_38"
+                                            rows="5">{{ $edit->element_kuk_4_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_39') is-invalid @enderror"
+                                            id="editor252" name="element_kuk_4_39"
+                                            rows="5">{{ $edit->element_kuk_4_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_40') is-invalid @enderror"
+                                            id="editor253" name="element_kuk_4_40"
+                                            rows="5">{{ $edit->element_kuk_4_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_41') is-invalid @enderror"
+                                            id="editor254" name="element_kuk_4_41"
+                                            rows="5">{{ $edit->element_kuk_4_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_42') is-invalid @enderror"
+                                            id="editor255" name="element_kuk_4_42"
+                                            rows="5">{{ $edit->element_kuk_4_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_43') is-invalid @enderror"
+                                            id="editor256" name="element_kuk_4_43"
+                                            rows="5">{{ $edit->element_kuk_4_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_44') is-invalid @enderror"
+                                            id="editor257" name="element_kuk_4_44"
+                                            rows="5">{{ $edit->element_kuk_4_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_4_45') is-invalid @enderror"
+                                            id="editor258" name="element_kuk_4_45"
+                                            rows="5">{{ $edit->element_kuk_4_45 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -452,6 +1270,210 @@
                                         <textarea class="form-control" id="editor55" name="element_kuk_5_11"
                                             rows="5">{{ $edit->element_kuk_5_11 }}</textarea>
                                     </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_12') is-invalid @enderror"
+                                            id="editor259" name="element_kuk_5_12"
+                                            rows="5">{{ $edit->element_kuk_5_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_13') is-invalid @enderror"
+                                            id="editor260" name="element_kuk_5_13"
+                                            rows="5">{{ $edit->element_kuk_5_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_14') is-invalid @enderror"
+                                            id="editor541" name="element_kuk_5_14"
+                                            rows="5">{{ $edit->element_kuk_5_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_15') is-invalid @enderror"
+                                            id="editor261" name="element_kuk_5_15"
+                                            rows="5">{{ $edit->element_kuk_5_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_16') is-invalid @enderror"
+                                            id="editor262" name="element_kuk_5_16"
+                                            rows="5">{{ $edit->element_kuk_5_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_17') is-invalid @enderror"
+                                            id="editor263" name="element_kuk_5_17"
+                                            rows="5">{{ $edit->element_kuk_5_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_18') is-invalid @enderror"
+                                            id="editor264" name="element_kuk_5_18"
+                                            rows="5">{{ $edit->element_kuk_5_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_19') is-invalid @enderror"
+                                            id="editor265" name="element_kuk_5_19"
+                                            rows="5">{{ $edit->element_kuk_5_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_20') is-invalid @enderror"
+                                            id="editor266" name="element_kuk_5_20"
+                                            rows="5">{{ $edit->element_kuk_5_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_21') is-invalid @enderror"
+                                            id="editor267" name="element_kuk_5_21"
+                                            rows="5">{{ $edit->element_kuk_5_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_22') is-invalid @enderror"
+                                            id="editor268" name="element_kuk_5_22"
+                                            rows="5">{{ $edit->element_kuk_5_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_23') is-invalid @enderror"
+                                            id="editor269" name="element_kuk_5_23"
+                                            rows="5">{{ $edit->element_kuk_5_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_24') is-invalid @enderror"
+                                            id="editor270" name="element_kuk_5_24"
+                                            rows="5">{{ $edit->element_kuk_5_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_25') is-invalid @enderror"
+                                            id="editor271" name="element_kuk_5_25"
+                                            rows="5">{{ $edit->element_kuk_5_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_26') is-invalid @enderror"
+                                            id="editor272" name="element_kuk_5_26"
+                                            rows="5">{{ $edit->element_kuk_5_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_27') is-invalid @enderror"
+                                            id="editor273" name="element_kuk_5_27"
+                                            rows="5">{{ $edit->element_kuk_5_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_28') is-invalid @enderror"
+                                            id="editor274" name="element_kuk_5_28"
+                                            rows="5">{{ $edit->element_kuk_5_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_29') is-invalid @enderror"
+                                            id="editor275" name="element_kuk_5_29"
+                                            rows="5">{{ $edit->element_kuk_5_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_30') is-invalid @enderror"
+                                            id="editor276" name="element_kuk_5_30"
+                                            rows="5">{{ $edit->element_kuk_5_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_31') is-invalid @enderror"
+                                            id="editor277" name="element_kuk_5_31"
+                                            rows="5">{{ $edit->element_kuk_5_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_32') is-invalid @enderror"
+                                            id="editor278" name="element_kuk_5_32"
+                                            rows="5">{{ $edit->element_kuk_5_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_33') is-invalid @enderror"
+                                            id="editor279" name="element_kuk_5_33"
+                                            rows="5">{{ $edit->element_kuk_5_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_34') is-invalid @enderror"
+                                            id="editor280" name="element_kuk_5_34"
+                                            rows="5">{{ $edit->element_kuk_5_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_35') is-invalid @enderror"
+                                            id="editor281" name="element_kuk_5_35"
+                                            rows="5">{{ $edit->element_kuk_5_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_36') is-invalid @enderror"
+                                            id="editor282" name="element_kuk_5_36"
+                                            rows="5">{{ $edit->element_kuk_5_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_37') is-invalid @enderror"
+                                            id="editor283" name="element_kuk_5_37"
+                                            rows="5">{{ $edit->element_kuk_5_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_38') is-invalid @enderror"
+                                            id="editor284" name="element_kuk_5_38"
+                                            rows="5">{{ $edit->element_kuk_5_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_39') is-invalid @enderror"
+                                            id="editor285" name="element_kuk_5_39"
+                                            rows="5">{{ $edit->element_kuk_5_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_40') is-invalid @enderror"
+                                            id="editor286" name="element_kuk_5_40"
+                                            rows="5">{{ $edit->element_kuk_5_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_41') is-invalid @enderror"
+                                            id="editor287" name="element_kuk_5_41"
+                                            rows="5">{{ $edit->element_kuk_5_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_42') is-invalid @enderror"
+                                            id="editor288" name="element_kuk_5_42"
+                                            rows="5">{{ $edit->element_kuk_5_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_43') is-invalid @enderror"
+                                            id="editor289" name="element_kuk_5_43"
+                                            rows="5">{{ $edit->element_kuk_5_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_44') is-invalid @enderror"
+                                            id="editor290" name="element_kuk_5_44"
+                                            rows="5">{{ $edit->element_kuk_5_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_5_45') is-invalid @enderror"
+                                            id="editor291" name="element_kuk_5_45"
+                                            rows="5">{{ $edit->element_kuk_5_45 }}</textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -532,6 +1554,210 @@
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor66" name="element_kuk_6_11"
                                             rows="5">{{ $edit->element_kuk_6_11 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_12') is-invalid @enderror"
+                                            id="editor292" name="element_kuk_6_12"
+                                            rows="5">{{ $edit->element_kuk_6_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_13') is-invalid @enderror"
+                                            id="editor293" name="element_kuk_6_13"
+                                            rows="5">{{ $edit->element_kuk_6_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_14') is-invalid @enderror"
+                                            id="editor294" name="element_kuk_6_14"
+                                            rows="5">{{ $edit->element_kuk_6_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_15') is-invalid @enderror"
+                                            id="editor295" name="element_kuk_6_15"
+                                            rows="5">{{ $edit->element_kuk_6_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_16') is-invalid @enderror"
+                                            id="editor296" name="element_kuk_6_16"
+                                            rows="5">{{ $edit->element_kuk_6_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_17') is-invalid @enderror"
+                                            id="editor297" name="element_kuk_6_17"
+                                            rows="5">{{ $edit->element_kuk_6_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_18') is-invalid @enderror"
+                                            id="editor298" name="element_kuk_6_18"
+                                            rows="5">{{ $edit->element_kuk_6_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_19') is-invalid @enderror"
+                                            id="editor299" name="element_kuk_6_19"
+                                            rows="5">{{ $edit->element_kuk_6_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_20') is-invalid @enderror"
+                                            id="editor300" name="element_kuk_6_20"
+                                            rows="5">{{ $edit->element_kuk_6_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_21') is-invalid @enderror"
+                                            id="editor301" name="element_kuk_6_21"
+                                            rows="5">{{ $edit->element_kuk_6_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_22') is-invalid @enderror"
+                                            id="editor302" name="element_kuk_6_22"
+                                            rows="5">{{ $edit->element_kuk_6_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_23') is-invalid @enderror"
+                                            id="editor303" name="element_kuk_6_23"
+                                            rows="5">{{ $edit->element_kuk_6_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_24') is-invalid @enderror"
+                                            id="editor304" name="element_kuk_6_24"
+                                            rows="5">{{ $edit->element_kuk_6_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_25') is-invalid @enderror"
+                                            id="editor305" name="element_kuk_6_25"
+                                            rows="5">{{ $edit->element_kuk_6_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_26') is-invalid @enderror"
+                                            id="editor306" name="element_kuk_6_26"
+                                            rows="5">{{ $edit->element_kuk_6_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_27') is-invalid @enderror"
+                                            id="editor307" name="element_kuk_6_27"
+                                            rows="5">{{ $edit->element_kuk_6_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_28') is-invalid @enderror"
+                                            id="editor308" name="element_kuk_6_28"
+                                            rows="5">{{ $edit->element_kuk_6_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_29') is-invalid @enderror"
+                                            id="editor309" name="element_kuk_6_29"
+                                            rows="5">{{ $edit->element_kuk_6_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_30') is-invalid @enderror"
+                                            id="editor310" name="element_kuk_6_30"
+                                            rows="5">{{ $edit->element_kuk_6_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_31') is-invalid @enderror"
+                                            id="editor311" name="element_kuk_6_31"
+                                            rows="5">{{ $edit->element_kuk_6_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_32') is-invalid @enderror"
+                                            id="editor312" name="element_kuk_6_32"
+                                            rows="5">{{ $edit->element_kuk_6_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_33') is-invalid @enderror"
+                                            id="editor313" name="element_kuk_6_33"
+                                            rows="5">{{ $edit->element_kuk_6_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_34') is-invalid @enderror"
+                                            id="editor314" name="element_kuk_6_34"
+                                            rows="5">{{ $edit->element_kuk_6_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_35') is-invalid @enderror"
+                                            id="editor315" name="element_kuk_6_35"
+                                            rows="5">{{ $edit->element_kuk_6_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_36') is-invalid @enderror"
+                                            id="editor316" name="element_kuk_6_36"
+                                            rows="5">{{ $edit->element_kuk_6_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_37') is-invalid @enderror"
+                                            id="editor317" name="element_kuk_6_37"
+                                            rows="5">{{ $edit->element_kuk_6_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_38') is-invalid @enderror"
+                                            id="editor318" name="element_kuk_6_38"
+                                            rows="5">{{ $edit->element_kuk_6_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_39') is-invalid @enderror"
+                                            id="editor319" name="element_kuk_6_39"
+                                            rows="5">{{ $edit->element_kuk_6_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_40') is-invalid @enderror"
+                                            id="editor320" name="element_kuk_6_40"
+                                            rows="5">{{ $edit->element_kuk_6_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_41') is-invalid @enderror"
+                                            id="editor321" name="element_kuk_6_41"
+                                            rows="5">{{ $edit->element_kuk_6_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_42') is-invalid @enderror"
+                                            id="editor322" name="element_kuk_6_42"
+                                            rows="5">{{ $edit->element_kuk_6_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_43') is-invalid @enderror"
+                                            id="editor323" name="element_kuk_6_43"
+                                            rows="5">{{ $edit->element_kuk_6_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_44') is-invalid @enderror"
+                                            id="editor324" name="element_kuk_6_44"
+                                            rows="5">{{ $edit->element_kuk_6_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_6_45') is-invalid @enderror"
+                                            id="editor325" name="element_kuk_6_45"
+                                            rows="5">{{ $edit->element_kuk_6_45 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -615,6 +1841,211 @@
                                         <textarea class="form-control" id="editor77" name="element_kuk_7_11"
                                             rows="5">{{ $edit->element_kuk_7_11 }}</textarea>
                                     </div>
+
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_12') is-invalid @enderror"
+                                            id="editor326" name="element_kuk_7_12"
+                                            rows="5">{{ $edit->element_kuk_7_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_13') is-invalid @enderror"
+                                            id="editor327" name="element_kuk_7_13"
+                                            rows="5">{{ $edit->element_kuk_7_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_14') is-invalid @enderror"
+                                            id="editor328" name="element_kuk_7_14"
+                                            rows="5">{{ $edit->element_kuk_7_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_15') is-invalid @enderror"
+                                            id="editor329" name="element_kuk_7_15"
+                                            rows="5">{{ $edit->element_kuk_7_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_16') is-invalid @enderror"
+                                            id="editor330" name="element_kuk_7_16"
+                                            rows="5">{{ $edit->element_kuk_7_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_17') is-invalid @enderror"
+                                            id="editor331" name="element_kuk_7_17"
+                                            rows="5">{{ $edit->element_kuk_7_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_18') is-invalid @enderror"
+                                            id="editor332" name="element_kuk_7_18"
+                                            rows="5">{{ $edit->element_kuk_7_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_19') is-invalid @enderror"
+                                            id="editor333" name="element_kuk_7_19"
+                                            rows="5">{{ $edit->element_kuk_7_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_20') is-invalid @enderror"
+                                            id="editor334" name="element_kuk_7_20"
+                                            rows="5">{{ $edit->element_kuk_7_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_21') is-invalid @enderror"
+                                            id="editor335" name="element_kuk_7_21"
+                                            rows="5">{{ $edit->element_kuk_7_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_22') is-invalid @enderror"
+                                            id="editor336" name="element_kuk_7_22"
+                                            rows="5">{{ $edit->element_kuk_7_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_23') is-invalid @enderror"
+                                            id="editor337" name="element_kuk_7_23"
+                                            rows="5">{{ $edit->element_kuk_7_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_24') is-invalid @enderror"
+                                            id="editor338" name="element_kuk_7_24"
+                                            rows="5">{{ $edit->element_kuk_7_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_25') is-invalid @enderror"
+                                            id="editor339" name="element_kuk_7_25"
+                                            rows="5">{{ $edit->element_kuk_7_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_26') is-invalid @enderror"
+                                            id="editor340" name="element_kuk_7_26"
+                                            rows="5">{{ $edit->element_kuk_7_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_27') is-invalid @enderror"
+                                            id="editor341" name="element_kuk_7_27"
+                                            rows="5">{{ $edit->element_kuk_7_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_28') is-invalid @enderror"
+                                            id="editor342" name="element_kuk_7_28"
+                                            rows="5">{{ $edit->element_kuk_7_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_29') is-invalid @enderror"
+                                            id="editor343" name="element_kuk_7_29"
+                                            rows="5">{{ $edit->element_kuk_7_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_30') is-invalid @enderror"
+                                            id="editor344" name="element_kuk_7_30"
+                                            rows="5">{{ $edit->element_kuk_7_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_31') is-invalid @enderror"
+                                            id="editor345" name="element_kuk_7_31"
+                                            rows="5">{{ $edit->element_kuk_7_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_32') is-invalid @enderror"
+                                            id="editor346" name="element_kuk_7_32"
+                                            rows="5">{{ $edit->element_kuk_7_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_33') is-invalid @enderror"
+                                            id="editor347" name="element_kuk_7_33"
+                                            rows="5">{{ $edit->element_kuk_7_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_34') is-invalid @enderror"
+                                            id="editor348" name="element_kuk_7_34"
+                                            rows="5">{{ $edit->element_kuk_7_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_35') is-invalid @enderror"
+                                            id="editor349" name="element_kuk_7_35"
+                                            rows="5">{{ $edit->element_kuk_7_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_36') is-invalid @enderror"
+                                            id="editor350" name="element_kuk_7_36"
+                                            rows="5">{{ $edit->element_kuk_7_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_37') is-invalid @enderror"
+                                            id="editor351" name="element_kuk_7_37"
+                                            rows="5">{{ $edit->element_kuk_7_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_38') is-invalid @enderror"
+                                            id="editor352" name="element_kuk_7_38"
+                                            rows="5">{{ $edit->element_kuk_7_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_39') is-invalid @enderror"
+                                            id="editor353" name="element_kuk_7_39"
+                                            rows="5">{{ $edit->element_kuk_7_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_40') is-invalid @enderror"
+                                            id="editor354" name="element_kuk_7_40"
+                                            rows="5">{{ $edit->element_kuk_7_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_41') is-invalid @enderror"
+                                            id="editor355" name="element_kuk_7_41"
+                                            rows="5">{{ $edit->element_kuk_7_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_42') is-invalid @enderror"
+                                            id="editor356" name="element_kuk_7_42"
+                                            rows="5">{{ $edit->element_kuk_7_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_43') is-invalid @enderror"
+                                            id="editor357" name="element_kuk_7_43"
+                                            rows="5">{{ $edit->element_kuk_7_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_44') is-invalid @enderror"
+                                            id="editor358" name="element_kuk_7_44"
+                                            rows="5">{{ $edit->element_kuk_7_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_7_45') is-invalid @enderror"
+                                            id="editor359" name="element_kuk_7_45"
+                                            rows="5">{{ $edit->element_kuk_7_45 }}</textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -697,6 +2128,211 @@
                                         <textarea class="form-control" id="editor88" name="element_kuk_8_11"
                                             rows="5">{{ $edit->element_kuk_8_11 }}</textarea>
                                     </div>
+
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_12') is-invalid @enderror"
+                                            id="editor360" name="element_kuk_8_12"
+                                            rows="5">{{ $edit->element_kuk_8_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_13') is-invalid @enderror"
+                                            id="editor361" name="element_kuk_8_13"
+                                            rows="5">{{ $edit->element_kuk_8_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_14') is-invalid @enderror"
+                                            id="editor362" name="element_kuk_8_14"
+                                            rows="5">{{ $edit->element_kuk_8_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_15') is-invalid @enderror"
+                                            id="editor363" name="element_kuk_8_15"
+                                            rows="5">{{ $edit->element_kuk_8_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_16') is-invalid @enderror"
+                                            id="editor364" name="element_kuk_8_16"
+                                            rows="5">{{ $edit->element_kuk_8_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_17') is-invalid @enderror"
+                                            id="editor365" name="element_kuk_8_17"
+                                            rows="5">{{ $edit->element_kuk_8_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_18') is-invalid @enderror"
+                                            id="editor367" name="element_kuk_8_18"
+                                            rows="5">{{ $edit->element_kuk_8_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_19') is-invalid @enderror"
+                                            id="editor368" name="element_kuk_8_19"
+                                            rows="5">{{ $edit->element_kuk_8_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_20') is-invalid @enderror"
+                                            id="editor369" name="element_kuk_8_20"
+                                            rows="5">{{ $edit->element_kuk_8_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_21') is-invalid @enderror"
+                                            id="editor370" name="element_kuk_8_21"
+                                            rows="5">{{ $edit->element_kuk_8_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_22') is-invalid @enderror"
+                                            id="editor371" name="element_kuk_8_22"
+                                            rows="5">{{ $edit->element_kuk_8_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_23') is-invalid @enderror"
+                                            id="editor372" name="element_kuk_8_23"
+                                            rows="5">{{ $edit->element_kuk_8_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_24') is-invalid @enderror"
+                                            id="editor373" name="element_kuk_8_24"
+                                            rows="5">{{ $edit->element_kuk_8_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_25') is-invalid @enderror"
+                                            id="editor374" name="element_kuk_8_25"
+                                            rows="5">{{ $edit->element_kuk_8_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_26') is-invalid @enderror"
+                                            id="editor375" name="element_kuk_8_26"
+                                            rows="5">{{ $edit->element_kuk_8_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_27') is-invalid @enderror"
+                                            id="editor376" name="element_kuk_8_27"
+                                            rows="5">{{ $edit->element_kuk_8_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_28') is-invalid @enderror"
+                                            id="editor377" name="element_kuk_8_28"
+                                            rows="5">{{ $edit->element_kuk_8_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_29') is-invalid @enderror"
+                                            id="editor378" name="element_kuk_8_29"
+                                            rows="5">{{ $edit->element_kuk_8_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_30') is-invalid @enderror"
+                                            id="editor379" name="element_kuk_8_30"
+                                            rows="5">{{ $edit->element_kuk_8_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_31') is-invalid @enderror"
+                                            id="editor380" name="element_kuk_8_31"
+                                            rows="5">{{ $edit->element_kuk_8_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_32') is-invalid @enderror"
+                                            id="editor381" name="element_kuk_8_32"
+                                            rows="5">{{ $edit->element_kuk_8_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_33') is-invalid @enderror"
+                                            id="editor382" name="element_kuk_8_33"
+                                            rows="5">{{ $edit->element_kuk_8_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_34') is-invalid @enderror"
+                                            id="editor383" name="element_kuk_8_34"
+                                            rows="5">{{ $edit->element_kuk_8_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_35') is-invalid @enderror"
+                                            id="editor384" name="element_kuk_8_35"
+                                            rows="5">{{ $edit->element_kuk_8_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_36') is-invalid @enderror"
+                                            id="editor385" name="element_kuk_8_36"
+                                            rows="5">{{ $edit->element_kuk_8_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_37') is-invalid @enderror"
+                                            id="editor386" name="element_kuk_8_37"
+                                            rows="5">{{ $edit->element_kuk_8_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_38') is-invalid @enderror"
+                                            id="editor387" name="element_kuk_8_38"
+                                            rows="5">{{ $edit->element_kuk_8_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_39') is-invalid @enderror"
+                                            id="editor388" name="element_kuk_8_39"
+                                            rows="5">{{ $edit->element_kuk_8_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_40') is-invalid @enderror"
+                                            id="editor389" name="element_kuk_8_40"
+                                            rows="5">{{ $edit->element_kuk_8_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_41') is-invalid @enderror"
+                                            id="editor390" name="element_kuk_8_41"
+                                            rows="5">{{ $edit->element_kuk_8_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_42') is-invalid @enderror"
+                                            id="editor391" name="element_kuk_8_42"
+                                            rows="5">{{ $edit->element_kuk_8_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_43') is-invalid @enderror"
+                                            id="editor392" name="element_kuk_8_43"
+                                            rows="5">{{ $edit->element_kuk_8_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_44') is-invalid @enderror"
+                                            id="editor393" name="element_kuk_8_44"
+                                            rows="5">{{ $edit->element_kuk_8_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_8_45') is-invalid @enderror"
+                                            id="editor394" name="element_kuk_8_45"
+                                            rows="5">{{ $edit->element_kuk_8_45 }}</textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -778,6 +2414,210 @@
                                         <textarea class="form-control" id="editor99" name="element_kuk_9_11"
                                             rows="5">{{ $edit->element_kuk_9_11 }}</textarea>
                                     </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_12') is-invalid @enderror"
+                                            id="editor395" name="element_kuk_9_12"
+                                            rows="5">{{ $edit->element_kuk_9_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_13') is-invalid @enderror"
+                                            id="editor396" name="element_kuk_9_13"
+                                            rows="5">{{ $edit->element_kuk_9_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_14') is-invalid @enderror"
+                                            id="editor397" name="element_kuk_9_14"
+                                            rows="5">{{ $edit->element_kuk_9_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_15') is-invalid @enderror"
+                                            id="editor398" name="element_kuk_9_15"
+                                            rows="5">{{ $edit->element_kuk_9_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_16') is-invalid @enderror"
+                                            id="editor399" name="element_kuk_9_16"
+                                            rows="5">{{ $edit->element_kuk_9_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_17') is-invalid @enderror"
+                                            id="editor400" name="element_kuk_9_17"
+                                            rows="5">{{ $edit->element_kuk_9_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_18') is-invalid @enderror"
+                                            id="editor401" name="element_kuk_9_18"
+                                            rows="5">{{ $edit->element_kuk_9_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_19') is-invalid @enderror"
+                                            id="editor402" name="element_kuk_9_19"
+                                            rows="5">{{ $edit->element_kuk_9_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_20') is-invalid @enderror"
+                                            id="editor403" name="element_kuk_9_20"
+                                            rows="5">{{ $edit->element_kuk_9_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_21') is-invalid @enderror"
+                                            id="editor404" name="element_kuk_9_21"
+                                            rows="5">{{ $edit->element_kuk_9_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_22') is-invalid @enderror"
+                                            id="editor405" name="element_kuk_9_22"
+                                            rows="5">{{ $edit->element_kuk_9_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_23') is-invalid @enderror"
+                                            id="editor406" name="element_kuk_9_23"
+                                            rows="5">{{ $edit->element_kuk_9_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_24') is-invalid @enderror"
+                                            id="editor407" name="element_kuk_9_24"
+                                            rows="5">{{ $edit->element_kuk_9_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_25') is-invalid @enderror"
+                                            id="editor408" name="element_kuk_9_25"
+                                            rows="5">{{ $edit->element_kuk_9_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_26') is-invalid @enderror"
+                                            id="editor409" name="element_kuk_9_26"
+                                            rows="5">{{ $edit->element_kuk_9_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_27') is-invalid @enderror"
+                                            id="editor410" name="element_kuk_9_27"
+                                            rows="5">{{ $edit->element_kuk_9_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_28') is-invalid @enderror"
+                                            id="editor411" name="element_kuk_9_28"
+                                            rows="5">{{ $edit->element_kuk_9_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_29') is-invalid @enderror"
+                                            id="editor412" name="element_kuk_9_29"
+                                            rows="5">{{ $edit->element_kuk_9_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_30') is-invalid @enderror"
+                                            id="editor413" name="element_kuk_9_30"
+                                            rows="5">{{ $edit->element_kuk_9_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_31') is-invalid @enderror"
+                                            id="editor414" name="element_kuk_9_31"
+                                            rows="5">{{ $edit->element_kuk_9_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_32') is-invalid @enderror"
+                                            id="editor415" name="element_kuk_9_32"
+                                            rows="5">{{ $edit->element_kuk_9_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_33') is-invalid @enderror"
+                                            id="editor416" name="element_kuk_9_33"
+                                            rows="5">{{ $edit->element_kuk_9_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_34') is-invalid @enderror"
+                                            id="editor417" name="element_kuk_9_34"
+                                            rows="5">{{ $edit->element_kuk_9_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_35') is-invalid @enderror"
+                                            id="editor418" name="element_kuk_9_35"
+                                            rows="5">{{ $edit->element_kuk_9_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_36') is-invalid @enderror"
+                                            id="editor419" name="element_kuk_9_36"
+                                            rows="5">{{ $edit->element_kuk_9_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_37') is-invalid @enderror"
+                                            id="editor420" name="element_kuk_9_37"
+                                            rows="5">{{ $edit->element_kuk_9_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_38') is-invalid @enderror"
+                                            id="editor421" name="element_kuk_9_38"
+                                            rows="5">{{ $edit->element_kuk_9_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_39') is-invalid @enderror"
+                                            id="editor422" name="element_kuk_9_39"
+                                            rows="5">{{ $edit->element_kuk_9_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_40') is-invalid @enderror"
+                                            id="editor423" name="element_kuk_9_40"
+                                            rows="5">{{ $edit->element_kuk_9_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_41') is-invalid @enderror"
+                                            id="editor424" name="element_kuk_9_41"
+                                            rows="5">{{ $edit->element_kuk_9_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_42') is-invalid @enderror"
+                                            id="editor425" name="element_kuk_9_42"
+                                            rows="5">{{ $edit->element_kuk_9_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_43') is-invalid @enderror"
+                                            id="editor426" name="element_kuk_9_43"
+                                            rows="5">{{ $edit->element_kuk_9_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_44') is-invalid @enderror"
+                                            id="editor427" name="element_kuk_9_44"
+                                            rows="5">{{ $edit->element_kuk_9_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_9_45') is-invalid @enderror"
+                                            id="editor428" name="element_kuk_9_45"
+                                            rows="5">{{ $edit->element_kuk_9_45 }}</textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -858,6 +2698,210 @@
                                         <label class="form-label" for="plFirstName">Element Kompetensi</label>
                                         <textarea class="form-control" id="editor110" name="element_kuk_10_11"
                                             rows="5">{{ $edit->element_kuk_10_11 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_12') is-invalid @enderror"
+                                            id="editor429" name="element_kuk_10_12"
+                                            rows="5">{{ $edit->element_kuk_10_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_13') is-invalid @enderror"
+                                            id="editor430" name="element_kuk_10_13"
+                                            rows="5">{{ $edit->element_kuk_10_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_14') is-invalid @enderror"
+                                            id="editor431" name="element_kuk_10_14"
+                                            rows="5">{{ $edit->element_kuk_10_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_15') is-invalid @enderror"
+                                            id="editor432" name="element_kuk_10_15"
+                                            rows="5">{{ $edit->element_kuk_10_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_16') is-invalid @enderror"
+                                            id="editor433" name="element_kuk_10_16"
+                                            rows="5">{{ $edit->element_kuk_10_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_17') is-invalid @enderror"
+                                            id="editor434" name="element_kuk_10_17"
+                                            rows="5">{{ $edit->element_kuk_10_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_18') is-invalid @enderror"
+                                            id="editor435" name="element_kuk_10_18"
+                                            rows="5">{{ $edit->element_kuk_10_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_19') is-invalid @enderror"
+                                            id="editor436" name="element_kuk_10_19"
+                                            rows="5">{{ $edit->element_kuk_10_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_20') is-invalid @enderror"
+                                            id="editor437" name="element_kuk_10_20"
+                                            rows="5">{{ $edit->element_kuk_10_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_21') is-invalid @enderror"
+                                            id="editor438" name="element_kuk_10_21"
+                                            rows="5">{{ $edit->element_kuk_10_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_22') is-invalid @enderror"
+                                            id="editor439" name="element_kuk_10_22"
+                                            rows="5">{{ $edit->element_kuk_10_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_23') is-invalid @enderror"
+                                            id="editor440" name="element_kuk_10_23"
+                                            rows="5">{{ $edit->element_kuk_10_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_24') is-invalid @enderror"
+                                            id="editor441" name="element_kuk_10_24"
+                                            rows="5">{{ $edit->element_kuk_10_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_25') is-invalid @enderror"
+                                            id="editor442" name="element_kuk_10_25"
+                                            rows="5">{{ $edit->element_kuk_10_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_26') is-invalid @enderror"
+                                            id="editor443" name="element_kuk_10_26"
+                                            rows="5">{{ $edit->element_kuk_10_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_27') is-invalid @enderror"
+                                            id="editor444" name="element_kuk_10_27"
+                                            rows="5">{{ $edit->element_kuk_10_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_28') is-invalid @enderror"
+                                            id="editor445" name="element_kuk_10_28"
+                                            rows="5">{{ $edit->element_kuk_10_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_29') is-invalid @enderror"
+                                            id="editor446" name="element_kuk_10_29"
+                                            rows="5">{{ $edit->element_kuk_10_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_30') is-invalid @enderror"
+                                            id="editor447" name="element_kuk_10_30"
+                                            rows="5">{{ $edit->element_kuk_10_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_31') is-invalid @enderror"
+                                            id="editor448" name="element_kuk_10_31"
+                                            rows="5">{{ $edit->element_kuk_10_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_32') is-invalid @enderror"
+                                            id="editor449" name="element_kuk_10_32"
+                                            rows="5">{{ $edit->element_kuk_10_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_33') is-invalid @enderror"
+                                            id="editor450" name="element_kuk_10_33"
+                                            rows="5">{{ $edit->element_kuk_10_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_34') is-invalid @enderror"
+                                            id="editor451" name="element_kuk_10_34"
+                                            rows="5">{{ $edit->element_kuk_10_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_35') is-invalid @enderror"
+                                            id="editor452" name="element_kuk_10_35"
+                                            rows="5">{{ $edit->element_kuk_10_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_36') is-invalid @enderror"
+                                            id="editor453" name="element_kuk_10_36"
+                                            rows="5">{{ $edit->element_kuk_10_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_37') is-invalid @enderror"
+                                            id="editor454" name="element_kuk_10_37"
+                                            rows="5">{{ $edit->element_kuk_10_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_38') is-invalid @enderror"
+                                            id="editor455" name="element_kuk_10_38"
+                                            rows="5">{{ $edit->element_kuk_10_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_39') is-invalid @enderror"
+                                            id="editor456" name="element_kuk_10_39"
+                                            rows="5">{{ $edit->element_kuk_10_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_40') is-invalid @enderror"
+                                            id="editor457" name="element_kuk_10_40"
+                                            rows="5">{{ $edit->element_kuk_10_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_41') is-invalid @enderror"
+                                            id="editor458" name="element_kuk_10_41"
+                                            rows="5">{{ $edit->element_kuk_10_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_42') is-invalid @enderror"
+                                            id="editor459" name="element_kuk_10_42"
+                                            rows="5">{{ $edit->element_kuk_10_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_43') is-invalid @enderror"
+                                            id="editor460" name="element_kuk_10_43"
+                                            rows="5">{{ $edit->element_kuk_10_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_44') is-invalid @enderror"
+                                            id="editor461" name="element_kuk_10_44"
+                                            rows="5">{{ $edit->element_kuk_10_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_10_45') is-invalid @enderror"
+                                            id="editor462" name="element_kuk_10_45"
+                                            rows="5">{{ $edit->element_kuk_10_45 }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -941,6 +2985,211 @@
                                         <textarea class="form-control" id="editor121" name="element_kuk_11_11"
                                             rows="5">{{ $edit->element_kuk_11_11 }}</textarea>
                                     </div>
+
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_12') is-invalid @enderror"
+                                            id="editor463" name="element_kuk_11_12"
+                                            rows="5">{{ $edit->element_kuk_11_12 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_13') is-invalid @enderror"
+                                            id="editor464" name="element_kuk_11_13"
+                                            rows="5">{{ $edit->element_kuk_11_13 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_14') is-invalid @enderror"
+                                            id="editor465" name="element_kuk_11_14"
+                                            rows="5">{{ $edit->element_kuk_11_14 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_15') is-invalid @enderror"
+                                            id="editor466" name="element_kuk_11_15"
+                                            rows="5">{{ $edit->element_kuk_11_15 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_16') is-invalid @enderror"
+                                            id="editor467" name="element_kuk_11_16"
+                                            rows="5">{{ $edit->element_kuk_11_16 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_17') is-invalid @enderror"
+                                            id="editor468" name="element_kuk_11_17"
+                                            rows="5">{{ $edit->element_kuk_11_17 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_18') is-invalid @enderror"
+                                            id="editor469" name="element_kuk_11_18"
+                                            rows="5">{{ $edit->element_kuk_11_18 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_19') is-invalid @enderror"
+                                            id="editor470" name="element_kuk_11_19"
+                                            rows="5">{{ $edit->element_kuk_11_19 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_20') is-invalid @enderror"
+                                            id="editor471" name="element_kuk_11_20"
+                                            rows="5">{{ $edit->element_kuk_11_20 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_21') is-invalid @enderror"
+                                            id="editor472" name="element_kuk_11_21"
+                                            rows="5">{{ $edit->element_kuk_11_21 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_22') is-invalid @enderror"
+                                            id="editor473" name="element_kuk_11_22"
+                                            rows="5">{{ $edit->element_kuk_11_22 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_23') is-invalid @enderror"
+                                            id="editor474" name="element_kuk_11_23"
+                                            rows="5">{{ $edit->element_kuk_11_23 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_24') is-invalid @enderror"
+                                            id="editor475" name="element_kuk_11_24"
+                                            rows="5">{{ $edit->element_kuk_11_24 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_25') is-invalid @enderror"
+                                            id="editor476" name="element_kuk_11_25"
+                                            rows="5">{{ $edit->element_kuk_11_25 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_26') is-invalid @enderror"
+                                            id="editor477" name="element_kuk_11_26"
+                                            rows="5">{{ $edit->element_kuk_11_26 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_27') is-invalid @enderror"
+                                            id="editor478" name="element_kuk_11_27"
+                                            rows="5">{{ $edit->element_kuk_11_27 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_28') is-invalid @enderror"
+                                            id="editor479" name="element_kuk_11_28"
+                                            rows="5">{{ $edit->element_kuk_11_28 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_29') is-invalid @enderror"
+                                            id="editor480" name="element_kuk_11_29"
+                                            rows="5">{{ $edit->element_kuk_11_29 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_30') is-invalid @enderror"
+                                            id="editor481" name="element_kuk_11_30"
+                                            rows="5">{{ $edit->element_kuk_11_30 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_31') is-invalid @enderror"
+                                            id="editor482" name="element_kuk_11_31"
+                                            rows="5">{{ $edit->element_kuk_11_31 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_32') is-invalid @enderror"
+                                            id="editor483" name="element_kuk_11_32"
+                                            rows="5">{{ $edit->element_kuk_11_32 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_33') is-invalid @enderror"
+                                            id="editor484" name="element_kuk_11_33"
+                                            rows="5">{{ $edit->element_kuk_11_33 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_34') is-invalid @enderror"
+                                            id="editor485" name="element_kuk_11_34"
+                                            rows="5">{{ $edit->element_kuk_11_34 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_35') is-invalid @enderror"
+                                            id="editor486" name="element_kuk_11_35"
+                                            rows="5">{{ $edit->element_kuk_11_35 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_36') is-invalid @enderror"
+                                            id="editor487" name="element_kuk_11_36"
+                                            rows="5">{{ $edit->element_kuk_11_36 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_37') is-invalid @enderror"
+                                            id="editor488" name="element_kuk_11_37"
+                                            rows="5">{{ $edit->element_kuk_11_37 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_38') is-invalid @enderror"
+                                            id="editor489" name="element_kuk_11_38"
+                                            rows="5">{{ $edit->element_kuk_11_38 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_39') is-invalid @enderror"
+                                            id="editor490" name="element_kuk_11_39"
+                                            rows="5">{{ $edit->element_kuk_11_39 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_40') is-invalid @enderror"
+                                            id="editor491" name="element_kuk_11_40"
+                                            rows="5">{{ $edit->element_kuk_11_40 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_41') is-invalid @enderror"
+                                            id="editor492" name="element_kuk_11_41"
+                                            rows="5">{{ $edit->element_kuk_11_41 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_42') is-invalid @enderror"
+                                            id="editor493" name="element_kuk_11_42"
+                                            rows="5">{{ $edit->element_kuk_11_42 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_43') is-invalid @enderror"
+                                            id="editor494" name="element_kuk_11_43"
+                                            rows="5">{{ $edit->element_kuk_11_43 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_44') is-invalid @enderror"
+                                            id="editor495" name="element_kuk_11_44"
+                                            rows="5">{{ $edit->element_kuk_11_44 }}</textarea>
+                                    </div>
+                                    <div class="col-sm-12 mt-2">
+                                        <label class="form-label" for="plFirstName">Element Kompetensi</label>
+                                        <textarea class="form-control @error('element_kuk_11_45') is-invalid @enderror"
+                                            id="editor496" name="element_kuk_11_45"
+                                            rows="5">{{ $edit->element_kuk_11_45 }}</textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -956,631 +3205,5 @@
 </div>
 <!-- /Invoice table -->
 <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
-<script>
-    ClassicEditor
-		.create( document.querySelector( '#editor' ) )
-		.catch( error => {
-			console.error( error );
-		} );
-
-        ClassicEditor
-		.create( document.querySelector( '#editor2' ) )
-		.catch( error => {
-			console.error( error );
-		} );
-        ClassicEditor
-		.create( document.querySelector( '#editor3' ) )
-		.catch( error => {
-			console.error( error );
-		} );
-
-        ClassicEditor
-		.create( document.querySelector( '#editor4' ) )
-		.catch( error => {
-			console.error( error );
-		} );
-
-        ClassicEditor
-		.create( document.querySelector( '#editor5' ) )
-		.catch( error => {
-			console.error( error );
-		} );
-
-        ClassicEditor
-		.create( document.querySelector( '#editor6' ) )
-		.catch( error => {
-			console.error( error );
-		} );
-
-        ClassicEditor
-            .create(document.querySelector('#editor7'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor8'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor9'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor10'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor11'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor12'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor13'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor14'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor15'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor16'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor17'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor18'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor19'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor20'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor21'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#editor22'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor23'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor24'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor25'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor26'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor27'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor28'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor29'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor30'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor31'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor32'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor33'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor34'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor35'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor36'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor37'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor38'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor39'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor40'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor41'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor42'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor43'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor44'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor45'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor46'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor47'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor48'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor49'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor50'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor51'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor52'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor53'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor54'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor55'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor56'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor57'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor58'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor59'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor60'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor61'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor62'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor63'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor64'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor65'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor66'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor67'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor68'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor69'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor70'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor71'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor72'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor73'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor74'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor75'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor76'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor77'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor78'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor79'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor80'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor81'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor82'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor83'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor84'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor85'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor86'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor87'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor88'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor89'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor90'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor91'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor92'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor93'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor94'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor95'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor96'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor97'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor98'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor99'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor100'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor101'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor102'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor103'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor104'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor105'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor106'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor107'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor108'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor109'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor110'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor111'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor112'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor113'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor114'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor115'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor116'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor117'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor118'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor119'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor120'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#editor121'))
-            .catch(error => {
-                console.error(error);
-            });
-</script>
+<script src="{{ asset('assets/js/ClassicEditor.js') }}"></script>
 @endsection

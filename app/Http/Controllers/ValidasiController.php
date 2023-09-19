@@ -43,20 +43,20 @@ class ValidasiController extends Controller
 
         ]);
 
-        $folderPath = storage_path('app/public/ttd_admin_lsp/'); // create signatures folder in public directory
-        $image_parts = explode(";base64,", $request->signature_admin);
-        $image_type_aux = explode("image/", $image_parts[0]);
-        $image_type = $image_type_aux[1];
-        $image_base64 = base64_decode($image_parts[1]);
-        $file = $folderPath . uniqid() . '.' . $image_type;
-        file_put_contents($file, $image_base64);
+        // $folderPath = storage_path('app/public/ttd_admin_lsp/'); // create signatures folder in public directory
+        // $image_parts = explode(";base64,", $request->signature_admin);
+        // $image_type_aux = explode("image/", $image_parts[0]);
+        // $image_type = $image_type_aux[1];
+        // $image_base64 = base64_decode($image_parts[1]);
+        // $file = $folderPath . uniqid() . '.' . $image_type;
+        // file_put_contents($file, $image_base64);
         // dd($request->all());
 
         $data = Personaldetail::find($id);
         // $image = $request->file('ttd_admin_lsp');
         // $image->storeAs('public/ttd_admin_lsp', $image->hashName());
         $data->update([
-            'signature_admin'     => uniqid() . '.' . $image_type,
+            // 'signature_admin'     => uniqid() . '.' . $image_type,
             'nama_admin_lsp'     => $request->nama_admin_lsp,
             'no_reg'     => $request->no_reg,
             'status'     => $request->status,

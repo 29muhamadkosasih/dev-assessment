@@ -90,6 +90,22 @@
             </a>
         </li>
 
+        @canany(['fr_ak_04.index'])
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Perangkat Assessment</span>
+        </li>
+
+        @can('fr_ak_04.index')
+        <li
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_04.index','fr_ak_04.show','fr_ak_04.edit' ,'fr_ak_04.create') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_04.create') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
+                <div data-i18n="FR. AK-04 Banding Assessment">FR. AK-04 Banding Assessment</div>
+            </a>
+        </li>
+        @endcan
+        @endcanany
+
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Master Data</span>
         </li>

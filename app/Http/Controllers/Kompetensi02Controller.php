@@ -33,10 +33,6 @@ class Kompetensi02Controller extends Controller
         // dd($request->all());
         $request->validate([
             'kompetensi_id'     => 'required|numeric',
-            // 'kode'              => 'required',
-            // 'unit'   => 'required',
-            // 'no_skkni'   => 'required',
-            // 'element_kuk_1_01' => 'required',
         ]);
         kompetensi02::create($request->all());
         return redirect()->route('get.kompetensi02')->with(
@@ -98,7 +94,7 @@ class Kompetensi02Controller extends Controller
             'element_kuk_1_01' => 'required',
         ]);
         // Mengambil semua data yang dikirimkan dalam permintaan
-      $data = $request->all();
+        $data = $request->all();
 
         $model = Kompetensi02::findOrFail($id);
 

@@ -45,9 +45,9 @@
         <thead>
             <tr>
                 <td colspan="2">
-                    {{-- <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
-                        width="80"> --}}
-                    {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
+                    <!--<img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"-->
+                    <!--    width="80"> -->
+                    <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80">
                 </td>
                 <td></td>
                 <td></td>
@@ -58,7 +58,7 @@
                 <td colspan="2">
                     {{-- <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
                         alt="" style="width: 90"> --}}
-                    {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
+                    <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90">
                 </td>
 
             </tr>
@@ -412,7 +412,8 @@
                     <td style="text-align: center">
                         @switch($datas)
                         @case($datas->status == 'Lengkap')
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                        {{-- <img
+                            src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18"> --}}
                         @break
                         @default
@@ -423,7 +424,8 @@
                         @case($datas->status == 'Lengkap')
                         @break
                         @default
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                        {{-- <img
+                            src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18"> --}}
                         @endswitch
                     </td>
@@ -456,15 +458,15 @@
                         @case($datas->ijazah == 0)
                         @break
                         @default
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @endswitch
                     </td>
                     <td>
                         @switch($datas)
                         @case($datas->ijazah == 0)
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @break
                         @default
                         @endswitch
@@ -479,15 +481,15 @@
                         @case($datas->surat_keterangan_perusahaan == 0)
                         @break
                         @default
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @endswitch
                     </td>
                     <td>
                         @switch($datas)
                         @case($datas->surat_keterangan_perusahaan == 0)
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @break
                         @default
                         @endswitch
@@ -502,15 +504,15 @@
                         @case($datas->cv == 0)
                         @break
                         @default
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @endswitch
                     </td>
                     <td>
                         @switch($datas)
                         @case($datas->cv == 0)
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @break
                         @default
                         @endswitch
@@ -525,15 +527,15 @@
                         @case($datas->sertifikat_pendukung == 0)
                         @break
                         @default
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @endswitch
                     </td>
                     <td>
                         @switch($datas)
                         @case($datas->sertifikat_pendukung == 0)
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @break
                         @default
                         @endswitch
@@ -547,14 +549,14 @@
                         @case($datas->ktp == 0)
                         @break
                         @default
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> @endswitch --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18"> @endswitch
                     </td>
                     <td>
                         @switch($datas)
                         @case($datas->ktp == 0)
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> @break --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18"> @break
                         @default
                         @endswitch
                     </td>
@@ -568,15 +570,15 @@
                         @case($datas->p_cbt == 0)
                         @break
                         @default
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @endswitch
                     </td>
                     <td>
                         @switch($datas)
                         @case($datas->p_cbt == 0)
-                        {{-- <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @break
                         @default
                         @endswitch
@@ -651,8 +653,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Tanda
-                        Tangan/ Tanggal</td>
+                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        TandaTangan/ Tanggal</td>
                     <td height="167px" style="text-align: center">
                         {{-- <img src="{{ storage_path('app/public/ttd_admin_lsp/').$datas->ttd_admin_lsp }}" alt=""
                             style="width: 150px"> --}}
@@ -667,4 +669,4 @@
     </div>
 </body>
 
-</html> 
+</html>

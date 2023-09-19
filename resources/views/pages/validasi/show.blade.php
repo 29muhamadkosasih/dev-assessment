@@ -475,7 +475,7 @@
                         <label class="form-label">Admin LSP</label>
                         <input type="text" class="form-control @error('nama_admin_lsp') is-invalid @enderror"
                             placeholder="Masukan Nama Admin LSP" name="nama_admin_lsp"
-                            value="{{ old('nama_admin_lsp') }}" required autofocus />
+                            value="{{ old('nama_admin_lsp') }}" required />
                         @error('nama_admin_lsp')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>

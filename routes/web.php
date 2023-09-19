@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AK04Controller;
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\APL01Controller;
 use App\Http\Controllers\APL02Controller;
@@ -41,7 +42,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('lang/{locale}', [LanguageController::class, 'swap']);
     Route::get('layouts/empty', [StaterkitController::class, 'layout_empty'])->name('layout.empty');
     Route::post('import-file', [SkemaController::class, 'import'])->name('import');
-    Route::post('apl_02/get/answer/{id}', [APL02Controller::class, 'getAnswer'])->name('getAnswer');
+    Route::post('apl_02/get/answer', [APL02Controller::class, 'getAnswer'])->name('getAnswer');
     Route::get('apl_01/get', [APL01Controller::class, 'get'])->name('get.apl01');
     Route::get('apl_02/get', [APL02Controller::class, 'get'])->name('get.apl02');
     Route::put('validasi/post/{id}', [ValidasiController::class, 'validasi'])->name('validasi');
@@ -62,4 +63,5 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('kompetensi02', Kompetensi02Controller::class);
     Route::resource('validasi', ValidasiController::class);
     Route::resource('validasi02', Validasi02Controller::class);
+    Route::resource('fr_ak_04', AK04Controller::class);
 });
