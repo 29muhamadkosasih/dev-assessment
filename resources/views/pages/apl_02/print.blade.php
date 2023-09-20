@@ -46,9 +46,9 @@
         <thead>
             <tr>
                 <td colspan="2">
-                    <!--<img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"-->
-                    <!--    width="80">-->
-                    <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80">
+                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
+                        width="80">
+                    {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
                 </td>
                 <td></td>
                 <td></td>
@@ -57,16 +57,16 @@
                 <td></td>
                 <td></td>
                 <td colspan="2">
-                    <!--<img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"-->
-                    <!--    alt="" style="width: 90">-->
-                    <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90">
+                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
+                        alt="" style="width: 90">
+                    {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
                 </td>
 
             </tr>
         </thead>
     </table>
     <div id=halaman>
-        <h3 id=judul>FR-APL-01 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI</h3>
+        <h3 id=judul>FR-APL-02 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI</h3>
         <table class="table" border="1" id="ping">
             <thead>
                 <tr>
@@ -209,7 +209,7 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.a</td>
                         </tr>
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_02)
                         <tr>
@@ -233,7 +233,7 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.b</td>
                         </tr>
                         @endunless
 
@@ -259,7 +259,7 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.a</td>
                         </tr>
                         @endunless
 
@@ -285,7 +285,7 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.b</td>
                         </tr>
                         @endunless
 

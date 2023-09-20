@@ -70,8 +70,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($answer as $data)
-
+                        @forelse ($answer as $data)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $data->apl02->personal_detail->nama_lengkap->name }}</td>
@@ -85,7 +84,14 @@
                                 </a>
                             </td>
                         </tr>
-                        @endforeach
+                        @empty
+                        <tr>
+                            <td colspan="4" style="text-align: center">
+                                tidak ada data
+                            </td>
+                        </tr>
+                        @endforelse
+
                     </tbody>
                 </table>
             </div>

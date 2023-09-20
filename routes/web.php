@@ -51,6 +51,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('kompetensi02/get', [Kompetensi02Controller::class, 'get'])->name('get.kompetensi02');
     Route::get('kompetensi02/edit_sub/{id}', [Kompetensi02Controller::class, 'edit_sub'])->name('kompetensi02.edit_sub');
     Route::put('kompetensi02/edit_sub/{id}', [Kompetensi02Controller::class, 'update_sub'])->name('kompetensi02.update_sub');
+    Route::get('apl_01/download/{file}', [APL01Controller::class, 'download'])->name('apl_01.download');
     Route::resource('/users', UserController::class);
     Route::resource('/roles', RoleController::class);
     Route::resource('/permissions', PermissionController::class)->except(['show']);

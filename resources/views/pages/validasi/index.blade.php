@@ -115,6 +115,12 @@
                                     data-bs-original-title="Download" aria-describedby="tooltip358783">
                                     <span class="ti ti-download"></span>
                                 </a>
+                                <a href="{{ route('validasi.show', $data->id) }}"
+                                    class="btn btn-icon btn-success btn-sm" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" data-bs-original-title="Validasi"
+                                    aria-describedby="tooltip358783">
+                                    <span class="ti ti-eye"></span>
+                                </a>
                                 @endswitch
                             </td>
                         </tr>

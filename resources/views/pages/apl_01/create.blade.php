@@ -227,7 +227,8 @@
                 <div class="tab-pane fade" id="form-tabs-social" role="tabpanel">
                     <div class="row g-3">
                         <div class="col-sm-6">
-                            <label class="form-label d-block" for="plBathrooms">KTP</label>
+                            <label class="form-label d-block" for="plBathrooms">KTP &nbsp; *) max. 10048 KB
+                                JPEG/PDF</label>
                             <input type="file" id="plBathrooms" name="ktp"
                                 class="form-control @error('ktp') is-invalid @enderror" placeholder="4" required />
                             @error('ktp')
@@ -237,7 +238,10 @@
                             @enderror
                         </div>
                         <div class="col-sm-6">
-                            <label class="form-label" for="plFloorNo">Surat Keterangan Perusahaan</label>
+                            <label class="form-label" for="plFloorNo">Surat Keterangan Perusahaan &nbsp; *) max. 10048
+                                KB
+                                JPEG/PDF
+                                KB</label>
                             <input type="file" id="plFloorNo" name="surat_keterangan_perusahaan"
                                 class="form-control @error('surat_keterangan_perusahaan') is-invalid @enderror"
                                 placeholder="12" required />
@@ -248,7 +252,8 @@
                             @enderror
                         </div>
                         <div class="col-sm-6">
-                            <label class="form-label d-block" for="plBedrooms">Ijazah</label>
+                            <label class="form-label d-block" for="plBedrooms">Ijazah &nbsp; *) max. 10048 KB
+                                JPEG/PDF KB</label>
                             <input type="file" id="plBedrooms" name="ijazah"
                                 class="form-control @error('ijazah') is-invalid @enderror" placeholder="3" required />
                             @error('ijazah')
@@ -258,7 +263,10 @@
                             @enderror
                         </div>
                         <div class="col-sm-6">
-                            <label class="form-label d-block" for="plBathrooms">Sertikat Pendukung</label>
+                            <label class="form-label d-block" for="plBathrooms">Sertikat Pendukung &nbsp; *) max. 10048
+                                KB
+                                JPEG/PDF
+                                KB</label>
                             <input type="file" id="plBathrooms" name="sertifikat_pendukung"
                                 class="form-control @error('sertifikat_pendukung') is-invalid @enderror" placeholder="4"
                                 required />
@@ -269,7 +277,8 @@
                             @enderror
                         </div>
                         <div class="col-sm-6">
-                            <label class="form-label d-block" for="plBathrooms">CV</label>
+                            <label class="form-label d-block" for="plBathrooms">CV &nbsp; *) max. 10048 KB
+                                JPEG/PDF KB</label>
                             <input type="file" id="plBathrooms" name="cv"
                                 class="form-control @error('cv') is-invalid @enderror" placeholder="4" required />
                             @error('cv')
@@ -279,7 +288,8 @@
                             @enderror
                         </div>
                         <div class="col-sm-6">
-                            <label class="form-label d-block" for="plBathrooms">Sertikat Pelatihan CBT</label>
+                            <label class="form-label d-block" for="plBathrooms">Sertikat Pelatihan CBT &nbsp; *) max.
+                                10048 KB</label>
                             <input type="file" id="plBathrooms" name="p_cbt"
                                 class="form-control @error('p_cbt') is-invalid @enderror" placeholder="4" required />
                             @error('p_cbt')
@@ -307,17 +317,16 @@
 </div>
 
 <!-- Jquery -->
-<script type="text/javascript" src="{{('http://code.jquery.com/jquery-3.3.1.min.js')}}"
+<script type="text/javascript" src="'http://code.jquery.com/jquery-3.3.1.min.js'"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Ajax -->
-<script type="text/javascript"
-    src="{{URL('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')}}"
+<script type="text/javascript" src="'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
 <!-- Signature Pad -->
 
-<script type="text/javascript"
-    src="{{URL('https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js')}}"></script>
+<script type="text/javascript" src="'https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js'">
+</script>
 <script type="text/javascript">
     var sig = $('#sig').signature({
         syncField: '#signature',

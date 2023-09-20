@@ -30,19 +30,19 @@
                         <tr>
                             <td colspan="2">TUK</td>
                             <td>:</td>
-                            <td colspan="4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1"> Sewaktu </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1"> Tempat Kerja </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1"> Mandiri </label>
-                                </div>
+                            <td colspan="4" style="text-align: center">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Sewaktu </label> &nbsp; &nbsp;
+                                &nbsp; &nbsp;
+
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1"> Tempat Kerja </label> &nbsp; &nbsp;
+                                &nbsp; &nbsp;
+
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> &nbsp;
+                                &nbsp; &nbsp; &nbsp;
+                                <label class="form-check-label" for="defaultCheck1"> Mandiri </label>
+
                             </td>
                         </tr>
                         <tr>

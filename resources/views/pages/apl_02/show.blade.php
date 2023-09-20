@@ -5,7 +5,7 @@
 <div class="col-12">
     <div class="card">
         <div class="card-body">
-            <form action="{{ route('getAnswer', $item->id) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('getAnswer')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
@@ -108,7 +108,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @unless(!$item->kompetensi02->element_kuk_1_02)
                                 <tr>
@@ -129,7 +129,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endunless
 
@@ -152,7 +152,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -175,7 +175,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endunless
 
@@ -198,7 +198,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -221,7 +221,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endunless
 
@@ -244,7 +244,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -267,7 +267,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endunless
 
@@ -291,7 +291,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -315,7 +315,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endunless
 
@@ -341,7 +341,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -367,7 +367,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -393,7 +393,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -419,7 +419,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -445,7 +445,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -471,7 +471,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -497,7 +497,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -523,7 +523,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -549,7 +549,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -574,7 +574,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -600,7 +600,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -626,7 +626,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -652,7 +652,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -678,7 +678,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -704,7 +704,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -730,7 +730,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -756,7 +756,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -783,7 +783,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -809,7 +809,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -835,7 +835,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -862,7 +862,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -888,7 +888,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -914,7 +914,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -940,7 +940,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -966,7 +966,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -992,7 +992,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -1018,7 +1018,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1044,7 +1044,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -1070,7 +1070,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1096,7 +1096,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -1122,7 +1122,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1148,7 +1148,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -1174,7 +1174,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1200,7 +1200,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.b</td>
                                 </tr>
                                 @endswitch
 
@@ -1226,7 +1226,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1279,7 +1279,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_2_02)
@@ -1301,7 +1301,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1324,7 +1324,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1347,7 +1347,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1370,7 +1370,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1393,7 +1393,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1416,7 +1416,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1439,7 +1439,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1463,7 +1463,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1487,7 +1487,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -1513,7 +1513,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1539,7 +1539,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1565,7 +1565,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1591,7 +1591,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1617,7 +1617,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1643,7 +1643,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1669,7 +1669,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1695,7 +1695,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1721,7 +1721,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -1746,7 +1746,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1772,7 +1772,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1798,7 +1798,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1824,7 +1824,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1850,7 +1850,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1876,7 +1876,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1902,7 +1902,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1928,7 +1928,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1955,7 +1955,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -1981,7 +1981,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2007,7 +2007,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2034,7 +2034,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2060,7 +2060,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2086,7 +2086,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2112,7 +2112,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2138,7 +2138,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2164,7 +2164,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2190,7 +2190,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2216,7 +2216,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2242,7 +2242,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2268,7 +2268,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2294,7 +2294,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2320,7 +2320,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2346,7 +2346,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2372,7 +2372,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2398,7 +2398,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2452,7 +2452,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_3_02)
@@ -2474,7 +2474,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2497,7 +2497,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2520,7 +2520,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2543,7 +2543,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2566,7 +2566,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2589,7 +2589,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2612,7 +2612,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2636,7 +2636,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2660,7 +2660,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -2686,7 +2686,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2712,7 +2712,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2738,7 +2738,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2764,7 +2764,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2790,7 +2790,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2816,7 +2816,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2842,7 +2842,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2868,7 +2868,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2894,7 +2894,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -2919,7 +2919,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2945,7 +2945,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2971,7 +2971,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -2997,7 +2997,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3023,7 +3023,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3049,7 +3049,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3075,7 +3075,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3101,7 +3101,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3128,7 +3128,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3154,7 +3154,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3180,7 +3180,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3207,7 +3207,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3233,7 +3233,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3259,7 +3259,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3285,7 +3285,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3311,7 +3311,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3337,7 +3337,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3363,7 +3363,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3389,7 +3389,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3415,7 +3415,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3441,7 +3441,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3467,7 +3467,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3493,7 +3493,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3519,7 +3519,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3545,7 +3545,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3571,7 +3571,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                             </tbody>
@@ -3624,7 +3624,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_4_02)
@@ -3646,7 +3646,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3669,7 +3669,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3692,7 +3692,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3715,7 +3715,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3738,7 +3738,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3761,7 +3761,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3784,7 +3784,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3808,7 +3808,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3832,7 +3832,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -3858,7 +3858,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3884,7 +3884,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3910,7 +3910,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3936,7 +3936,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3962,7 +3962,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -3988,7 +3988,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4014,7 +4014,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4040,7 +4040,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4066,7 +4066,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -4091,7 +4091,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4117,7 +4117,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4143,7 +4143,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4169,7 +4169,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4195,7 +4195,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4221,7 +4221,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4247,7 +4247,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4273,7 +4273,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4300,7 +4300,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4326,7 +4326,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4352,7 +4352,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4379,7 +4379,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4405,7 +4405,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4431,7 +4431,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4457,7 +4457,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4483,7 +4483,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4509,7 +4509,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4535,7 +4535,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4561,7 +4561,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4587,7 +4587,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4613,7 +4613,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4639,7 +4639,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4665,7 +4665,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4691,7 +4691,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4717,7 +4717,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4743,7 +4743,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -4797,7 +4797,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_5_02)
@@ -4819,7 +4819,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -4842,7 +4842,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -4865,7 +4865,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -4888,7 +4888,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -4911,7 +4911,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -4934,7 +4934,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -4957,7 +4957,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -4981,7 +4981,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -5005,7 +5005,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -5031,7 +5031,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5057,7 +5057,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5083,7 +5083,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5109,7 +5109,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5135,7 +5135,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5161,7 +5161,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5187,7 +5187,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5213,7 +5213,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5239,7 +5239,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -5264,7 +5264,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5290,7 +5290,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5316,7 +5316,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5342,7 +5342,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5368,7 +5368,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5394,7 +5394,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5420,7 +5420,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5446,7 +5446,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5473,7 +5473,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5499,7 +5499,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5525,7 +5525,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5552,7 +5552,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5578,7 +5578,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5604,7 +5604,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5630,7 +5630,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5656,7 +5656,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5682,7 +5682,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5708,7 +5708,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5734,7 +5734,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5760,7 +5760,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5786,7 +5786,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5812,7 +5812,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5838,7 +5838,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5864,7 +5864,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5890,7 +5890,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -5916,7 +5916,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                             </tbody>
@@ -5969,7 +5969,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_6_02)
@@ -5991,7 +5991,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6014,7 +6014,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6037,7 +6037,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6060,7 +6060,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6083,7 +6083,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6106,7 +6106,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6129,7 +6129,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6153,7 +6153,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6177,7 +6177,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -6203,7 +6203,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6229,7 +6229,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6255,7 +6255,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6281,7 +6281,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6307,7 +6307,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6333,7 +6333,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6359,7 +6359,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6385,7 +6385,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6411,7 +6411,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -6436,7 +6436,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6462,7 +6462,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6488,7 +6488,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6514,7 +6514,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6540,7 +6540,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6566,7 +6566,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6592,7 +6592,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6618,7 +6618,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6645,7 +6645,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6671,7 +6671,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6697,7 +6697,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6724,7 +6724,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6750,7 +6750,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6776,7 +6776,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6802,7 +6802,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6828,7 +6828,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6854,7 +6854,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6880,7 +6880,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6906,7 +6906,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6932,7 +6932,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6958,7 +6958,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -6984,7 +6984,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7010,7 +7010,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7036,7 +7036,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7062,7 +7062,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7088,7 +7088,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7142,7 +7142,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_7_02)
@@ -7164,7 +7164,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7187,7 +7187,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7210,7 +7210,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7233,7 +7233,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7256,7 +7256,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7279,7 +7279,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7302,7 +7302,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7326,7 +7326,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7350,7 +7350,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -7376,7 +7376,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7402,7 +7402,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7428,7 +7428,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7454,7 +7454,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7480,7 +7480,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7506,7 +7506,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7532,7 +7532,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7558,7 +7558,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7584,7 +7584,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -7609,7 +7609,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7635,7 +7635,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7661,7 +7661,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7687,7 +7687,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7713,7 +7713,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7739,7 +7739,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7765,7 +7765,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7791,7 +7791,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7818,7 +7818,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7844,7 +7844,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7870,7 +7870,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7897,7 +7897,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7923,7 +7923,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7949,7 +7949,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -7975,7 +7975,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8001,7 +8001,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8027,7 +8027,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8053,7 +8053,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8079,7 +8079,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8105,7 +8105,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8131,7 +8131,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8157,7 +8157,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8183,7 +8183,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8209,7 +8209,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8235,7 +8235,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8261,7 +8261,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8315,7 +8315,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_8_02)
@@ -8337,7 +8337,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8360,7 +8360,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8383,7 +8383,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8406,7 +8406,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8429,7 +8429,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8452,7 +8452,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8475,7 +8475,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8499,7 +8499,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8523,7 +8523,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -8549,7 +8549,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8575,7 +8575,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8601,7 +8601,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8627,7 +8627,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8653,7 +8653,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8679,7 +8679,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8705,7 +8705,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8731,7 +8731,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8757,7 +8757,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -8782,7 +8782,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8808,7 +8808,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8834,7 +8834,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8860,7 +8860,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8886,7 +8886,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8912,7 +8912,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8938,7 +8938,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8964,7 +8964,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -8991,7 +8991,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9017,7 +9017,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9043,7 +9043,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9070,7 +9070,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9096,7 +9096,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9122,7 +9122,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9148,7 +9148,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9174,7 +9174,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9200,7 +9200,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9226,7 +9226,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9252,7 +9252,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9278,7 +9278,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9304,7 +9304,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9330,7 +9330,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9356,7 +9356,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9382,7 +9382,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9408,7 +9408,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9434,7 +9434,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9488,7 +9488,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_9_02)
@@ -9510,7 +9510,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9533,7 +9533,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9556,7 +9556,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9579,7 +9579,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9602,7 +9602,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9625,7 +9625,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9648,7 +9648,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9672,7 +9672,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9696,7 +9696,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -9722,7 +9722,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9748,7 +9748,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9774,7 +9774,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9800,7 +9800,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9826,7 +9826,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9852,7 +9852,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9878,7 +9878,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9904,7 +9904,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9930,7 +9930,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -9955,7 +9955,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -9981,7 +9981,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10007,7 +10007,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10033,7 +10033,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10059,7 +10059,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10085,7 +10085,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10111,7 +10111,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10137,7 +10137,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10164,7 +10164,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10190,7 +10190,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10216,7 +10216,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10243,7 +10243,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10269,7 +10269,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10295,7 +10295,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10321,7 +10321,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10347,7 +10347,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10373,7 +10373,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10399,7 +10399,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10425,7 +10425,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10451,7 +10451,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10477,7 +10477,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10503,7 +10503,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10529,7 +10529,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10555,7 +10555,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10581,7 +10581,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10607,7 +10607,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10661,7 +10661,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_10_02)
@@ -10683,7 +10683,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10706,7 +10706,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10729,7 +10729,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10752,7 +10752,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10775,7 +10775,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10798,7 +10798,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10821,7 +10821,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10845,7 +10845,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10869,7 +10869,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -10895,7 +10895,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10921,7 +10921,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10947,7 +10947,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10973,7 +10973,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -10999,7 +10999,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11025,7 +11025,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11051,7 +11051,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11077,7 +11077,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11103,7 +11103,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -11128,7 +11128,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11154,7 +11154,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11180,7 +11180,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11206,7 +11206,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11232,7 +11232,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11258,7 +11258,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11284,7 +11284,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11310,7 +11310,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11337,7 +11337,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11363,7 +11363,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11389,7 +11389,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11416,7 +11416,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11442,7 +11442,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11468,7 +11468,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11494,7 +11494,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11520,7 +11520,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11546,7 +11546,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11572,7 +11572,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11598,7 +11598,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11624,7 +11624,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11650,7 +11650,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11676,7 +11676,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11702,7 +11702,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11728,7 +11728,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11754,7 +11754,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11780,7 +11780,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -11834,7 +11834,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
 
                                 @unless(!$item->kompetensi02->element_kuk_11_02)
@@ -11856,7 +11856,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -11879,7 +11879,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -11902,7 +11902,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -11925,7 +11925,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -11948,7 +11948,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -11971,7 +11971,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -11994,7 +11994,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -12018,7 +12018,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -12042,7 +12042,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endunless
 
@@ -12068,7 +12068,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -12093,7 +12093,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12119,7 +12119,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12145,7 +12145,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12171,7 +12171,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12197,7 +12197,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12223,7 +12223,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12249,7 +12249,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12275,7 +12275,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                                 @switch($item)
@@ -12300,7 +12300,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12326,7 +12326,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12352,7 +12352,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12378,7 +12378,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12404,7 +12404,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12430,7 +12430,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12456,7 +12456,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12482,7 +12482,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12509,7 +12509,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12535,7 +12535,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12561,7 +12561,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12588,7 +12588,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12614,7 +12614,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12640,7 +12640,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12666,7 +12666,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12692,7 +12692,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12718,7 +12718,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12744,7 +12744,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12770,7 +12770,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12796,7 +12796,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12822,7 +12822,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12848,7 +12848,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12874,7 +12874,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12900,7 +12900,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12926,7 +12926,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
 
@@ -12952,7 +12952,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td style="text-align: center">Bukti 3.a</td>
                                 </tr>
                                 @endswitch
                             </tbody>

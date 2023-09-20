@@ -322,14 +322,15 @@
                     <table class="table table-bordered mt-3" border=”1″ id="ping">
                         <thead>
                             <tr>
-                                <th rowspan="2" width='40px' style="text-align: center">No</th>
-                                <th rowspan="2" width="900px" style="text-align: center">Bukti Pendidikan/Pelatihan
+                                <th rowspan="3" width='40px' style="text-align: center">No</th>
+                                <th rowspan="3" width="900px" style="text-align: center">Bukti Pendidikan/Pelatihan
                                 </th>
-                                <th colspan="2" width="10px" style="text-align: center">Bukti DiLampiran</th>
+                                <th colspan="3" width="10px" style="text-align: center">Bukti DiLampiran</th>
                             </tr>
                             <tr>
                                 <th style="text-align: center">Ya</th>
                                 <th style="text-align: center">Tidak</th>
+                                <th style="text-align: center">Attachment</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -352,6 +353,24 @@
                                     @default
                                     @endswitch
                                 </td>
+                                <td style="text-align: center">
+                                    @switch($show)
+                                    @case($show->ijazah == 0)
+                                    @break
+                                    @default
+                                    <a href="{{ url('apl_01/download/' . $show->ijazah) }}" target="_blank"
+                                        class="text-primary font-weight-bold"><svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-download" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                                            <path d="M7 11l5 5l5 -5"></path>
+                                            <path d="M12 4l0 12"></path>
+                                        </svg>
+                                    </a>
+                                    @endswitch
+                                </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center">2</td>
@@ -372,6 +391,25 @@
                                     @default
                                     @endswitch
                                 </td>
+                                <td style="text-align: center">
+                                    @switch($show)
+                                    @case($show->surat_keterangan_perusahaan == 0)
+                                    @break
+                                    @default
+                                    <a href="{{ url('apl_01/download/' . $show->surat_keterangan_perusahaan) }}"
+                                        target="_blank" class="text-primary font-weight-bold"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-download" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                                            <path d="M7 11l5 5l5 -5"></path>
+                                            <path d="M12 4l0 12"></path>
+                                        </svg>
+                                    </a>
+                                    @endswitch
+                                </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center">3</td>
@@ -388,8 +426,32 @@
                                     @switch($show)
                                     @case($show->cv == 0)
                                     &check;
+                                    <a href="{{ url('form/download/' . $show->cv) }}" target="_blank"
+                                        class="text-primary font-weight-bold"> <i data-feather="download"></i>
+                                        {{ $show->image4 }}
+                                    </a>
                                     @break
                                     @default
+                                    @endswitch
+
+                                </td>
+
+                                <td style="text-align: center">
+                                    @switch($show)
+                                    @case($show->cv == 0)
+                                    @break
+                                    @default
+                                    <a href="{{ url('apl_01/download/' . $show->cv) }}" target="_blank"
+                                        class="text-primary font-weight-bold"><svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-download" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                                            <path d="M7 11l5 5l5 -5"></path>
+                                            <path d="M12 4l0 12"></path>
+                                        </svg>
+                                    </a>
                                     @endswitch
                                 </td>
                             </tr>
@@ -412,6 +474,26 @@
                                     @default
                                     @endswitch
                                 </td>
+
+                                <td style="text-align: center">
+                                    @switch($show)
+                                    @case($show->sertifikat_pendukung == 0)
+                                    @break
+                                    @default
+                                    <a href="{{ url('apl_01/download/' . $show->sertifikat_pendukung) }}"
+                                        target="_blank" class="text-primary font-weight-bold"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-download" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                                            <path d="M7 11l5 5l5 -5"></path>
+                                            <path d="M12 4l0 12"></path>
+                                        </svg>
+                                    </a>
+                                    @endswitch
+                                </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center">5</td>
@@ -432,6 +514,25 @@
                                     @default
                                     @endswitch
                                 </td>
+
+                                <td style="text-align: center">
+                                    @switch($show)
+                                    @case($show->ktp == 0)
+                                    @break
+                                    @default
+                                    <a href="{{ url('apl_01/download/' . $show->ktp) }}" target="_blank"
+                                        class="text-primary font-weight-bold"><svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-download" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                                            <path d="M7 11l5 5l5 -5"></path>
+                                            <path d="M12 4l0 12"></path>
+                                        </svg>
+                                    </a>
+                                    @endswitch
+                                </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center">6</td>
@@ -450,6 +551,25 @@
                                     &check;
                                     @break
                                     @default
+                                    @endswitch
+                                </td>
+
+                                <td style="text-align: center">
+                                    @switch($show)
+                                    @case($show->p_cbt == 0)
+                                    @break
+                                    @default
+                                    <a href="{{ url('apl_01/download/' . $show->p_cbt) }}" target="_blank"
+                                        class="text-primary font-weight-bold"><svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-download" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                                            <path d="M7 11l5 5l5 -5"></path>
+                                            <path d="M12 4l0 12"></path>
+                                        </svg>
+                                    </a>
                                     @endswitch
                                 </td>
                             </tr>
@@ -532,7 +652,7 @@
                 </div>
                 <div class="col-12 mt-4 ">
                     <div class="col-6 mb-3">
-                        <label class="form-label d-block" for="plBathrooms">Tanda Tangan</label>
+                        <label class="form-label d-block" for="plBathrooms">Tanda Tangan Admin</label>
                         <div id="sig"></div>
                     </div>
                     <button id="clear" class="btn btn-danger btn-sm">Clear</button>
