@@ -605,7 +605,7 @@
                     <div class="col-sm-6">
                         <label class="form-label">No. Reg</label>
                         <input type="text" class="form-control @error('no_reg') is-invalid @enderror"
-                            placeholder="Masukan No Reg" name="no_reg" value="{{ old('no_reg') }}" required />
+                            placeholder="BNSP-LSP-841-ID" name="no_reg" value="BNSP-LSP-841-ID" readonly />
                         @error('no_reg')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -655,7 +655,7 @@
                         <label class="form-label d-block" for="plBathrooms">Tanda Tangan Admin</label>
                         <div id="sig"></div>
                     </div>
-                    <button id="clear" class="btn btn-danger btn-sm">Clear</button>
+                    <button id="clear" class="btn btn-primary btn-sm">Clear</button>
                     <textarea id="signature" name="signature_admin" style="display: none"></textarea>
                 </div>
                 <div class="col-12 d-flex justify-content-end mt-4">

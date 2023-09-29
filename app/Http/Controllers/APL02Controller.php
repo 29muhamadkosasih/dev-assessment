@@ -236,6 +236,7 @@ class APL02Controller extends Controller
             'datas' => $datas,
         ]);
         $pdf->set_paper('letter', 'potrait');
-        return $pdf->stream('FR-APL-02 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI.pdf');
+        $pdf->set_option("isPhpEnabled", true);
+                return $pdf->stream('FR-APL-02 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI.pdf');
     }
 }

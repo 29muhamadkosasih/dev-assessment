@@ -3688,7 +3688,7 @@
                     <div class="col-sm-6 mb-3">
                         <label class="form-label d-block" for="plBathrooms">Tanda Tangan Asesor</label>
                         <div id="sig"></div>
-                        <button id="clear" class="btn btn-danger btn-sm">Clear</button>
+                        <button id="clear" class="btn btn-primary btn-sm">Clear</button>
                         <textarea id="signature" name="signature_asesor" style="display: none"></textarea>
                     </div>
                     <div class="col-sm-6">

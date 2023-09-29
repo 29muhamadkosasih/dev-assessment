@@ -80,7 +80,8 @@
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">:</td>
                     <td width="650px" colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        <b>{{ $datas->apl02->kompetensi02->kompetensi->skema->nama_skema }}</b>
+                        <b style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
+                            $datas->apl02->kompetensi02->kompetensi->skema->nama_skema }}</b>
                     </td>
                 </tr>
                 </tr>
@@ -90,7 +91,8 @@
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">:</td>
                     <td colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        <b>{{ $datas->apl02->kompetensi02->kompetensi->skema->no }}</b>
+                        <b style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
+                            $datas->apl02->kompetensi02->kompetensi->skema->no }}</b>
                     </td>
                 </tr>
             </thead>
@@ -170,7 +172,9 @@
                                 <b>Unit Kompetensi No.
                                     1</b>
                             </td>
-                            <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                            <td width="482px" style="vertical-align: top;padding: 10px;"
+                                style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {{
                                 $datas->apl02->kompetensi02->kode2 }} <br>
                                 {{ $datas->apl02->kompetensi02->unit }}
                             </td>
@@ -189,7 +193,8 @@
                             <td width="80px" style="text-align: center">Bukti</td>
                         </tr>
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_01 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_01 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -213,7 +218,8 @@
                         </tr>
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_02)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_02 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_02 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -239,7 +245,8 @@
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_03)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_03 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_03 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -265,7 +272,8 @@
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_04)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_04 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_04 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -291,7 +299,8 @@
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_05)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_05 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_05 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -311,13 +320,14 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.a</td>
                         </tr>
                         @endunless
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_06)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_06 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_06 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -337,13 +347,14 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.b</td>
                         </tr>
                         @endunless
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_07)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_07 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_07 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -363,13 +374,14 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.a</td>
                         </tr>
                         @endunless
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_08)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_08 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_08 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -389,14 +401,15 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.b</td>
                         </tr>
                         @endunless
 
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_09)
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_09 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_09 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -416,14 +429,15 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.a</td>
                         </tr>
                         @endunless
 
                         @unless(!$datas->apl02->kompetensi02->element_kuk_1_10)
                         <!-- Tampilkan data -->
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_10 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_10 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -443,7 +457,7 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.b</td>
                         </tr>
                         @endunless
 
@@ -452,7 +466,8 @@
                         @break
                         @default
                         <tr>
-                            <td>{!! $datas->apl02->kompetensi02->element_kuk_1_11 !!}</td>
+                            <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                {!! $datas->apl02->kompetensi02->element_kuk_1_11 !!}</td>
                             <td style="text-align: center">
 
                                 @switch($datas)
@@ -472,7 +487,7 @@
                                 @default
                                 @endswitch
                             </td>
-                            <td></td>
+                            <td style="text-align: center">Bukti 3.a</td>
                         </tr>
                         @endswitch
 
@@ -492,7 +507,9 @@
                                     <b>Unit Kompetensi No.
                                         2</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode2 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit2 }}
                                 </td>
@@ -510,7 +527,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -530,11 +549,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -554,13 +575,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -580,13 +603,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -606,13 +631,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -632,13 +659,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -658,13 +687,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -684,13 +715,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -710,14 +743,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -737,14 +772,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_2_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -764,7 +801,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -773,7 +810,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_2_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_2_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -793,7 +832,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -815,7 +854,9 @@
                                     <b>Unit Kompetensi No.
                                         3</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode3 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit3 }}
                                 </td>
@@ -833,7 +874,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -853,11 +896,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -877,13 +922,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -903,13 +950,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -929,13 +978,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -955,13 +1006,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -981,13 +1034,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1007,13 +1062,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1033,14 +1090,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1060,14 +1119,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_3_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1087,7 +1148,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -1096,7 +1157,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_3_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_3_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1116,7 +1179,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -1138,7 +1201,9 @@
                                     <b>Unit Kompetensi No.
                                         4</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode4 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit4 }}
                                 </td>
@@ -1156,7 +1221,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1176,11 +1243,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1200,13 +1269,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1226,13 +1297,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1252,13 +1325,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1278,13 +1353,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1304,13 +1381,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1330,13 +1409,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1356,14 +1437,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1383,14 +1466,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_4_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1410,7 +1495,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -1419,7 +1504,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_4_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_4_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1439,7 +1526,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -1461,7 +1548,9 @@
                                     <b>Unit Kompetensi No.
                                         5</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode5 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit5 }}
                                 </td>
@@ -1479,7 +1568,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1499,11 +1590,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1523,13 +1616,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1549,13 +1644,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1575,13 +1672,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1601,13 +1700,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1627,13 +1728,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1653,13 +1756,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1679,14 +1784,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1706,14 +1813,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_5_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1733,7 +1842,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -1742,7 +1851,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_5_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_5_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1762,7 +1873,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -1785,7 +1896,9 @@
                                     <b>Unit Kompetensi No.
                                         6</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode6 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit6 }}
                                 </td>
@@ -1803,7 +1916,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1823,11 +1938,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1847,13 +1964,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1873,13 +1992,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1899,13 +2020,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1925,13 +2048,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1951,13 +2076,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -1977,13 +2104,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2003,14 +2132,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2030,14 +2161,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_6_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2057,7 +2190,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -2066,7 +2199,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_6_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_6_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2086,7 +2221,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -2108,7 +2243,9 @@
                                     <b>Unit Kompetensi No.
                                         7</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode7 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit7 }}
                                 </td>
@@ -2126,7 +2263,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2146,11 +2285,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2170,13 +2311,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2196,13 +2339,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2222,13 +2367,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2248,13 +2395,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2274,13 +2423,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2300,13 +2451,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2326,14 +2479,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2353,14 +2508,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_7_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2380,7 +2537,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -2389,7 +2546,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_7_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_7_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2409,7 +2568,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -2432,7 +2591,9 @@
                                     <b>Unit Kompetensi No.
                                         8</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode8 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit8 }}
                                 </td>
@@ -2450,7 +2611,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2470,11 +2633,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2494,13 +2659,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2520,13 +2687,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2546,13 +2715,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2572,13 +2743,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2598,13 +2771,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2624,13 +2799,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2650,14 +2827,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2677,14 +2856,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_8_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2704,7 +2885,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -2713,7 +2894,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_8_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_8_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2733,7 +2916,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -2756,7 +2939,9 @@
                                     <b>Unit Kompetensi No.
                                         9</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode9 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit9 }}
                                 </td>
@@ -2774,7 +2959,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2794,11 +2981,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2818,13 +3007,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2844,13 +3035,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2870,13 +3063,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2896,13 +3091,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2922,13 +3119,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2948,13 +3147,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -2974,14 +3175,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3001,14 +3204,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_9_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3028,7 +3233,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -3037,7 +3242,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_9_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_9_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3057,7 +3264,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -3079,7 +3286,9 @@
                                     <b>Unit Kompetensi No.
                                         10</b>
                                 </td>
-                                <td width="482px" style="vertical-align: top;padding: 10px;">{{
+                                <td width="482px" style="vertical-align: top;padding: 10px;"
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {{
                                     $datas->apl02->kompetensi02->kode10 }} <br>
                                     {{ $datas->apl02->kompetensi02->unit10 }}
                                 </td>
@@ -3097,7 +3306,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3117,11 +3328,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3141,13 +3354,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3167,13 +3382,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3193,13 +3410,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3219,13 +3438,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3245,13 +3466,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3271,13 +3494,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3297,14 +3522,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3324,14 +3551,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_10_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3351,7 +3580,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -3360,7 +3589,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_10_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_10_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3380,7 +3611,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -3421,7 +3652,9 @@
                                 <td width="80px" style="text-align: center">Bukti</td>
                             </tr>
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_01 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_01 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3441,11 +3674,13 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_02)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_02 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_02 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3465,13 +3700,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_03)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_03 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_03 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3491,13 +3728,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_04)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_04 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_04 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3517,13 +3756,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_05)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_05 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_05 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3543,13 +3784,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_06)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_06 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_06 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3569,13 +3812,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_07)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_07 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_07 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3595,13 +3840,15 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_08)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_08 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_08 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3621,14 +3868,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_09)
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_09 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_09 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3648,14 +3897,16 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endunless
 
                             @unless(!$datas->apl02->kompetensi02->element_kuk_11_10)
                             <!-- Tampilkan data -->
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_10 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_10 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3675,7 +3926,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.b</td>
                             </tr>
                             @endunless
 
@@ -3684,7 +3935,9 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $datas->apl02->kompetensi02->element_kuk_11_11 !!}</td>
+                                <td
+                                    style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                                    {!! $datas->apl02->kompetensi02->element_kuk_11_11 !!}</td>
                                 <td style="text-align: center">
 
                                     @switch($datas)
@@ -3704,7 +3957,7 @@
                                     @default
                                     @endswitch
                                 </td>
-                                <td></td>
+                                <td style="text-align: center">Bukti 3.a</td>
                             </tr>
                             @endswitch
 
@@ -3724,7 +3977,8 @@
                     style="text-align: left: vertical-align: top; vertical-align: top;padding-left: 10px; padding-right: 10px;">
                     <b>Nama
                         Peserta :</b>
-                    <p>{{ $datas->apl02->personal_detail->nama_lengkap->name }}</p>
+                    <p style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
+                        $datas->apl02->personal_detail->nama_lengkap->name }}</p>
 
                 </td>
                 <td width="220px"
@@ -3758,7 +4012,8 @@
                     style="text-align: left: vertical-align: top; vertical-align: top;padding-left: 10px; padding-right: 10px;">
                     <b>Nama
                         asesor :</b>
-                    <p>{{ $datas->nama_asesor_lsp }}</p>
+                    <p style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
+                        $datas->nama_asesor_lsp }}</p>
                 </td>
                 <td
                     style="text-align: left: vertical-align: top; vertical-align: top;padding-left: 10px; padding-right: 10px;">
@@ -3811,7 +4066,9 @@
                         <!--<img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"-->
                         <!--    width="100"> <br>-->
                     </p>
-                    <p style="text-align: center">{{ $datas->tanggal_validasi }}</p>
+                    <p style="text-align: center"
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
+                        $datas->tanggal_validasi }}</p>
 
                 </td>
             </tr>
@@ -3822,6 +4079,25 @@
         </p>
 
     </div>
+    <script type="text/php">
+        if ( isset($pdf) ) {
+                        // OLD 
+                        // $font = Font_Metrics::get_font("DejaVuSans", "bold");
+                        // $pdf->page_text(72, 18, "{PAGE_NUM} of {PAGE_COUNT}", $font, 6, array(255,0,0));
+                        // v.0.7.0 and greater
+        
+        
+        
+                        $x = 38; // from left
+                        $y = 20; // from bottom
+                        $text = "Halaman {PAGE_NUM} "; // {PAGE_NUM} and {PAGE_COUNT} are placeholders populated by dompdf
+                        $font = $fontMetrics->get_font("arial", "normal");
+                        $size = "10"; // in pt
+                        $color = array(.3, .3, .3); // rgb, valid values are between 0 and 1
+                        $pdf->page_text($x, $y, $text, $font, $size);
+        
+                    }
+                </script>
 </body>
 
 </html>

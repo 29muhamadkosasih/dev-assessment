@@ -26,6 +26,7 @@
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary float-end ms-2">Submit</button>
                     <a href="{{ route('permissions.index') }}" class="btn btn-secondary float-end ">Back</a>
+                </div>
             </form>
         </div>
     </div>

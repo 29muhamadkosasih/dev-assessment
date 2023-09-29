@@ -8,6 +8,9 @@
     <style>
         body {
             font-family: 'DejaVuSans', sans-serif;
+            font-size: 16px;
+            margin: 5px;
+            /* margin-right: 7px; */
         }
 
         #judul {
@@ -399,15 +402,8 @@
                 <tr>
                     <td style="text-align: center">1 </td>
                     <td style="padding-left: 10px; padding-right: 10px;">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum veritatis maiores
-                        deleniti? Id sed labore dolor molestias? Temporibus facere cumque beatae est eligendi possimus?
-                        Distinctio laudantium recusandae mollitia doloribus. Facere sequi nihil possimus perspiciatis ea
-                        quis facilis temporibus accusantium hic, dolore officia non eligendi velit nam et cupiditate
-                        iusto perferendis natus, dolorem voluptatibus laboriosam neque? Non nulla debitis repellat
-                        inventore possimus numquam enim ea accusantium perspiciatis quae aliquid delectus facilis
-                        voluptas cumque facere, error corrupti amet qui reprehenderit fugit! Eos a quia maiores
-                        recusandae soluta earum inventore, unde quis, illum exercitationem eveniet fugit obcaecati
-                        adipisci molestias laborum rerum facere?
+                        Sertifikasi Pelatihan Berbasi Kompetensi {{ $datas->kompetensi->skema->nama_skema}} dari
+                        Transafe Indonesia
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
@@ -564,7 +560,7 @@
                 <tr>
                     <td style="text-align: center">6</td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Sertifikat Pelatihan CBT</td>
+                        Bukti Hasil Kerja</td>
                     <td style="text-align: center">
                         @switch($datas)
                         @case($datas->p_cbt == 0)
@@ -670,21 +666,32 @@
     <script type="text/php">
         if ( isset($pdf) ) {
                 // OLD 
-                // $font = Font_Metrics::get_font("helvetica", "bold");
+                // $font = Font_Metrics::get_font("DejaVuSans", "bold");
                 // $pdf->page_text(72, 18, "{PAGE_NUM} of {PAGE_COUNT}", $font, 6, array(255,0,0));
                 // v.0.7.0 and greater
-                $x = 72;
-                $y = 18;
-                $text = "{PAGE_NUM} of {PAGE_COUNT}";
-                $font = $fontMetrics->get_font("helvetica", "bold");
-                $size = 6;
-                $color = array(255,0,0);
-                $word_space = 0.0;  //  default
-                $char_space = 0.0;  //  default
-                $angle = 0.0;   //  default
-                $pdf->page_text($x, $y, $text, $font, $size, $color, $word_space, $char_space, $angle);
+
+
+
+                $x = 38; // from left
+                $y = 20; // from bottom
+                $text = "Halaman {PAGE_NUM} "; // {PAGE_NUM} and {PAGE_COUNT} are placeholders populated by dompdf
+                $font = $fontMetrics->get_font("arial", "normal");
+                $size = "10"; // in pt
+                $color = array(.3, .3, .3); // rgb, valid values are between 0 and 1
+                $pdf->page_text($x, $y, $text, $font, $size);
+
             }
         </script>
+    {{-- $x = 38;
+    $y = 20;
+    $text = "{PAGE_NUM} of {PAGE_COUNT}";
+    $font = $fontMetrics->get_font("DejaVuSans", "bold");
+    $size = 10;
+    $color = array(0,0,0);
+    $word_space = 0.0; // default
+    $char_space = 0.0; // default
+    $angle = 0.0; // default
+    $pdf->page_text($x, $y, $text, $font, $size, $color, $word_space, $char_space, $angle); --}}
 </body>
 
 </html>
