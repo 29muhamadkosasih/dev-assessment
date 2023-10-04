@@ -7,7 +7,7 @@
 <div class="col-12">
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
-            <h5 class="mb-0">FK.AK-04. Banding Assessment</h5>
+            <h5 class="mb-0">FK.AK-04. Banding ASESMEN</h5>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -18,12 +18,12 @@
                                 Okupasi Nasional</th>
                             <th width="200px">Judul</th>
                             <th width="10px">:</th>
-                            <th colspan="4"></th>
+                            <th colspan="4">{{ $show->apl02->kompetensi02->kompetensi->skema->nama_skema }}</th>
                         </tr>
                         <tr>
                             <th>Nomor</th>
                             <th>:</th>
-                            <th colspan="4"></th>
+                            <th colspan="4"> {{ $show->apl02->kompetensi02->kompetensi->skema->no }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,18 +48,18 @@
                         <tr>
                             <td colspan="2">Nama Asesor</td>
                             <td>:</td>
-                            <td colspan="4"></td>
+                            <td colspan="4">{{ $show->nama_asesor_lsp }}</td>
                         </tr>
                         <tr>
-                            <td colspan="2">nama Asesi</td>
+                            <td colspan="2">Nama Asesi</td>
                             <td>:</td>
-                            <td colspan="4"></td>
+                            <td colspan="4"> {{$show->apl02->personal_detail->nama_lengkap->name}}</td>
                         </tr>
                         <tr>
                             <td colspan="2">Tanggal</td>
                             <td>:</td>
                             <td colspan="2"></td>
-                            <td colspan="2"></td>
+                            {{-- <td colspan="2"></td> --}}
                         </tr>
                     </tbody>
                 </table>
@@ -126,7 +126,9 @@
                             <td>Banding ini diajukan atas keputusan assessment yang dibuat terhadap skema
                                 sertifikasi
                                 okupasi nasional berikut :
-                                <br>Skema :<br>No. Skema ;
+                                <br>Skema : {{ $show->apl02->kompetensi02->kompetensi->skema->nama_skema
+                                }}
+                                <br>No. Skema : {{ $show->apl02->kompetensi02->kompetensi->skema->no }}
                             </td>
                         </tr>
                     </thead>
@@ -137,7 +139,11 @@
                 <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <td>Banding ini diajukan atas alasan sebagai berikut :<br><br><br><br></td>
+                            <td>Banding ini diajukan atas alasan sebagai berikut :
+                                <p>
+                                    <textarea name="" class="form-control" cols="113" rows="3"></textarea>
+                                </p>
+                            </td>
                         </tr>
                     </thead>
                 </table>
@@ -163,7 +169,11 @@
                     <tbody>
                         <tr>
                             <td width="10px">Tanda tangan&nbsp;&nbsp;asesi : <br>
-                                <p>ini ttd asesor</p>
+
+                                {{-- <img src="{{ asset('uploads/Fatia_dKZml_CV.png) }}" alt="" style="width: 90px">
+                                --}}
+
+
                             </td>
                             <td width="10px">Tanggal : <br>
 
@@ -173,6 +183,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <img src="{{ asset('Uploads/Fatia_dKZml_SKP.png') }}" alt="" style="width: 10px">
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@ class APL02Controller extends Controller
         $kompetensi = Kompetensi02::all();
         $apl01 = Personaldetail::all();
         $apl02 = APL02::all();
-        $answer = AnswerAPL02::all();
+        $answer = AnswerAPL02::get();
         return view('pages.apl_02.index', [
             'kompetensi'   => $kompetensi,
             'apl01'   => $apl01,
@@ -35,7 +35,7 @@ class APL02Controller extends Controller
         ]);
         APL02::create($request->all());
 
-        return redirect()->route('get.apl02')->with('success', 'Success ! Data Bank Berhasil di Tambahkan');
+        return redirect()->route('get.apl02')->with('success', 'Success APL-2 Berhasil di Tambahkan');
     }
 
     public function show($id)
@@ -237,6 +237,6 @@ class APL02Controller extends Controller
         ]);
         $pdf->set_paper('letter', 'potrait');
         $pdf->set_option("isPhpEnabled", true);
-                return $pdf->stream('FR-APL-02 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI.pdf');
+        return $pdf->stream('FR-APL-02 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI.pdf');
     }
 }

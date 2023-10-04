@@ -1,6 +1,7 @@
 @extends('layouts/master')
 @section('title', 'APL 02')
 @section('content')
+
 <div class="col">
     <div class="card mb">
         <form action="{{ route('apl_02.store') }}" method="POST" enctype="multipart/form-data">
@@ -70,11 +71,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse ($answer as $data)
+                        @foreach ($answer as $data)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $data->apl02->personal_detail->nama_lengkap->name }}</td>
                             <td>{{ $data->apl02->kompetensi02->kompetensi->skema->nama_skema }}</td>
+                            {{-- <td></td> --}}
                             <td style="text-align: center">
                                 <a href="{{ url('apl_02/cetak_pdf', $data->id) }}" target="_blank"
                                     class="btn btn-icon btn-primary btn-sm" data-bs-toggle="tooltip"
@@ -84,18 +86,12 @@
                                 </a>
                             </td>
                         </tr>
-                        @empty
-                        <tr>
-                            <td colspan="4" style="text-align: center">
-                                tidak ada data
-                            </td>
-                        </tr>
-                        @endforelse
-
+                        @endforeach
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
+
 @endsection

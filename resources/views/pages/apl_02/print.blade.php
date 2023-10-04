@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'DejaVuSans', sans-serif;
-            font-size: 15px;
+            font-size: 16px;
         }
 
         #judul {
@@ -25,52 +25,64 @@
             border-collapse: separate;
             border: 1px solid black;
         }
+
+        @page {
+            margin: 100px 45px 10px;
+        }
+
+        header {
+            position: fixed;
+            top: -60px;
+            left: 0px;
+            right: 0px;
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <table style="undefined;table-layout: fixed; width: 766px">
+            <colgroup>
+                <col style="width: 109.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 105.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 60.88889px">
+                <col style="width: 260.88889px">
+                <col style="width: 110.88889px">
+                <col style="width: 20.88889px">
+            </colgroup>
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
+                            width="80">
+                        {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">
+                        <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
+                            alt="" style="width: 90">
+                        {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
+                    </td>
 
-    <table style="undefined;table-layout: fixed; width: 766px">
-        <colgroup>
-            <col style="width: 109.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 105.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 60.88889px">
-            <col style="width: 260.88889px">
-            <col style="width: 110.88889px">
-            <col style="width: 20.88889px">
-        </colgroup>
-        <thead>
-            <tr>
-                <td colspan="2">
-                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
-                        width="80">
-                    {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td colspan="2">
-                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
-                        alt="" style="width: 90">
-                    {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
-                </td>
-
-            </tr>
-        </thead>
-    </table>
+                </tr>
+            </thead>
+        </table>
+    </header> <br>
     <div id=halaman>
         <h3 id=judul>FR-APL-02 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI</h3>
         <table class="table" border="1" id="ping">
             <thead>
                 <tr>
-                    <td width="250px" colspan="3" rowspan="2"
+                    <td width="249px" colspan="3" rowspan="2"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Skema
                         Sertifikasi <br> Okupasi
                     </td>
@@ -148,7 +160,8 @@
                 </tr>
             </thead>
             <tr>
-                <td style="text-align: left: vertical-align: top;padding-left: 20px; padding-right: 10px;"> <b>Instruksi
+                <td width="691px"
+                    style="text-align: left: vertical-align: top;padding-left: 20px; padding-right: 10px;"> <b>Instruksi
                         :</b> <br>
 
                     <li>Baca
@@ -4081,13 +4094,13 @@
     </div>
     <script type="text/php">
         if ( isset($pdf) ) {
-                        // OLD 
+                        // OLD
                         // $font = Font_Metrics::get_font("DejaVuSans", "bold");
                         // $pdf->page_text(72, 18, "{PAGE_NUM} of {PAGE_COUNT}", $font, 6, array(255,0,0));
                         // v.0.7.0 and greater
-        
-        
-        
+
+
+
                         $x = 38; // from left
                         $y = 20; // from bottom
                         $text = "Halaman {PAGE_NUM} "; // {PAGE_NUM} and {PAGE_COUNT} are placeholders populated by dompdf
@@ -4095,7 +4108,7 @@
                         $size = "10"; // in pt
                         $color = array(.3, .3, .3); // rgb, valid values are between 0 and 1
                         $pdf->page_text($x, $y, $text, $font, $size);
-        
+
                     }
                 </script>
 </body>

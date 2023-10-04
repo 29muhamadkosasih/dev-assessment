@@ -1398,7 +1398,7 @@
                             @break
                             @default
                             <tr>
-                                <td>{!! $show->element_kuk_3_11 !!}</td>
+                                <td>{!! $show->element_kuk_3_21 !!}</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>

@@ -65,7 +65,7 @@ class User extends Authenticatable
         });
     }
 
-    public function personal()
+    public function nama_lengkap()
     {
         return $this->hasMany(Personaldetail::class);
     }

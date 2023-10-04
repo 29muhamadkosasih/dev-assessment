@@ -21,7 +21,7 @@ class APL02 extends Model
         return $this->belongsTo(Kompetensi02::class, 'kompetensi02_id');
     }
 
-    public function answer()
+    public function apl02()
     {
         return $this->hasMany(AnswerAPL02::class);
     }

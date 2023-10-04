@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AnswerAPL02;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
@@ -11,15 +12,19 @@ class AK04Controller extends Controller
 {
     public function index()
     {
-        abort_if(Gate::denies('fr_ak_04.create'), Response::HTTP_FORBIDDEN, 'Forbidden');
+        $apl_02 = AnswerAPL02::all();
 
-        dd(['hello word']);
+        return view('pages.perangkat_assessment.fr_ak_04.index', [
+            'apl_02'   => $apl_02
+        ]);
     }
 
-    public function create()
+    public function show($id)
     {
+        $show = AnswerAPL02::find($id);
+
         return view('pages.perangkat_assessment.fr_ak_04.create', [
-            ''
+            'show'  => $show
         ]);
     }
 }

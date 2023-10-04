@@ -116,7 +116,7 @@
                                 </th>
                                 <th style="text-align: start">Judul</th>
                                 <th style="text-align: center">:</th>
-                                <th colspan="5" style="text-align: center">{{ $show->kompetensi->skema->nama_skema }}
+                                <th colspan="5" >{{ $show->kompetensi->skema->nama_skema }}
                                 </th>
                             </tr>
                             </tr>
@@ -280,7 +280,7 @@
                         <thead>
                             <tr>
                                 <th rowspan="2" width='40px' style="text-align: center">No</th>
-                                <th width="700px" rowspan="2" style="text-align: center">Bukti Persyaratan </th>
+                                <th width="500px" rowspan="2" style="text-align: center">Bukti Persyaratan </th>
                                 <th width="200px" colspan="2" style="text-align: center">Memenuhi Pesyaratan </th>
                                 <th width="200px" rowspan="2" style="text-align: center">Catatan</th>
                             </tr>
@@ -293,23 +293,9 @@
                             <tr>
                                 <td style="text-align: center">1 </td>
                                 <td style="padding-left: 10px; padding-right: 10px;">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum veritatis
-                                    maiores
-                                    deleniti? Id sed labore dolor molestias? Temporibus facere cumque beatae est
-                                    eligendi possimus?
-                                    Distinctio laudantium recusandae mollitia doloribus. Facere sequi nihil possimus
-                                    perspiciatis ea
-                                    quis facilis temporibus accusantium hic, dolore officia non eligendi velit nam et
-                                    cupiditate
-                                    iusto perferendis natus, dolorem voluptatibus laboriosam neque? Non nulla debitis
-                                    repellat
-                                    inventore possimus numquam enim ea accusantium perspiciatis quae aliquid delectus
-                                    facilis
-                                    voluptas cumque facere, error corrupti amet qui reprehenderit fugit! Eos a quia
-                                    maiores
-                                    recusandae soluta earum inventore, unde quis, illum exercitationem eveniet fugit
-                                    obcaecati
-                                    adipisci molestias laborum rerum facere?
+                                    Sertifikat Pelatihan Berbasis Kompetensi <b>{{ $show->kompetensi->skema->nama_skema
+                                        }} </b>
+                                    dari Transafe Indonesia
                                 </td>
                                 <td></td>
                                 <td></td>

@@ -319,7 +319,7 @@
 
 <div class="col-12">
     <div class="card">
-        <form method="POST" action="#">
+        <form action="{{ route('apl_01.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="mb-0">Data Diri</h5>

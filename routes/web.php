@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AK04Controller;
+use App\Http\Controllers\AK05Controller;
+use App\Http\Controllers\AK06Controller;
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\APL01Controller;
 use App\Http\Controllers\APL02Controller;
@@ -65,4 +67,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('validasi', ValidasiController::class);
     Route::resource('validasi02', Validasi02Controller::class);
     Route::resource('fr_ak_04', AK04Controller::class);
+    Route::resource('fr_ak_05', AK05Controller::class);
+    Route::resource('fr_ak_06', AK06Controller::class);
 });

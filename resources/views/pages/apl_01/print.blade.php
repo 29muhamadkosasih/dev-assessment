@@ -9,7 +9,7 @@
         body {
             font-family: 'DejaVuSans', sans-serif;
             font-size: 16px;
-            margin: 5px;
+            /* margin: 5px; */
             /* margin-right: 7px; */
         }
 
@@ -27,46 +27,61 @@
             border-collapse: separate;
             border: 1px solid black;
         }
+
+        header {
+            position: fixed;
+            top: -60px;
+            left: 0px;
+            right: 0px;
+
+        }
+
+        @page {
+            margin: 100px 45px 10px;
+        }
     </style>
 </head>
 
 <body>
 
-    <table style="undefined;table-layout: fixed; width: 766px">
-        <colgroup>
-            <col style="width: 109.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 105.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 24.88889px">
-            <col style="width: 60.88889px">
-            <col style="width: 260.88889px">
-            <col style="width: 110.88889px">
-            <col style="width: 20.88889px">
-        </colgroup>
-        <thead>
-            <tr>
-                <td colspan="2">
-                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
-                        width="80">
-                    {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td colspan="2">
-                    <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
-                        alt="" style="width: 90">
-                    {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
-                </td>
+    <header>
+        <table style="undefined;table-layout: fixed; width: 766px">
+            <colgroup>
+                <col style="width: 109.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 105.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 24.88889px">
+                <col style="width: 60.88889px">
+                <col style="width: 260.88889px">
+                <col style="width: 110.88889px">
+                <col style="width: 20.88889px">
+            </colgroup>
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        <img src="{{ asset('https://sisfo.bnsp.go.id/images/K8cRm4d6SGTrLQXefW3ON0JsIYM5ioPH.png') }}"
+                            width="80">
+                        {{-- <img src="{{ asset('assets/img/favicon/lsp.png') }}" width="80"> --}}
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2">
+                        <img src="{{ asset('https://sisfo.bnsp.go.id/images/RHdf56WGqTZFU3vaohwy7gIr9pEzNkYc.png') }}"
+                            alt="" style="width: 90">
+                        {{-- <img src="{{ asset('assets/img/favicon/bnsp.png') }}" alt="" style="width: 90"> --}}
+                    </td>
 
-            </tr>
-        </thead>
-    </table>
+                </tr>
+            </thead>
+        </table>
+    </header> <br>
+
     <div id=halaman>
         <h3 id=judul>FR-APL-01 FORMULIR PERMOHONAN SERTIFIKASI KOMPETENSI</h3>
         <h4 id=judul>Bagian 1 : Rincian Data Pemohon Sertifikasi</h4>
@@ -391,7 +406,7 @@
                     <th rowspan="2" width='40px' style="text-align: center">No</th>
                     <th width="400px" rowspan="2">Bukti Persyaratan </th>
                     <th width="167px" colspan="2">Memenuhi Pesyaratan </th>
-                    <th width="100px" rowspan="2">Catatan</th>
+                    <th width="200px" rowspan="2">Catatan</th>
                 </tr>
                 <tr>
                     <th>Ya</th>
@@ -411,6 +426,8 @@
                         {{-- <img
                             src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @break
                         @default
                         @endswitch
@@ -423,6 +440,8 @@
                         {{-- <img
                             src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18"> --}}
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
                         @endswitch
                     </td>
                     <td></td>
@@ -665,7 +684,7 @@
     </div>
     <script type="text/php">
         if ( isset($pdf) ) {
-                // OLD 
+                // OLD
                 // $font = Font_Metrics::get_font("DejaVuSans", "bold");
                 // $pdf->page_text(72, 18, "{PAGE_NUM} of {PAGE_COUNT}", $font, 6, array(255,0,0));
                 // v.0.7.0 and greater

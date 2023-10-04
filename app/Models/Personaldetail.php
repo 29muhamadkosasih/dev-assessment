@@ -43,4 +43,9 @@ class Personaldetail extends Model
     {
         return $this->belongsTo(Kompetensi::class, 'kompetensi_id');
     }
+
+    public function personal_detail()
+    {
+        return $this->hasMany(Personaldetail::class);
+    }
 }

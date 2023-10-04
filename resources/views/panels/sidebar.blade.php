@@ -63,7 +63,7 @@
         {{-- @can('apl_01.create') --}}
         <li class="menu-item {{ Route::currentRouteNamed('apl_01.create') ? 'active' : '' }}">
             <a href="{{ route('apl_01.create') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
+                <i class="menu-icon tf-icons ti ti-box-multiple-1"></i>
                 <div data-i18n="APL-01">APL-01</div>
             </a>
         </li>
@@ -71,40 +71,56 @@
 
         <li class="menu-item {{ Route::currentRouteNamed('validasi.index', 'validasi.show') ? 'active' : '' }}">
             <a href="{{ route('validasi.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
+                <i class="menu-icon tf-icons ti ti-loader-3"></i>
                 <div data-i18n="Validasi APL-01">Validasi APL-01</div>
             </a>
         </li>
 
         <li class="menu-item {{ Route::currentRouteNamed('apl_02.index') ? 'active' : '' }}">
             <a href="{{ route('apl_02.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
+                <i class="menu-icon tf-icons ti ti-box-multiple-2"></i>
                 <div data-i18n="APL-02">APL-02</div>
             </a>
         </li>
 
         <li class="menu-item {{ Route::currentRouteNamed('validasi02.index', 'validasi02.show') ? 'active' : '' }}">
             <a href="{{ route('validasi02.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
+                <i class="menu-icon tf-icons ti ti-badges"></i>
                 <div data-i18n="Validasi APL-02">Validasi APL-02</div>
             </a>
         </li>
 
         @canany(['fr_ak_04.index'])
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Perangkat Assessment</span>
+            <span class="menu-header-text">Perangkat Asesmen</span>
         </li>
 
         @can('fr_ak_04.index')
         <li
             class="menu-item {{ Route::currentRouteNamed('fr_ak_04.index','fr_ak_04.show','fr_ak_04.edit' ,'fr_ak_04.create') ? 'active' : '' }}">
             <a href="{{ route('fr_ak_04.create') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-arrow-loop-right-2"></i>
-                <div data-i18n="FR. AK-04 Banding Assessment">FR. AK-04 Banding Assessment</div>
+                <i class="menu-icon tf-icons ti ti-id-badge-2"></i>
+                <div data-i18n="FR. AK-04 Banding Asesmen">FR. AK-04 Banding Asesmen</div>
             </a>
         </li>
         @endcan
         @endcanany
+
+        {{-- <li
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_05.index','fr_ak_05.show','fr_ak_05.edit' ,'fr_ak_05.create') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_05.create') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-box-multiple"></i>
+                <div data-i18n="FR. AK-05 Laporan Asesmen">FR. AK-05 Laporan Asesmen</div>
+            </a>
+        </li>
+
+        <li
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_06.index','fr_ak_06.show','fr_ak_06.edit' ,'fr_ak_06.create') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_06.create') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-brand-couchdb"></i>
+                <div data-i18n="FR. AK-05 Meninjau Proses Asesmen">FR. AK-06 Meninjau Proses Asesmen</div>
+            </a>
+        </li> --}}
 
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Master Data</span>
@@ -122,7 +138,7 @@
         <li
             class="menu-item {{ Route::currentRouteNamed('kompetensi.index','kompetensi.show','kompetensi.edit','kompetensi.create') ? 'active' : '' }}">
             <a href="{{ route('kompetensi.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-tool"></i>
+                <i class="menu-icon tf-icons ti ti-arrows-double-nw-se"></i>
                 <div data-i18n="Kompentensi APL-01">Kompentensi APL-01</div>
             </a>
         </li>
@@ -130,14 +146,14 @@
         <li
             class="menu-item {{ Route::currentRouteNamed('kompetensi02.index','kompetensi02.show','kompetensi02.edit','kompetensi02.create') ? 'active' : '' }}">
             <a href="{{ route('kompetensi02.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-tool"></i>
+                <i class="menu-icon tf-icons ti ti-arrows-double-se-nw"></i>
                 <div data-i18n="Kompentensi APL-02">Kompentensi APL-02</div>
             </a>
         </li>
 
         <li class="menu-item {{ Route::currentRouteNamed('skema.index','skema.show','skema.edit') ? 'active' : '' }}">
             <a href="{{ route('skema.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-tool"></i>
+                <i class="menu-icon tf-icons ti ti-ballpen"></i>
                 <div data-i18n="Skema">Skema</div>
             </a>
         </li>
