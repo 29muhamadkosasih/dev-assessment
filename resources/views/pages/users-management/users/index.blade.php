@@ -16,9 +16,9 @@
                 </div>
             </div>
             <div class="table-responsive text-nowrap">
-                <table class="table table-bordered table-hover zero-configuration">
+                <table class="table table-bordered table-hover dataex-fixh-responsive">
                     <thead>
-                        <tr>
+                        <tr style="background-color: skyblue">
                             <th width='10px' style="text-align: center">No</th>
                             <th>Name</th>
                             <th>UserName</th>

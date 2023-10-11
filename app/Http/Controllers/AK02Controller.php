@@ -2,48 +2,47 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\fkAspek;
+use App\Models\fkRekAsm;
 use App\Models\AnswerAPL02;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use PDF;
 
-class AK06Controller extends Controller
+class AK02Controller extends Controller
 {
-
     public function index()
     {
         $apl_02 = AnswerAPL02::all();
-        $aspek = fkAspek::where('status', '1')->get();
+        $Asm = fkRekAsm::all();
 
 
-        return view('pages.perangkat_assessment.fr_ak_06.index', [
+        return view('pages.perangkat_assessment.fr_ak_02.index', [
             'apl_02'   => $apl_02,
-            'aspek'   => $aspek,
+            'Asm'   => $Asm,
         ]);
     }
 
     public function store(Request $request)
     {
-        fkAspek::create($request->all());
-        return redirect()->route('get.fr_ak_06');
+        // dd($request);
+        fkRekAsm::create($request->all());
+        return redirect()->route('get.fr_ak_02');
     }
 
     public function get()
     {
-        $datas = fkAspek::latest()
+        $datas = fkRekAsm::latest()
             ->limit(1)
             ->get();
-        return view('pages.perangkat_assessment.fr_ak_06.get', [
+        return view('pages.perangkat_assessment.fr_ak_02.get', [
             'datas' => $datas
         ]);
     }
 
     public function show($id)
     {
-        $show = fkAspek::find($id);
+        $show = fkRekAsm::find($id);
 
-        return view('pages.perangkat_assessment.fr_ak_06.create', [
+        return view('pages.perangkat_assessment.fr_ak_02.create', [
             'show'  => $show,
         ]);
     }
@@ -52,19 +51,17 @@ class AK06Controller extends Controller
     {
         // dd($request);
         $data = $request->all();
-        $model = fkAspek::findOrFail($id);
+        $model = fkRekAsm::findOrFail($id);
         $model->fill($data);
-        $model->status = 1;
-        // dd($model);
         $model->save();
-        return redirect()->route('fr_ak_06.index')->with('success', 'Success ! Data Banding Berhasil di Tambahkan');
+        return redirect()->route('fr_ak_02.index')->with('success', 'Success ! Berhasil di Tambahkan');
     }
 
     public function pdf($id)
     {
-        $datas = fkAspek::find($id);
+        $datas = fkRekAsm::find($id);
         // dd($datas);
-        $pdf = PDF::loadview('pages.perangkat_assessment.fr_ak_06.print', [
+        $pdf = PDF::loadview('pages.perangkat_assessment.fr_ak_02.print', [
             'datas' => $datas,
         ]);
         $pdf->set_paper('letter', 'potrait');

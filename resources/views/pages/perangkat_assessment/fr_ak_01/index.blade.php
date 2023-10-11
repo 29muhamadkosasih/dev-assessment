@@ -1,10 +1,9 @@
 @extends('layouts/master')
-@section('title', 'FK AK-04')
+@section('title', 'FK AK-01')
 @section('content')
-
 <div class="col-xl-6 offset-2 mb-3">
     <div class="card mb">
-        <form action="{{ route('fr_ak_04.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('fr_ak_01.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="tab-content">
                 <div class="tab-pane fade active show" id="form-tabs-account" role="tabpanel">
@@ -27,13 +26,12 @@
             </div>
     </div>
 </div>
-
 <div class="col-xl-12">
     <div class="card">
         <div class="card-body">
             <div class="row ">
                 <div class="col-auto me-auto ">
-                    <h5 class="mb-0">FK.AK-04. Banding Asesmen</h5>
+                    <h5 class="mb-0">FK.AK-01. Persetujuan Asesmen Dan Kerahasiaan</h5>
                 </div>
             </div>
             <div class="table-responsive text-nowrap">
@@ -51,37 +49,28 @@
                         </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-                        @foreach ($banding as $data)
+                        @foreach ($data as $data)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
-                            <td>{{$data->banding->apl02->personal_detail->no_pendaftaran}}</td>
+                            <td>{{$data->rahasia->apl02->personal_detail->no_pendaftaran}}</td>
                             <td> {{ \Carbon\Carbon::parse($data->created_at)->format('d-m-Y') }}</td>
-                            <td>{{$data->banding->apl02->personal_detail->nama_lengkap->name}}</td>
-                            <td>{{$data->banding->apl02->kompetensi02->kompetensi->skema->nama_skema}}</td>
+                            <td>{{$data->rahasia->apl02->personal_detail->nama_lengkap->name}}</td>
+                            <td>{{$data->rahasia->apl02->kompetensi02->kompetensi->skema->nama_skema}}</td>
                             <td>
-                                {{ $data->banding->nama_asesor_lsp }}
-
+                                {{ $data->rahasia->nama_asesor_lsp }}
                             </td>
                             <td>
                                 {{
-                                \Carbon\Carbon::parse($data->banding->tanggal_validasi)->format('d-m-Y')
+                                \Carbon\Carbon::parse($data->rahasia->tanggal_validasi)->format('d-m-Y')
                                 }}
                             </td>
-
                             <td class="text-center">
-
-                                @switch($data)
-                                @case($data->status == 1)
-                                <a href="{{ url('fr_ak_04/cetak_pdf',$data->id) }}"
+                                <a href="{{ url('fr_ak_01/cetak_pdf',$data->id) }}"
                                     class="btn btn-icon btn-primary btn-sm" target="_blank" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" data-bs-original-title="Banding"
+                                    data-bs-placement="top" data-bs-original-title="rahasia"
                                     aria-describedby="tooltip358783">
                                     <span class="ti ti-download"></span>
                                 </a>
-                                @break
-                                @default
-                                @endswitch
-
                             </td>
                         </tr>
                         @endforeach

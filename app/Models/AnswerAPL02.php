@@ -15,4 +15,24 @@ class AnswerAPL02 extends Model
     {
         return $this->belongsTo(APL02::class, 'apl02_id');
     }
+
+    public function banding()
+    {
+        return $this->hasMany(fkBanding::class);
+    }
+
+    public function aspek()
+    {
+        return $this->hasMany(fkAspek::class);
+    }
+
+    public function rekAsm()
+    {
+        return $this->hasMany(fkRekAsm::class);
+    }
+
+    public function rahasia()
+    {
+        return $this->hasMany(fkRahasia::class);
+    }
 }

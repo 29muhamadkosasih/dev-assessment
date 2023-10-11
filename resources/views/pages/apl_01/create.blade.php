@@ -599,7 +599,7 @@
                             <div id="sig"></div>
                         </div>
                         <button id="clear" class="btn btn-primary btn-sm ">Clear</button>
-                        <textarea id="signature" name="signed" style="display: none"></textarea>
+                        <textarea id="signature" name="ttd_peninjau" style="display: none"></textarea>
                     </div>
 
 

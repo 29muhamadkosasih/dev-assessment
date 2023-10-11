@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AK01Controller;
+use App\Http\Controllers\AK02Controller;
+use App\Http\Controllers\AK03Controller;
 use App\Http\Controllers\AK04Controller;
 use App\Http\Controllers\AK05Controller;
 use App\Http\Controllers\AK06Controller;
@@ -19,16 +22,6 @@ use App\Http\Controllers\KompetensiController;
 use App\Http\Controllers\Validasi02Controller;
 use App\Http\Controllers\Kompetensi02Controller;
 use App\Http\Controllers\Admin\PermissionController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return view('auth.login');
@@ -50,7 +43,15 @@ Route::group(['middleware' => ['auth']], function () {
     Route::put('validasi/post/{id}', [ValidasiController::class, 'validasi'])->name('validasi');
     Route::get('cetak_pdf/{id}', [APL01Controller::class, 'pdf']);
     Route::get('apl_02/cetak_pdf/{id}', [APL02Controller::class, 'pdf']);
+    Route::get('fr_ak_04/cetak_pdf/{id}', [AK04Controller::class, 'pdf']);
+    Route::get('fr_ak_06/cetak_pdf/{id}', [AK06Controller::class, 'pdf']);
+    Route::get('fr_ak_02/cetak_pdf/{id}', [AK02Controller::class, 'pdf']);
+    Route::get('fr_ak_01/cetak_pdf/{id}', [AK01Controller::class, 'pdf']);
     Route::get('kompetensi02/get', [Kompetensi02Controller::class, 'get'])->name('get.kompetensi02');
+    Route::get('fr_ak_04/get', [AK04Controller::class, 'get'])->name('get.fr_ak_04');
+    Route::get('fr_ak_01/get', [AK01Controller::class, 'get'])->name('get.fr_ak_01');
+    Route::get('fr_ak_06/get', [AK06Controller::class, 'get'])->name('get.fr_ak_06');
+    Route::get('fr_ak_02/get', [AK02Controller::class, 'get'])->name('get.fr_ak_02');
     Route::get('kompetensi02/edit_sub/{id}', [Kompetensi02Controller::class, 'edit_sub'])->name('kompetensi02.edit_sub');
     Route::put('kompetensi02/edit_sub/{id}', [Kompetensi02Controller::class, 'update_sub'])->name('kompetensi02.update_sub');
     Route::get('apl_01/download/{file}', [APL01Controller::class, 'download'])->name('apl_01.download');
@@ -66,6 +67,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('kompetensi02', Kompetensi02Controller::class);
     Route::resource('validasi', ValidasiController::class);
     Route::resource('validasi02', Validasi02Controller::class);
+    Route::resource('fr_ak_01', AK01Controller::class);
+    Route::resource('fr_ak_02', AK02Controller::class);
+    Route::resource('fr_ak_03', AK03Controller::class);
     Route::resource('fr_ak_04', AK04Controller::class);
     Route::resource('fr_ak_05', AK05Controller::class);
     Route::resource('fr_ak_06', AK06Controller::class);

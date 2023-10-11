@@ -90,38 +90,74 @@
             </a>
         </li>
 
-        @canany(['fr_ak_04.index'])
+        @canany(['fr_ak_04.index', 'fr_ak_04.index'])
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Perangkat Asesmen</span>
         </li>
 
+        @can('fr_ak_01.index')
+        <li
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_01.index','fr_ak_01.show','fr_ak_01.edit' ,'fr_ak_01.create') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_01.create') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-box-model"></i>
+                <div data-i18n="FR. AK-01 Persetujuan Asesmen dan Kerahasiaan">FR. AK-01 Persetujuan Asesmen dan
+                    Kerahasiaan</div>
+            </a>
+        </li>
+        @endcan
+
+        @can('fr_ak_02.index')
+        <li
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_02.index','fr_ak_02.show','fr_ak_02.edit' ,'fr_ak_02.create') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_02.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-brand-airtable"></i>
+                <div data-i18n="FR. AK-02 Formulir Rekaman Asesmen Kompetensi">FR. AK-02 Formulir Rekaman Asesmen
+                    Kompetensi</div>
+            </a>
+        </li>
+        @endcan
+
+        @can('fr_ak_03.index')
+        <li
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_03.index','fr_ak_03.show','fr_ak_03.edit' ,'fr_ak_03.create') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_03.create') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-brand-campaignmonitor"></i>
+                <div data-i18n="FR. AK-03 Umpan Balik Dan Catatan">FR. AK-03 Umpan Balik Dan Catatan</div>
+            </a>
+        </li>
+        @endcan
+
         @can('fr_ak_04.index')
         <li
             class="menu-item {{ Route::currentRouteNamed('fr_ak_04.index','fr_ak_04.show','fr_ak_04.edit' ,'fr_ak_04.create') ? 'active' : '' }}">
-            <a href="{{ route('fr_ak_04.create') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-id-badge-2"></i>
+            <a href="{{ route('fr_ak_04.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-brand-couchdb"></i>
                 <div data-i18n="FR. AK-04 Banding Asesmen">FR. AK-04 Banding Asesmen</div>
             </a>
         </li>
         @endcan
-        @endcanany
 
-        {{-- <li
+
+        @can('fr_ak_05.index')
+        <li
             class="menu-item {{ Route::currentRouteNamed('fr_ak_05.index','fr_ak_05.show','fr_ak_05.edit' ,'fr_ak_05.create') ? 'active' : '' }}">
             <a href="{{ route('fr_ak_05.create') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-box-multiple"></i>
                 <div data-i18n="FR. AK-05 Laporan Asesmen">FR. AK-05 Laporan Asesmen</div>
             </a>
         </li>
+        @endcan
 
+        @can('fr_ak_06.index')
         <li
             class="menu-item {{ Route::currentRouteNamed('fr_ak_06.index','fr_ak_06.show','fr_ak_06.edit' ,'fr_ak_06.create') ? 'active' : '' }}">
             <a href="{{ route('fr_ak_06.create') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-brand-couchdb"></i>
-                <div data-i18n="FR. AK-05 Meninjau Proses Asesmen">FR. AK-06 Meninjau Proses Asesmen</div>
+                <i class="menu-icon tf-icons ti ti-chalkboard"></i>
+                <div data-i18n="FR. AK-06 Meninjau Proses Asesmen">FR. AK-06 Meninjau Proses Asesmen</div>
             </a>
-        </li> --}}
-
+        </li>
+        @endcan
+        @endcanany
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Master Data</span>
         </li>

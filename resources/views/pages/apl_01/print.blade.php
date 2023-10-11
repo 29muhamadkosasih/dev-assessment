@@ -669,7 +669,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        TandaTangan/ Tanggal</td>
+                        Tanda Tangan/ Tanggal</td>
                     <td height="167px" style="text-align: center">
                         {{-- <img src="{{ storage_path('app/public/ttd_admin_lsp/').$datas->ttd_admin_lsp }}" alt=""
                             style="width: 150px"> --}}
