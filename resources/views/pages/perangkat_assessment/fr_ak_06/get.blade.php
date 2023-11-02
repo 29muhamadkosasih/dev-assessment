@@ -15,13 +15,14 @@
                                 Okupasi Nasional</th>
                             <th width="200px">Judul</th>
                             <th width="10px">:</th>
-                            <th colspan="4">{{ $show->aspek->apl02->kompetensi02->kompetensi->skema->nama_skema }}
+                            <th colspan="4"><b>{{ $show->aspek->apl02->kompetensi02->kompetensi->skema->nama_skema
+                                    }}</b>
                             </th>
                         </tr>
                         <tr>
                             <th>Nomor</th>
                             <th>:</th>
-                            <th colspan="4"> {{ $show->aspek->apl02->kompetensi02->kompetensi->skema->no }}</th>
+                            <th colspan="4"> <b>{{ $show->aspek->apl02->kompetensi02->kompetensi->skema->no }}</b></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,7 +37,8 @@
                 </table>
             </div>
             <div class="col-12 d-flex justify-content-end mt-3">
-                <a href="{{ route('fr_ak_06.show', $show->id) }}" class="btn btn-primary btn-submit">Tinjau</a>
+                <a href="{{ route('fr_ak_06.show', $show->id) }}" class="btn btn-primary btn-submit">Meninjau Proses
+                    Asesmen</a>
             </div>
         </div>
         @endforeach

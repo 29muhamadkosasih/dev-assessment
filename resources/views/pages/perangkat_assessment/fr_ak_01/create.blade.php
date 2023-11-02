@@ -26,12 +26,12 @@
                                 <td width="250px" rowspan="2">Skema Sertifikasi&nbsp;&nbsp;Okupasi</td>
                                 <td width="200px">Judul</td>
                                 <td width="10px">:</td>
-                                <td>{{ $show->rahasia->apl02->kompetensi02->kompetensi->skema->nama_skema }}</td>
+                                <td><b>{{ $show->rahasia->apl02->kompetensi02->kompetensi->skema->nama_skema }}</b></td>
                             </tr>
                             <tr>
                                 <td>Nomor</td>
                                 <td>:</td>
-                                <td>{{ $show->rahasia->apl02->kompetensi02->kompetensi->skema->no }}</td>
+                                <td><b>{{ $show->rahasia->apl02->kompetensi02->kompetensi->skema->no }}</b></td>
                             </tr>
                             <tr>
                                 <td colspan="2">TUK</td>
@@ -78,7 +78,8 @@
                                 <td colspan="4">Pelaksanaan Asesmen disepakati pada :<br>Hari /Tanggal : <input
                                         type="date" class="form-control" name="p_date">
 
-                                    <br>Tempat : <input type="text" name="p_tempat" id="" class="form-control">
+                                    <br>Tempat Uji Kompetensi : <input type="text" name="p_tempat" id=""
+                                        class="form-control">
 
                                     <br>
                                     Jam : <input type="time" class="form-control" name="p_jam">

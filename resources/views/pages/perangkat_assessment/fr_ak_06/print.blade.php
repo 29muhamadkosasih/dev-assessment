@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'DejaVuSans', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         #judul {
@@ -35,6 +35,13 @@
             top: -60px;
             left: 0px;
             right: 0px;
+        }
+
+        ul,
+        ul li {
+            margin: 0;
+            padding: 0;
+            margin-left: 10px
         }
     </style>
 </head>
@@ -84,7 +91,7 @@
                 <tr>
                     <td width="249px" colspan="3" rowspan="2"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Skema
-                        Sertifikasi <br> Okupasi
+                        Sertifikasi <br> Okupasi Nasional
                     </td>
                     <td style="text-align: center"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Judul
@@ -127,7 +134,7 @@
         <table class="table" border="1" id="ping">
             <thead>
                 <tr>
-                    <th width="380px" rowspan="2">Aspek yang ditinjau </th>
+                    <th width="384px" rowspan="2">Aspek yang ditinjau </th>
                     <th class="text-center" colspan="4">Kesesuaian dengan prinsip asesmen</th>
                 </tr>
                 <tr>
@@ -154,7 +161,7 @@
                     <td style="text-align: center">
 
                         @switch($datas)
-                        @case($datas->aspek_1 == 1)
+                        @case($datas->aspek_1_val == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -164,7 +171,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_1 == 2)
+                        @case($datas->aspek_1_rel == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -173,7 +180,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_1 == 3)
+                        @case($datas->aspek_1_flex == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -182,7 +189,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_1 == 4)
+                        @case($datas->aspek_1_ad == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -197,8 +204,19 @@
                         </ul>
                     </td>
                     <td style="text-align: center">
+
                         @switch($datas)
-                        @case($datas->aspek_2 == 1)
+                        @case($datas->aspek_2_val == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->aspek_2_rel == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -207,7 +225,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_2 == 2)
+                        @case($datas->aspek_2_flex == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -216,16 +234,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_2 == 3)
-                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18">
-                        @break
-                        @default
-                        @endswitch
-                    </td>
-                    <td style="text-align: center">
-                        @switch($datas)
-                        @case($datas->aspek_2 == 4)
+                        @case($datas->aspek_2_ad == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -240,8 +249,19 @@
                         </ul>
                     </td>
                     <td style="text-align: center">
+
                         @switch($datas)
-                        @case($datas->aspek_3 == 1)
+                        @case($datas->aspek_3_val == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->aspek_3_rel == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -250,7 +270,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_3 == 2)
+                        @case($datas->aspek_3_flex == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -259,16 +279,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_3 == 3)
-                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18">
-                        @break
-                        @default
-                        @endswitch
-                    </td>
-                    <td style="text-align: center">
-                        @switch($datas)
-                        @case($datas->aspek_3 == 4)
+                        @case($datas->aspek_3_ad == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -283,8 +294,19 @@
                         </ul>
                     </td>
                     <td style="text-align: center">
+
                         @switch($datas)
-                        @case($datas->aspek_4 == 1)
+                        @case($datas->aspek_4_val == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->aspek_4_rel == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -293,7 +315,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_4 == 2)
+                        @case($datas->aspek_4_flex == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -302,16 +324,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_4 == 3)
-                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18">
-                        @break
-                        @default
-                        @endswitch
-                    </td>
-                    <td style="text-align: center">
-                        @switch($datas)
-                        @case($datas->aspek_4 == 4)
+                        @case($datas->aspek_4_ad == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -326,8 +339,19 @@
                         </ul>
                     </td>
                     <td style="text-align: center">
+
                         @switch($datas)
-                        @case($datas->aspek_5 == 1)
+                        @case($datas->aspek_5_val == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->aspek_5_rel == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -336,7 +360,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_5 == 2)
+                        @case($datas->aspek_5_flex == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -345,16 +369,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->aspek_5 == 3)
-                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
-                            width="18">
-                        @break
-                        @default
-                        @endswitch
-                    </td>
-                    <td style="text-align: center">
-                        @switch($datas)
-                        @case($datas->aspek_5 == 4)
+                        @case($datas->aspek_5_ad == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -363,14 +378,39 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5"
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Rekomendasi untuk peningkatan :
-                        <p>
-                            {{ $datas->rek_1 }}
-                        </p>
+                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        <b>Rekomendasi</b> <br>[untuk peningkatan ]: <br> <br>
+
+                        @switch($datas)
+                        @case($datas->rek_1 == false)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">&nbsp;Ada
+
+                        <br>
+                        <input name="comment" type="checkbox" style="margin-top: 5px">
+                        <label class="form-check-label"> &nbsp; &nbsp;Tidak Ada
+                        </label>
+
+                        @break
+                        @default
+                        <input name="comment" type="checkbox" style="margin-top: 5px">
+                        <label class="form-check-label">&nbsp; &nbsp;Ada
+                        </label>
+                        <br>
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18"> &nbsp; Tidak Ada
+                        </label>
+                        @endswitch
+
+                    </td>
+                    <td colspan="4"
+                        style="text-align: left; vertical-align: top;padding-left: 10px; padding-right: 10px;">Tuliskan
+                        jika ada: <br>
+                        {{ $datas->rek_1_detail }}
+
                     </td>
                 </tr>
+
             </tbody>
         </table>
         <br>
@@ -379,25 +419,26 @@
             <thead>
                 <tr>
                     <td rowspan="2"
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Aspek
-                        yang ditinjau </td>
-                    <td colspan="5" style="text-align: center;">Pemenuhan dimensi Kompetensi</td>
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;"><b>Aspek
+                            yang ditinjau</b></td>
+                    <td colspan="5" style="text-align: center;"><b>Pemenuhan dimensi Kompetensi</b></td>
                 </tr>
                 <tr>
                     <td style="text-align: center;"><em>Task Skills</em></td>
                     <td style="text-align: center;"><em>Task Mgmt Skills</em></td>
                     <td style="text-align: center;"><em>Contingency Mgmt Skills</em></td>
-                    <td style="text-align: center;"><em>Jon Role/Envirotment Skills</em></td>
+                    <td style="text-align: center;"><em>Job Role/Envirotment Skills</em></td>
                     <td style="text-align: center;"><em>Transfer Skills</em></td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Konsistensi Keputusan Asesmen<br> <br> Bukti dari berbagai asesmen diperiksa untuk
+                        <b>Konsistensi Keputusan Asesmen</b><br> Bukti dari berbagai asesmen diperiksa untuk
                         konsistensi
                         dimensi
-                        kompetensi</td>
+                        kompetensi
+                    </td>
                     <td style="text-align: center;">
                         {{ $datas->p_task }}
                     </td>
@@ -417,13 +458,35 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="6"
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Rekomendasi Untuk Peningkatan
+                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        <b>Rekomendasi</b> <br>[untuk peningkatan ]: <br> <br>
 
-                        <p>
-                            {{ $datas->rek_2 }}
-                        </p>
+                        @switch($datas)
+                        @case($datas->rek_2 == false)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">&nbsp;Ada
+
+                        <br>
+                        <input name="comment" type="checkbox" style="margin-top: 5px">
+                        <label class="form-check-label"> &nbsp; &nbsp;Tidak Ada
+                        </label>
+
+                        @break
+                        @default
+                        <input name="comment" type="checkbox" style="margin-top: 5px">
+                        <label class="form-check-label">&nbsp; &nbsp;Ada
+                        </label>
+                        <br>
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18"> &nbsp; Tidak Ada
+                        </label>
+                        @endswitch
+
+                    </td>
+                    <td colspan="5"
+                        style="text-align: left; vertical-align: top;padding-left: 10px; padding-right: 10px;">Tuliskan
+                        jika ada: <br>
+                        {{ $datas->rek_2_detail }}
 
                     </td>
                 </tr>
@@ -434,7 +497,7 @@
             <thead>
                 <tr>
                     <td width="280px" rowspan="2"
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Catatan
+                        style="text-align: left; vertical-align: top;padding-left: 10px; padding-right: 10px;">Komentar
                         <p>
                             {{ $datas->catatan }}
                         </p>

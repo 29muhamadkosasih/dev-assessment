@@ -49,13 +49,10 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $data->nama_bank }}</td>
                             <td style="text-align: center">
-                                @can('bank.edit')
                                 <a href="{{ route('bank.edit', $data->id) }}" class="btn btn-icon btn-warning btn-sm">
                                     <span class="ti ti-edit"></span>
                                 </a>
-                                @endcan
 
-                                @can('bank.delete')
                                 <form action="{{ route('bank.destroy', $data->id) }}" class="d-inline-block"
                                     method="post">
                                     @csrf
@@ -65,7 +62,6 @@
                                         <span class="ti ti-trash "></span>
                                     </button>
                                 </form>
-                                @endcan
                             </td>
                         </tr>
                         @endforeach

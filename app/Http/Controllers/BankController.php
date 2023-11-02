@@ -12,7 +12,6 @@ class BankController extends Controller
 {
     public function index()
     {
-        abort_if(Gate::denies('bank.index'), Response::HTTP_FORBIDDEN, 'Forbidden');
 
         $bank = Bank::all();
         return view('pages.bank.index', [
@@ -31,7 +30,6 @@ class BankController extends Controller
 
     public function edit($id)
     {
-        abort_if(Gate::denies('bank.edit'), Response::HTTP_FORBIDDEN, 'Forbidden');
 
         $edit = Bank::find($id);
         $bank = Bank::all();
@@ -58,7 +56,6 @@ class BankController extends Controller
 
     public function destroy($id)
     {
-        abort_if(Gate::denies('bank.delete'), Response::HTTP_FORBIDDEN, 'Forbidden');
 
         $delete = Bank::find($id);
         $delete->delete();

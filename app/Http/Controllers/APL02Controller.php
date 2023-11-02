@@ -18,6 +18,7 @@ class APL02Controller extends Controller
         $apl01 = Personaldetail::all();
         $apl02 = APL02::all();
         $answer = AnswerAPL02::get();
+        // dd($answer);
         return view('pages.apl_02.index', [
             'kompetensi'   => $kompetensi,
             'apl01'   => $apl01,

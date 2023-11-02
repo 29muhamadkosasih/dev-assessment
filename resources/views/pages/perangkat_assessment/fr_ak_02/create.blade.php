@@ -122,31 +122,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom1" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom1_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom1" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom1_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom1" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom1_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom1" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom1_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom1" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom1_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom1" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom1_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom1" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom1_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -154,31 +154,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi2 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom2" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom2_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom2" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom2_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom2" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom2_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom2" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom2_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom2" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom2_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom2" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom2_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom2" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom2_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -190,31 +190,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi3 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom3" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom3_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom3" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom3_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom3" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom3_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom3" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom3_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom3" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom3_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom3" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom3_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom3" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom3_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -227,31 +227,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi4 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom4" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom4_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom4" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom4_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom4" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom4_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom4" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom4_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom4" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom4_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom4" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom4_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom4" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom4_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -264,31 +264,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi5 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom5" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom5_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom5" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom5_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom5" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom5_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom5" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom5_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom5" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom5_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom5" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom5_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom5" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom5_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -301,31 +301,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi6 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom6" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom6_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom6" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom6_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom6" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom6_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom6" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom6_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom6" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom6_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom6" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom6_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom6" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom6_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -339,31 +339,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi7 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom7" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom7_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom7" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom7_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom7" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom7_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom7" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom7_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom7" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom7_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom7" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom7_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom7" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom7_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -376,31 +376,31 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi8 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom8" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom8_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom8" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom8_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom8" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom8_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom8" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom8_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom8" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom8_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom8" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom8_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom8" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom8_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -414,31 +414,107 @@
                             <tr>
                                 <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi9 }}</td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom9" class="form-check-input" type="radio" value="1">
+                                    <input name="unit_kom9_1" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom9" class="form-check-input" type="radio" value="2">
+                                    <input name="unit_kom9_2" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom9" class="form-check-input" type="radio" value="3">
+                                    <input name="unit_kom9_3" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom9" class="form-check-input" type="radio" value="4">
+                                    <input name="unit_kom9_4" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom9" class="form-check-input" type="radio" value="5">
+                                    <input name="unit_kom9_5" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom9" class="form-check-input" type="radio" value="6">
+                                    <input name="unit_kom9_6" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="unit_kom9" class="form-check-input" type="radio" value="7">
+                                    <input name="unit_kom9_7" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                            </tr>
+                            @endswitch
+
+
+                            @switch($show)
+                            @case($show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi10 == null)
+                            @break
+                            @default
+                            <tr>
+                                <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi10 }}</td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom10_1" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom10_2" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom10_3" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom10_4" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom10_5" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom10_6" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom10_7" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                            </tr>
+                            @endswitch
+
+
+                            @switch($show)
+                            @case($show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi11 == null)
+                            @break
+                            @default
+                            <tr>
+                                <td>{{ $show->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi11 }}</td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom11_1" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom11_2" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom11_3" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom11_4" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom11_5" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom11_6" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
+                                </td>
+                                <td style="text-align: center">
+                                    <input name="unit_kom11_7" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>

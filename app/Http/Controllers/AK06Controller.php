@@ -71,4 +71,42 @@ class AK06Controller extends Controller
         $pdf->set_option("isPhpEnabled", true);
         return $pdf->stream('FK.AK-04. BANDING ASESMEN.pdf');
     }
+
+    public function destroy($id)
+    {
+        $delete = fkAspek::find($id);
+        if (!$delete) {
+            return redirect()->back()->with('error', 'Data tidak ditemukan.');
+        }
+        $delete->delete();
+        return redirect()->route('fr_ak_06.index')->with('success', 'Data berhasil dihapus.');
+    }
+
+    public function detail($id)
+    {
+        $show = fkAspek::find($id);
+
+        return view('pages.perangkat_assessment.fr_ak_06.detail', [
+            'show'  => $show,
+        ]);
+    }
+
+    public function edit($id)
+    {
+        $edit = fkAspek::find($id);
+        return view('pages.perangkat_assessment.fr_ak_06.edit', [
+            'edit'   => $edit,
+        ]);
+    }
+
+    public function update_data(Request $request, $id)
+    {
+        // dd($request);
+        $data = $request->all();
+        $model = fkAspek::findOrFail($id);
+        $model->fill($data);
+        $model->status = 1;
+        $model->save();
+        return redirect()->route('fr_ak_06.index')->with('success', 'Success ! Berhasil di Update');
+    }
 }

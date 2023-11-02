@@ -10,7 +10,7 @@
         <!-- Search -->
         <div class="navbar-nav align-items-center">
             <div class="nav-item navbar-search-wrapper mb-0">
-                <h4 class="mt-3" style="color: white">E - Assessment</h4>
+                <h4 class="mt-3" style="color: white"></h4>
             </div>
         </div>
         <!-- /Search -->

@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'DejaVuSans', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         #judul {
@@ -84,7 +84,7 @@
                 <tr>
                     <td width="249px" colspan="3" rowspan="2"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Skema
-                        Sertifikasi <br> Okupasi
+                        Sertifikasi <br> Okupasi Nasional
                     </td>
                     <td style="text-align: center"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Judul
@@ -253,9 +253,10 @@
                         Pelaksanaan Asesmen disepakati pada :
                         <br>Hari/ Tanggal :
 
-                        {{ Carbon\Carbon::parse($datas->p_date)->formatLocalized('%A, %e %B %Y') }}
+                        {{-- {{ Carbon\Carbon::parse($datas->p_date)->formatLocalized('%A, %e %B %Y') }} --}}
+                        {{ \Carbon\Carbon::parse($datas->p_date)->translatedFormat('l, j F Y') }}
 
-                        <br>Tempat : {{ $datas->p_tempat }} <br>
+                        <br>Tempat Uji Kompetensi : {{ $datas->p_tempat }} <br>
                         Jam : {{ $datas->p_jam }} WIB
                     </td>
                 </tr>

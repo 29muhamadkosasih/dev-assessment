@@ -1,10 +1,8 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
     <div class="app-brand demo">
         {{-- <span class="app-brand-logo demo"> --}}
-            <img src="{{ asset('assets/img/favicon/lgo.png') }}" width="110" height="90" alt
-                class="me-3 ms-3 h-auto text-right" />
-
-            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+            <img src="{{ asset('assets/img/favicon/logo.png') }}" width="42" height="22" alt class="mt-3 h-auto" /> <a
+                href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
                 <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
                 <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
             </a>
@@ -97,8 +95,8 @@
 
         @can('fr_ak_01.index')
         <li
-            class="menu-item {{ Route::currentRouteNamed('fr_ak_01.index','fr_ak_01.show','fr_ak_01.edit' ,'fr_ak_01.create') ? 'active' : '' }}">
-            <a href="{{ route('fr_ak_01.create') }}" class="menu-link">
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_01.index','fr_ak_01.show','fr_ak_01.edit' ,'fr_ak_01.create','fr_ak_01.detail') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_01.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-box-model"></i>
                 <div data-i18n="FR. AK-01 Persetujuan Asesmen dan Kerahasiaan">FR. AK-01 Persetujuan Asesmen dan
                     Kerahasiaan</div>
@@ -108,7 +106,7 @@
 
         @can('fr_ak_02.index')
         <li
-            class="menu-item {{ Route::currentRouteNamed('fr_ak_02.index','fr_ak_02.show','fr_ak_02.edit' ,'fr_ak_02.create') ? 'active' : '' }}">
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_02.index','fr_ak_02.show','fr_ak_02.edit' ,'fr_ak_02.create','fr_ak_02.detail') ? 'active' : '' }}">
             <a href="{{ route('fr_ak_02.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-brand-airtable"></i>
                 <div data-i18n="FR. AK-02 Formulir Rekaman Asesmen Kompetensi">FR. AK-02 Formulir Rekaman Asesmen
@@ -119,8 +117,8 @@
 
         @can('fr_ak_03.index')
         <li
-            class="menu-item {{ Route::currentRouteNamed('fr_ak_03.index','fr_ak_03.show','fr_ak_03.edit' ,'fr_ak_03.create') ? 'active' : '' }}">
-            <a href="{{ route('fr_ak_03.create') }}" class="menu-link">
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_03.index','fr_ak_03.show','fr_ak_03.edit' ,'fr_ak_03.create','fr_ak_03.detail') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_03.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-brand-campaignmonitor"></i>
                 <div data-i18n="FR. AK-03 Umpan Balik Dan Catatan">FR. AK-03 Umpan Balik Dan Catatan</div>
             </a>
@@ -129,7 +127,7 @@
 
         @can('fr_ak_04.index')
         <li
-            class="menu-item {{ Route::currentRouteNamed('fr_ak_04.index','fr_ak_04.show','fr_ak_04.edit' ,'fr_ak_04.create') ? 'active' : '' }}">
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_04.index','fr_ak_04.show','fr_ak_04.edit' ,'fr_ak_04.create','fr_ak_04.detail') ? 'active' : '' }}">
             <a href="{{ route('fr_ak_04.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-brand-couchdb"></i>
                 <div data-i18n="FR. AK-04 Banding Asesmen">FR. AK-04 Banding Asesmen</div>
@@ -140,8 +138,8 @@
 
         @can('fr_ak_05.index')
         <li
-            class="menu-item {{ Route::currentRouteNamed('fr_ak_05.index','fr_ak_05.show','fr_ak_05.edit' ,'fr_ak_05.create') ? 'active' : '' }}">
-            <a href="{{ route('fr_ak_05.create') }}" class="menu-link">
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_05.index','fr_ak_05.show','fr_ak_05.edit' ,'fr_ak_05.create','fr_ak_05.detail') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_05.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-box-multiple"></i>
                 <div data-i18n="FR. AK-05 Laporan Asesmen">FR. AK-05 Laporan Asesmen</div>
             </a>
@@ -150,8 +148,8 @@
 
         @can('fr_ak_06.index')
         <li
-            class="menu-item {{ Route::currentRouteNamed('fr_ak_06.index','fr_ak_06.show','fr_ak_06.edit' ,'fr_ak_06.create') ? 'active' : '' }}">
-            <a href="{{ route('fr_ak_06.create') }}" class="menu-link">
+            class="menu-item {{ Route::currentRouteNamed('fr_ak_06.index','fr_ak_06.show','fr_ak_06.edit' ,'fr_ak_06.create','fr_ak_06.detail') ? 'active' : '' }}">
+            <a href="{{ route('fr_ak_06.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-chalkboard"></i>
                 <div data-i18n="FR. AK-06 Meninjau Proses Asesmen">FR. AK-06 Meninjau Proses Asesmen</div>
             </a>
@@ -191,6 +189,14 @@
             <a href="{{ route('skema.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-ballpen"></i>
                 <div data-i18n="Skema">Skema</div>
+            </a>
+        </li>
+
+        <li
+            class="menu-item {{ Route::currentRouteNamed('asesor.index','asesor.show','asesor.edit') ? 'active' : '' }}">
+            <a href="{{ route('asesor.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-feather"></i>
+                <div data-i18n="Asesor">Asesor</div>
             </a>
         </li>
 

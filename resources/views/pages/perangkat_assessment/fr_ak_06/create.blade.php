@@ -32,13 +32,15 @@
                                     Okupasi Nasional</th>
                                 <th width="200px">Judul</th>
                                 <th width="10px">:</th>
-                                <th colspan="4">{{ $show->aspek->apl02->kompetensi02->kompetensi->skema->nama_skema }}
+                                <th colspan="4"><b>{{ $show->aspek->apl02->kompetensi02->kompetensi->skema->nama_skema
+                                        }}</b>
                                 </th>
                             </tr>
                             <tr>
                                 <th>Nomor</th>
                                 <th>:</th>
-                                <th colspan="4">{{ $show->aspek->apl02->kompetensi02->kompetensi->skema->no }}</th>
+                                <th colspan="4"><b>{{ $show->aspek->apl02->kompetensi02->kompetensi->skema->no }}</b>
+                                </th>
                             </tr>
                             <tr>
                                 <td colspan="4">
@@ -79,19 +81,19 @@
                                     <li>Rencana Asesmen</li>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_1" class="form-check-input" type="radio" value="1">
+                                    <input name="aspek_1_val" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_1" class="form-check-input" type="radio" value="2">
+                                    <input name="aspek_1_rel" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_1" class="form-check-input" type="radio" value="3">
+                                    <input name="aspek_1_flex" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_1" class="form-check-input" type="radio" value="4">
+                                    <input name="aspek_1_ad" class="form-check-input" type="checkbox" value="1">
                                     <label class="form-check-label"></label>
                                 </td>
                             </tr>
@@ -100,24 +102,20 @@
                                     <li>Persiapan Asesmen</li>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_2" class="form-check-input" type="radio" value="1"
-                                        id="defaultRadio2">
-                                    <label class="form-check-label" for="defaultRadio2"></label>
+                                    <input name="aspek_2_val" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_2" class="form-check-input" type="radio" value="2"
-                                        id="defaultRadio2">
-                                    <label class="form-check-label" for="defaultRadio2"></label>
+                                    <input name="aspek_2_rel" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_2" class="form-check-input" type="radio" value="3"
-                                        id="defaultRadio2">
-                                    <label class="form-check-label" for="defaultRadio2"></label>
+                                    <input name="aspek_2_flex" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_2" class="form-check-input" type="radio" value="4"
-                                        id="defaultRadio2">
-                                    <label class="form-check-label" for="defaultRadio2"></label>
+                                    <input name="aspek_2_ad" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                             </tr>
                             <tr>
@@ -125,24 +123,20 @@
                                     <li>Implementasi Asesmen</li>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_3" class="form-check-input" type="radio" value="1"
-                                        id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio3"></label>
+                                    <input name="aspek_3_val" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_3" class="form-check-input" type="radio" value="2"
-                                        id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio3"></label>
+                                    <input name="aspek_3_rel" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_3" class="form-check-input" type="radio" value="3"
-                                        id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio3"></label>
+                                    <input name="aspek_3_flex" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_3" class="form-check-input" type="radio" value="4"
-                                        id="defaultRadio3">
-                                    <label class="form-check-label" for="defaultRadio3"></label>
+                                    <input name="aspek_3_ad" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                             </tr>
                             <tr>
@@ -150,24 +144,20 @@
                                     <li>Keputusan Asesmen</li>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_4" class="form-check-input" type="radio" value="1"
-                                        id="defaultRadio4">
-                                    <label class="form-check-label" for="defaultRadio4"></label>
+                                    <input name="aspek_4_val" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_4" class="form-check-input" type="radio" value="2"
-                                        id="defaultRadio4">
-                                    <label class="form-check-label" for="defaultRadio4"></label>
+                                    <input name="aspek_4_rel" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_4" class="form-check-input" type="radio" value="3"
-                                        id="defaultRadio4">
-                                    <label class="form-check-label" for="defaultRadio4"></label>
+                                    <input name="aspek_4_flex" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_4" class="form-check-input" type="radio" value="4"
-                                        id="defaultRadio4">
-                                    <label class="form-check-label" for="defaultRadio4"></label>
+                                    <input name="aspek_4_ad" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                             </tr>
                             <tr>
@@ -175,36 +165,51 @@
                                     <li>Umpan balik Asesmen</li>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_5" class="form-check-input" type="radio" value="1"
-                                        id="defaultRadio5">
-                                    <label class="form-check-label" for="defaultRadio5"></label>
+                                    <input name="aspek_5_val" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_5" class="form-check-input" type="radio" value="2"
-                                        id="defaultRadio5">
-                                    <label class="form-check-label" for="defaultRadio5"></label>
+                                    <input name="aspek_5_rel" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_5" class="form-check-input" type="radio" value="3"
-                                        id="defaultRadio5">
-                                    <label class="form-check-label" for="defaultRadio5"></label>
+                                    <input name="aspek_5_flex" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                                 <td style="text-align: center">
-                                    <input name="aspek_5" class="form-check-input" type="radio" value="4"
-                                        id="defaultRadio5">
-                                    <label class="form-check-label" for="defaultRadio5"></label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="5">Rekomendasi untuk peningkatan :
-                                    <p>
-                                        <textarea name="rek_1" class="form-control" cols="113" rows="3"></textarea>
-                                    </p>
+                                    <input name="aspek_5_ad" class="form-check-input" type="checkbox" value="1">
+                                    <label class="form-check-label"></label>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
 
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td style="text-align: left: vertical-align: top">Rekomendasi <br>(untuk peningkatan) :
+                                    <br>
+                                    <input name="rek_1" class="form-check-input" type="radio" value="true"
+                                        id="defaultRadio5">
+                                    <label class="form-check-label" for="defaultRadio5">Ada</label>
+                                </td>
+                                <td rowspan="2">Tuliskan Jika ada :
+
+                                    <p>
+                                        <textarea name="rek_1_detail" class="form-control" cols="113"
+                                            rows="3"></textarea>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="rek_1" class="form-check-input" type="radio" value="false"
+                                        id="defaultRadio5">
+                                    <label class="form-check-label" for="defaultRadio5">Tidak Ada</label>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
                     <table class="table table-bordered table-hover mt-3">
                         <thead>
                             <tr>
@@ -213,9 +218,9 @@
                             </tr>
                             <tr>
                                 <th width="130px">Task Skills</th>
-                                <th>Task Mgmt Skills</th>
-                                <th>Contingency Mgmt Skills</th>
-                                <th>Jon Role/Envirotment Skills</th>
+                                <th>Task Management Skills</th>
+                                <th>Contigency Management Skills</th>
+                                <th>Job Role/Envirotment Skills</th>
                                 <th>Transfer Skills</th>
                             </tr>
                         </thead>
@@ -266,7 +271,7 @@
                                     </p>
                                 </td>
                             </tr>
-                            <tr>
+                            {{-- <tr>
                                 <th colspan="6">Rekomendasi Untuk Peningkatan
 
                                     <p>
@@ -275,8 +280,35 @@
                                     </p>
 
                                 </th>
-                            </tr>
+                            </tr> --}}
                         </tbody>
+                    </table>
+
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <td style="text-align: left: vertical-align: top">Rekomendasi <br>(untuk peningkatan) :
+                                    <br>
+                                    <input name="rek_2" class="form-check-input" type="radio" value="true"
+                                        id="defaultRadio5">
+                                    <label class="form-check-label" for="defaultRadio5">Ada</label>
+                                </td>
+                                <td rowspan="2">Tuliskan Jika ada :
+
+                                    <p>
+                                        <textarea name="rek_2_detail" class="form-control" cols="113"
+                                            rows="3"></textarea>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="rek_2" class="form-check-input" type="radio" value="false"
+                                        id="defaultRadio5">
+                                    <label class="form-check-label" for="defaultRadio5">Tidak Ada</label>
+                                </td>
+                            </tr>
+                        </thead>
                     </table>
 
                     <table class="table table-bordered table-hover mt-3">

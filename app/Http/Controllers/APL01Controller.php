@@ -19,7 +19,7 @@ class APL01Controller extends Controller
     {
         abort_if(Gate::denies('apl_01.index'), Response::HTTP_FORBIDDEN, 'Forbidden');
 
-        $apl_01 = Personaldetail::all();
+        $apl_01 = Personaldetail::query()->paginate(1);
 
         return view('pages.apl_01.index', [
             'apl_01'    => $apl_01

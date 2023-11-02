@@ -21,4 +21,9 @@ class Kompetensi extends Model
     {
         return $this->hasMany(Personaldetail::class);
     }
+
+    public function kompetensiLaporan()
+    {
+        return $this->hasMany(fkLaporan::class);
+    }
 }

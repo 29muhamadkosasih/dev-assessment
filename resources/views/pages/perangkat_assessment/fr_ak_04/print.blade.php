@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'DejaVuSans', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         #judul {
@@ -76,7 +76,7 @@
                 </tr>
             </thead>
         </table>
-    </header> <br>
+    </header> <br> 
     <div id=halaman>
         <h3 id=judul>FK.AK-04. BANDING ASESMEN</h3>
         <table class="table" border="1" id="ping">
@@ -84,7 +84,7 @@
                 <tr>
                     <td width="249px" colspan="3" rowspan="2"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Skema
-                        Sertifikasi <br> Okupasi
+                        Sertifikasi <br> Okupasi Nasional
                     </td>
                     <td style="text-align: center"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Judul
@@ -183,9 +183,8 @@
 
         <table class="table" border="1" id="ping">
             <thead>
-                <tr style="background-color:skyblue">
-                    <th width="532px"
-                        style="text-align: center">
+                <tr>
+                    <th width="550px" style="text-align: center">
                         Jawablah
                         dengan ya atau tidak pertanyaan pertanyaan berikut ini</th>
                     <th width="80px" style="text-align: center">Ya</th>
@@ -268,7 +267,7 @@
                 <tr>
                     <td colspan="3"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Banding ini diajukan atas keputusan assessment yang dibuat terhadap skema
+                        Banding ini diajukan atas keputusan asesmen yang dibuat terhadap skema
                         sertifikasi
                         okupasi nasional berikut :
                         <br>Skema : {{ $datas->banding->apl02->kompetensi02->kompetensi->skema->nama_skema
@@ -306,6 +305,11 @@
                 </tr>
             </tbody>
         </table>
+
+        <br>
+
+        (<img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+            width="18">) yang perlu
     </div>
     <script type="text/php">
         if ( isset($pdf) ) {

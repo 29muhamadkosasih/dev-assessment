@@ -26,6 +26,9 @@
 <script src="{{ asset('assets/vendor/libs/i18n/i18n.js')}}"></script>
 <script src="{{ asset('assets/vendor/libs/typeahead-js/typeahead.js')}}"></script>
 <script src="{{ asset('assets/vendor/js/menu.js')}}"></script>
+<script src="{{ asset('assets/js/form-layouts.js')}}"></script>
+
+
 
 <!-- endbuild -->
 
@@ -80,40 +83,43 @@
 <script src="{{ asset('assets/js/tables-datatables-extensions.js')}}"></script>
 <script src="{{ asset('https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js') }}"></script>
 <script>
+    setTimeout(function () {
+        $html.removeClass('loading').addClass('loaded');
+    }, 1200);
     $(window).on('load', function () {
-                if (feather) {
-                    feather.replace({
-                        width: 14,
-                        height: 14
-                    });
-                }
-            })
+        if (feather) {
+            feather.replace({
+                width: 14,
+                height: 14
+            });
+        }
+    })
 
-            @if(Session::has('success'))
-            toastr.options = {
-                "closeButton": true,
-            }
-            toastr.success("{{ session('success') }}");
-            @endif
+    @if(Session::has('success'))
+    toastr.options = {
+        "closeButton": true,
+    }
+    toastr.success("{{ session('success') }}");
+    @endif
 
-            @if(Session::has('error'))
-            toastr.options = {
-                "closeButton": true,
-            }
-            toastr.error("{{ session('error') }}");
-            @endif
+    @if(Session::has('error'))
+    toastr.options = {
+        "closeButton": true,
+    }
+    toastr.error("{{ session('error') }}");
+    @endif
 
-            @if(Session::has('info'))
-            toastr.options = {
-                "closeButton": true,
-            }
-            toastr.info("{{ session('info') }}");
-            @endif
+    @if(Session::has('info'))
+    toastr.options = {
+        "closeButton": true,
+    }
+    toastr.info("{{ session('info') }}");
+    @endif
 
-            @if(Session::has('warning'))
-            toastr.options = {
-                "closeButton": true,
-            }
-            toastr.warning("{{ session('warning') }}");
-            @endif
+    @if(Session::has('warning'))
+    toastr.options = {
+        "closeButton": true,
+    }
+    toastr.warning("{{ session('warning') }}");
+    @endif
 </script>

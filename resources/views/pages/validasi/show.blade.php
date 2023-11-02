@@ -644,9 +644,9 @@
                     <button id="clear" class="btn btn-primary btn-sm">Clear</button>
                     <textarea id="signature" name="signature_admin" style="display: none"></textarea>
                 </div>
-                {{-- <div class="col-12 d-flex justify-content-end mt-4">
+                <div class="col-12 d-flex justify-content-end mt-4">
                     <button class="btn btn-primary btn-submit" type="submit">Submit</button>
-                </div> --}}
+                </div>
             </div>
         </form>
     </div>

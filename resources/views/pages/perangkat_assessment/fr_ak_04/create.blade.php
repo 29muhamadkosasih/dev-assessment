@@ -20,13 +20,15 @@
                                     Okupasi Nasional</th>
                                 <th width="200px">Judul</th>
                                 <th width="10px">:</th>
-                                <th colspan="4">{{ $show->banding->apl02->kompetensi02->kompetensi->skema->nama_skema }}
+                                <th colspan="4"><b>{{ $show->banding->apl02->kompetensi02->kompetensi->skema->nama_skema
+                                        }}</b>
                                 </th>
                             </tr>
                             <tr>
                                 <th>Nomor</th>
                                 <th>:</th>
-                                <th colspan="4"> {{ $show->banding->apl02->kompetensi02->kompetensi->skema->no }}</th>
+                                <th colspan="4"> <b>{{ $show->banding->apl02->kompetensi02->kompetensi->skema->no }}</b>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>

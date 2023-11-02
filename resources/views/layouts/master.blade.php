@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default"
-    data-assets-path="../../assets/" data-template="vertical-menu-template-no-customizer">
+<html lang="en" class="loading light-style layout-navbar-fixed layout-menu-fixed layout-menu-collapsed" dir="ltr"
+    data-theme="theme-default" data-assets-path="{{ asset('assets/') }}"
+    data-template="vertical-menu-template-no-customizer">
 
 <head>
     <meta charset="utf-8" />
@@ -10,7 +11,7 @@
     <title>@yield('title') - E Assessment Management System</title>
     <meta name="description" content="" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon/lgo.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon/logo1.png') }}" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,6 +75,16 @@
     </div>
     <!-- / Layout wrapper -->
     @include('panels/scripts')
+    <script>
+        $(window).on('load', function() {
+                    if (feather) {
+                        feather.replace({
+                            width: 14,
+                            height: 14
+                        });
+                    }
+                })
+    </script>
 </body>
 
 </html>

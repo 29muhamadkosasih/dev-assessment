@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'DejaVuSans', sans-serif;
-            font-size: 15px;
+            font-size: 14px;
         }
 
         #judul {
@@ -84,7 +84,8 @@
                 <tr>
                     <td width="205px" colspan="4"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Nama Asesor</td>
+                        <b>Nama Asesor</b>
+                    </td>
                     <td width="600px" colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{ $datas->rekAsm->nama_asesor_lsp }}
@@ -93,7 +94,8 @@
                 <tr>
                     <td colspan="4"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Nama Asesi</td>
+                        <b>Nama Asesi</b>
+                    </td>
                     <td colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{$datas->rekAsm->apl02->personal_detail->nama_lengkap->name}}
@@ -102,16 +104,18 @@
                 <tr>
                     <td colspan="4"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Skema Sertifikasi Okupasi</td>
+                        <b>Skema Sertifikasi Okupasi</b>
+                    </td>
                     <td colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{ $datas->rekAsm->apl02->kompetensi02->kompetensi->skema->nama_skema }}
+                        <B>{{ $datas->rekAsm->apl02->kompetensi02->kompetensi->skema->nama_skema }}</B>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="4"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Unit Kompetensi</td>
+                        <b>Unit Kompetensi</b>
+                    </td>
                     <td colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         {{ $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi }} <br>
@@ -171,20 +175,25 @@
                 <tr>
                     <td colspan="4"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Tanggal Mulai</td>
+                        <b>Tanggal Mulai</b>
+                    </td>
                     <td colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->tgl_mulai}}
+
+                        {{ \Carbon\Carbon::parse($datas->tgl_mulai)->translatedFormat('l, j F Y') }}
+
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="4"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Tanggal Selesai</td>
+                        <b>Tanggal Selesai</b>
+                    </td>
                     <td colspan="5"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        {{$datas->tgl_selesai}}
+
+                        {{ \Carbon\Carbon::parse($datas->tgl_selesai)->translatedFormat('l, j F Y') }}
                     </td>
                 </tr>
             </tbody>
@@ -201,21 +210,23 @@
             <thead>
                 <tr>
                     <td width="167px"
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Unit
-                        Kompetensi</td>
-                    <td style="text-align: center">Observasi
-                        Demontrasi</td>
-                    <td style="text-align: center">Portfolio
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;"> <b>Unit
+                            Kompetensi</b></td>
+                    <td style="text-align: center"><b>Observasi
+                            Demontrasi</b></td>
+                    <td style="text-align: center"><b>Portfolio</b>
                     </td>
                     <td style="text-align: center">
-                        Pertanyaan Wawancara</th>
+                        <b>Pertanyaan Wawancara</b></th>
                     <td style="text-align: center">
-                        Pertanyaan Lisan</td>
+                        <b>Pertanyaan Lisan</b>
+                    </td>
                     <td style="text-align: center">
-                        Pertanyaan Tertulis</td>
-                    <td style="text-align: center">Proyek
-                        Kerja</td>
-                    <td style="text-align: center">Lainnya
+                        <b>Pertanyaan Tertulis</b>
+                    </td>
+                    <td style="text-align: center"><b>Proyek
+                            Kerja</b></td>
+                    <td style="text-align: center"><b>Lainnya</b>
                     </td>
                 </tr>
             </thead>
@@ -225,7 +236,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom1 == 1)
+                        @case($datas->unit_kom1_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -234,7 +245,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom1 == 2)
+                        @case($datas->unit_kom1_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -243,7 +254,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom1 == 3)
+                        @case($datas->unit_kom1_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -252,7 +263,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom1 == 4)
+                        @case($datas->unit_kom1_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -261,7 +272,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom1 == 5)
+                        @case($datas->unit_kom1_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -270,7 +281,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom1 == 6)
+                        @case($datas->unit_kom1_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -279,7 +290,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom1 == 7)
+                        @case($datas->unit_kom1_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -293,7 +304,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi2 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom2 == 1)
+                        @case($datas->unit_kom2_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -302,7 +313,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom2 == 2)
+                        @case($datas->unit_kom2_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -311,7 +322,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom2 == 3)
+                        @case($datas->unit_kom2_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -320,7 +331,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom2 == 4)
+                        @case($datas->unit_kom2_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -329,7 +340,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom2 == 5)
+                        @case($datas->unit_kom2_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -338,7 +349,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom2 == 6)
+                        @case($datas->unit_kom2_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -347,7 +358,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom2 == 7)
+                        @case($datas->unit_kom2_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -365,7 +376,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi3 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom3 == 1)
+                        @case($datas->unit_kom3_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -374,7 +385,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom3 == 2)
+                        @case($datas->unit_kom3_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -383,7 +394,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom3 == 3)
+                        @case($datas->unit_kom3_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -392,7 +403,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom3 == 4)
+                        @case($datas->unit_kom3_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -401,7 +412,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom3 == 5)
+                        @case($datas->unit_kom3_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -410,7 +421,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom3 == 6)
+                        @case($datas->unit_kom3_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -419,7 +430,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom3 == 7)
+                        @case($datas->unit_kom3_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -438,7 +449,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi4 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom4 == 1)
+                        @case($datas->unit_kom4_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -447,7 +458,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom4 == 2)
+                        @case($datas->unit_kom4_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -456,7 +467,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom4 == 3)
+                        @case($datas->unit_kom4_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -465,7 +476,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom4 == 4)
+                        @case($datas->unit_kom4_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -474,7 +485,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom4 == 5)
+                        @case($datas->unit_kom4_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -483,7 +494,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom4 == 6)
+                        @case($datas->unit_kom4_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -492,7 +503,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom4 == 7)
+                        @case($datas->unit_kom4_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -511,7 +522,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi5 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom5 == 1)
+                        @case($datas->unit_kom5_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -520,7 +531,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom5 == 2)
+                        @case($datas->unit_kom5_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -529,7 +540,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom5 == 3)
+                        @case($datas->unit_kom5_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -538,7 +549,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom5 == 4)
+                        @case($datas->unit_kom5_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -547,7 +558,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom5 == 5)
+                        @case($datas->unit_kom5_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -556,7 +567,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom5 == 6)
+                        @case($datas->unit_kom5_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -565,7 +576,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom5 == 7)
+                        @case($datas->unit_kom5_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -584,7 +595,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi6 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom6 == 1)
+                        @case($datas->unit_kom6_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -593,7 +604,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom6 == 2)
+                        @case($datas->unit_kom6_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -602,7 +613,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom6 == 3)
+                        @case($datas->unit_kom6_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -611,7 +622,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom6 == 4)
+                        @case($datas->unit_kom6_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -620,7 +631,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom6 == 5)
+                        @case($datas->unit_kom6_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -629,7 +640,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom6 == 6)
+                        @case($datas->unit_kom6_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -638,7 +649,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom6 == 7)
+                        @case($datas->unit_kom6_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -658,7 +669,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi7 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom7 == 1)
+                        @case($datas->unit_kom7_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -667,7 +678,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom7 == 2)
+                        @case($datas->unit_kom7_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -676,7 +687,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom7 == 3)
+                        @case($datas->unit_kom7_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -685,7 +696,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom7 == 4)
+                        @case($datas->unit_kom7_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -694,7 +705,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom7 == 5)
+                        @case($datas->unit_kom7_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -703,7 +714,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom7 == 6)
+                        @case($datas->unit_kom7_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -712,7 +723,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom7 == 7)
+                        @case($datas->unit_kom7_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -731,7 +742,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi8 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom8 == 1)
+                        @case($datas->unit_kom8_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -740,7 +751,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom8 == 2)
+                        @case($datas->unit_kom8_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -749,7 +760,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom8 == 3)
+                        @case($datas->unit_kom8_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -758,7 +769,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom8 == 4)
+                        @case($datas->unit_kom8_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -767,7 +778,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom8 == 5)
+                        @case($datas->unit_kom8_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -776,7 +787,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom8 == 6)
+                        @case($datas->unit_kom8_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -785,7 +796,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom8 == 7)
+                        @case($datas->unit_kom8_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -805,7 +816,7 @@
                         $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi9 }}</td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom9 == 1)
+                        @case($datas->unit_kom9_1 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -814,7 +825,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom9 == 2)
+                        @case($datas->unit_kom9_2 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -823,7 +834,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom9 == 3)
+                        @case($datas->unit_kom9_3 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -832,7 +843,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom9 == 4)
+                        @case($datas->unit_kom9_4 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -841,7 +852,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom9 == 5)
+                        @case($datas->unit_kom9_5 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -850,7 +861,7 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom9 == 6)
+                        @case($datas->unit_kom9_6 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -859,7 +870,153 @@
                     </td>
                     <td style="text-align: center">
                         @switch($datas)
-                        @case($datas->unit_kom9 == 7)
+                        @case($datas->unit_kom9_7 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                </tr>
+                @endswitch
+
+                @switch($datas)
+                @case($datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi10 == null)
+                @break
+                @default
+                <tr>
+                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
+                        $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi10 }}</td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom10_1 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom10_2 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom10_3 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom10_4 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom10_5 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom10_6 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom10_7 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                </tr>
+                @endswitch
+
+                @switch($datas)
+                @case($datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi11 == null)
+                @break
+                @default
+                <tr>
+                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">{{
+                        $datas->rekAsm->apl02->kompetensi02->kompetensi->unit_kompetensi11 }}</td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom11_1 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom11_2 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom11_3 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom11_4 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom11_5 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom11_6 == 1)
+                        <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                            width="18">
+                        @break
+                        @default
+                        @endswitch
+                    </td>
+                    <td style="text-align: center">
+                        @switch($datas)
+                        @case($datas->unit_kom11_7 == 1)
                         <img src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
                             width="18">
                         @break
@@ -876,15 +1033,17 @@
             <thead>
                 <tr>
                     <td width="200px"
-                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Keputusan
-                        Asesmen</td>
+                        style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        <b>Keputusan
+                            Asesmen</b>
+                    </td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
                         @switch($datas)
                         @case($datas->result == 'Kompeten')
-                        Kompeten / <del>Belum Kompeten</del>
+                        <b>Kompeten / <del>Belum Kompeten</del></b>
                         @break
                         @default
-                        <del>Kompeten</del> / Belum Kompeten
+                        <b><del>Kompeten</del> / Belum Kompeten</b>
                         @endswitch
 
                     </td>
@@ -892,7 +1051,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Tindak Lanjut yang dibutuhkan ** (masukkan pekerjaan tambahan dan asesmen yang
+                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">Tindak
+                        Lanjut yang dibutuhkan ** (masukkan pekerjaan tambahan dan asesmen yang
                         diperlukan untuk mencapai
                         kompeten)</td>
 
@@ -933,7 +1093,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Kometar/Observasi Oleh Asesor</td>
+                    <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
+                        <b>Kometar/Observasi Oleh Asesor</b>
+                    </td>
                     <td style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;"> <br>
                         @switch($datas)
                         @case($datas->comment == 'Belum Kompeten')
@@ -979,10 +1141,11 @@
                 <tr>
                     <td width="340px"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Tanda Tangan Asesi / Tanggal</td>
+                        <b>Tanda Tangan Asesi / Tanggal</b>
+                    </td>
                     <td width="340px"
                         style="text-align: left: vertical-align: top;padding-left: 10px; padding-right: 10px;">
-                        Tanda Tangan Asesor / Tanggal
+                        <b>Tanda Tangan Asesor / Tanggal</b>
                     </td>
                 </tr>
             </thead>
@@ -1010,6 +1173,9 @@
                 </tr>
             </tbody>
         </table>
+        <p>* Coret yang tidak perlu <br> ** Beri tanda ( <img
+                src="{{ asset('https://tse3.mm.bing.net/th?id=OIP.e8eVc4yxvayW82qcX6Yo8QHaHa&pid=Api&P=0&h=220') }}"
+                width="16">) pada kolom sesuai hasil </p>
         <p> LAMPIRAN DOKUMEN : <br>
             1. Dokumen APL 01 Peserta <br>
             2. Dokumen APL 02 Peserta <br>

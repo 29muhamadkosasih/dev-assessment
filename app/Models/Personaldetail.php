@@ -46,6 +46,6 @@ class Personaldetail extends Model
 
     public function personal_detail()
     {
-        return $this->hasMany(Personaldetail::class);
+        return $this->hasMany(APL02::class);
     }
 }

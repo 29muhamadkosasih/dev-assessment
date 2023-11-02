@@ -56,18 +56,11 @@
                         <tr>
                             <td> <b>Instruksi :</b> <br>
 
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non deserunt aperiam sequi
-                                    nostrum natus vero veritatis similique perspiciatis, eum exercitationem nisi nam
-                                    quidem,
-                                    nihil rerum aut incidunt modi illo aliquam.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non deserunt aperiam sequi
-                                    nostrum natus vero veritatis similique perspiciatis, eum exercitationem nisi nam
-                                    quidem,
-                                    nihil rerum aut incidunt modi illo aliquam.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non deserunt aperiam sequi
-                                    nostrum natus vero veritatis similique perspiciatis, eum exercitationem nisi nam
-                                    quidem,
-                                    nihil rerum aut incidunt modi illo aliquam.</li>
+                                <li>Baca setiap pertanyaan dikolom sebelah kiri</li>
+                                <li>Isi dengan <b>"K"</b> pada kotak jika anda yakin dapat melakukan tugas yang di
+                                    jelaskan </li>
+                                <li>Isi kolom disebelah kanan dengan mendaftar bukti yang anda miliki untuk menunjukan
+                                    bahwa anda melakukan tugas-tugas ini.</li>
 
                             </td>
                         </tr>

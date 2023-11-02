@@ -112,4 +112,15 @@ $(function () {
       });
     });
   }
+
+  var select3 = $('.select3');
+  if (select3.length) {
+    select3.each(function () {
+      var $this = $(this);
+      $this.wrap('<div class="position-relative"></div>').select3({
+        placeholder: 'Select value',
+        dropdownParent: $this.parent()
+      });
+    });
+  }
 });

@@ -71,12 +71,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($answer as $data)
+                        @forelse ($answer as $data)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $data->apl02->personal_detail->nama_lengkap->name }}</td>
                             <td>{{ $data->apl02->kompetensi02->kompetensi->skema->nama_skema }}</td>
-                            {{-- <td></td> --}}
                             <td style="text-align: center">
                                 <a href="{{ url('apl_02/cetak_pdf', $data->id) }}" target="_blank"
                                     class="btn btn-icon btn-primary btn-sm" data-bs-toggle="tooltip"
@@ -86,7 +85,8 @@
                                 </a>
                             </td>
                         </tr>
-                        @endforeach
+                        @empty
+                        @endforelse
                     </tbody>
                 </table>
             </div>
